@@ -4,20 +4,22 @@ This document explains who the maintainers are (see below), what they do in this
 
 ## Current Maintainers
 
-| Maintainer | GitHub ID | Affiliation |
-| --------------- | --------- | ----------- |
-| Henri Yandell | [hyandell](https://github.com/hyandell) | Amazon |
-| Daniel "dB." Doubrovkine | [dblock](https://github.com/dblock) | Amazon |
+| Maintainer               | GitHub ID                               | Affiliation |
+| ------------------------ | --------------------------------------- | ----------- |
+| Henri Yandell            | [hyandell](https://github.com/hyandell) | Amazon      |
+| Daniel "dB." Doubrovkine | [dblock](https://github.com/dblock)     | Amazon      |
 
 ## Maintainer Responsibilities
 
-### Code of Conduct
+Maintainers are active and visible members of the community, and have [maintain-level permissions on a repository](https://docs.github.com/en/organizations/managing-access-to-your-organizations-repositories/repository-permission-levels-for-an-organization). Use those privileges to serve the community and evolve code as follows.
 
-Be an examplary practitioner of the guidelines set forward by the [Code of Conduct](CODE_OF_CONDUCT.md).
+### Uphold Code of Conduct
 
-### Security
+Model the behavior set forward by the [Code of Conduct](CODE_OF_CONDUCT.md) and raise any violations to other maintainers and admins.
 
-Prioritize security above-all. For example, maintainer's Github keys must be password protected securely and any reported security vulnerabilities are addressed before features or bugs.
+### Prioritize Security
+
+Prioritize security above-all, including your own. Maintainer's Github keys must be password protected securely and any reported security vulnerabilities are addressed before features or bugs.
 
 Note that this repository is monitored and supported 24/7 by Amazon Security, see [Reporting a Vulnerability](SECURITY.md) for details.
 
@@ -27,11 +29,19 @@ Review pull requests regularly, comment, suggest, reject, merge and close. Accep
 
 ### Triage Open Issues
 
-Review issues regularly and triage by labelling issues. For example, add "help wanted" to good issues for new community members. Request for more information from a submitter if an issue is not clear. Create new labels as needed by the project.
+Manage labels, review issues regularly, and triage by labelling them. For example, add "help wanted" to good issues for new community members and *blocker* for issues that scare you or need immediate attention. Request for more information from a submitter if an issue is not clear. Create new labels as needed by the project.
+
+### Be Responsive
+
+Respond to enhancement requests, and forum posts. Allocate time to reviewing and commenting on issues and conversations as they come in. 
 
 ### Maintain Overall Health of the Repo
 
-Keep the main branch at production quality at all times.
+Keep the `main` branch at production quality at all times. Backport features as needed. Cut release branches and tags to enable future patches. 
+
+### Use Semver
+
+Use and enforce [semantic versioning](https://semver.org/) and do not let breaking changes be made outside of major releases.
 
 ### Release Frequently
 
@@ -39,4 +49,5 @@ Make frequent project releases to the community.
 
 ### Promote Other Maintainers
 
-Exercise good judgement, and propose high quality contributors to become co-maintainers of this repository. Ask one of the [ADMINS](ADMINS.md) to add maintainers publicly.
+Assist, add, and remove [MAINTAINERS](MAINTAINERS.md). Exercise good judgement, and propose high quality contributors to become co-maintainers.
+
