@@ -10,14 +10,16 @@ This document explains who the admins are (see below), what they do in this repo
 
 ## Admin Responsibilities
 
-Admins are [MAINTAINERS](MAINTAINERS.md) and inherit all maintainer responsibilities.
+### Prioritize Security
 
-### Security
-
-Prioritize security above-all. You are responsible for safeguarding access and keys to the repository and the repository itself.
+Prioritize security above all. Manage security keys and safeguard access to the repository.
 
 Note that this repository is monitored and supported 24/7 by Amazon Security, see [Reporting a Vulnerability](SECURITY.md) for details.
 
-### Assist Maintainers
+### Manage Maintainers
 
-Exercise good judgement and support existing maintainers in promoting new co-maintainers.
+Assist, add, and remove [MAINTAINERS](MAINTAINERS.md).
+
+### Enforce Code of Conduct
+
+Act on [CODE_OF_CONDUCT](CODE_OF_CONDUCT.md) violations by revoking access, and blocking malicious actors.
