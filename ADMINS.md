@@ -14,7 +14,7 @@ As an admin you own stewartship of the repository and its settings. Admins have 
 
 ### Prioritize Security
 
-Prioritize security above all. Manage security keys and safeguard access to the repository.
+Security is your number one priority. Manage security keys and safeguard access to the repository.
 
 Note that this repository is monitored and supported 24/7 by Amazon Security, see [Reporting a Vulnerability](SECURITY.md) for details.
 
