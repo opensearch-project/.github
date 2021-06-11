@@ -1,3 +1,16 @@
+- [Overview](#overview)
+- [Current Maintainers](#current-maintainers)
+- [Maintainer Responsibilities](#maintainer-responsibilities)
+  - [Uphold Code of Conduct](#uphold-code-of-conduct)
+  - [Prioritize Security](#prioritize-security)
+  - [Review Pull Requests](#review-pull-requests)
+  - [Triage Open Issues](#triage-open-issues)
+  - [Be Responsive](#be-responsive)
+  - [Maintain Overall Health of the Repo](#maintain-overall-health-of-the-repo)
+  - [Use Semver](#use-semver)
+  - [Release Frequently](#release-frequently)
+  - [Promote Other Maintainers](#promote-other-maintainers)
+  
 ## Overview
 
 This document explains who the maintainers are (see below), what they do in this repo, and how they should be doing it. If you're interested in contributing, see [CONTRIBUTING](CONTRIBUTING.md).
@@ -29,7 +42,11 @@ Review pull requests regularly, comment, suggest, reject, merge and close. Accep
 
 ### Triage Open Issues
 
-Manage labels, review issues regularly, and triage by labelling them. For example, add "help wanted" to good issues for new community members and *blocker* for issues that scare you or need immediate attention. Request for more information from a submitter if an issue is not clear. Create new labels as needed by the project.
+Manage labels, review issues regularly, and triage by labelling them. 
+
+All repositories in this organization have a standard set of labels, including `bug`, `documentation`, `duplicate`, `enhancement`, `good first issue`, `help wanted`, `blocker`, `invalid`, `question`, `wontfix`, and `untriaged`, along with release labels, such as `v1.0.0`, `v1.1.0` and `v2.0.0`, and `backport`. 
+
+Use labels to target an issue or a PR for a given release, add `help wanted` to good issues for new community members, and `blocker` for issues that scare you or need immediate attention. Request for more information from a submitter if an issue is not clear. Create new labels as needed by the project.
 
 ### Be Responsive
 
