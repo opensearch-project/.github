@@ -1,41 +1,21 @@
 ---
-name: Proposal Template
+name: 💭 Proposal
 about: Suggest an idea for a specific feature you wish to propose to the community for comment
-title: ''
+title: '[PROPOSAL]'
 labels: proposal
 assignees: ''
 ---
+## What kind of business use case are you trying to solve? What are your requirements?
+A clear and concise description of the business problem, e.g. _My customers are asking for [...]_
 
-<!--
-Welcome to the OpenSearch project! 👋🎉
+**What is the problem? What is preventing you from meeting the requirements?**
+Describe what impact this problem has for lack of a solution.
 
+**What are you proposing? What do you suggest we do to solve the problem or improve the existing situation?**
+Describe your proposed solution. It's OK if you don't have one.
 
- - Please be respectful and considerate of others when commenting on issues.
- - Search for existing issues before creating duplicate proposals
- - Try to provide as much detail as possible
- - Please delete the comments before posting 
- - When opening a feature request you should expect to contribute a solution or part of this to make it a reality. 
- - Think of this like a requirements doc a product manager may fill out but with less rigor typically
+**What are your assumptions or prerequisites?**
+Describe any assumptions you may be making that would limit the scope of this proposal.
 
-- If you only have a question, you may get a faster response by asking in the forum.
-    https://discuss.opendistrocommunity.dev/c/forking-elasticsearch-kibana/50
-    (but please don't double post)
--->
-
-## Requirement - what kind of business use case are you trying to solve?
-<!-- What is the business case or user reason for you wanting to build this feature or capability? -->
-<!-- required section -->
-
-## Problem - what blocks you from solving the requirement?
-<!-- What is the impact of you not having this feature, what blocks you from solving a specific problem? -->
-<!-- required section -->
-
-## Proposal - what do you suggest to solve the problem or improve the existing situation?
-<!-- It's okay if you don't have one here, but if there is a workaround or other way this could be solved please suggest it here-->
-
-## Assumptions - are there certain things you assume the user is doing before this?
-<!-- With this proposal are you making some assumptions about the user or the specific situation? -->
-<!-- It's ok if you don't have one. -->
-
-## Any open questions to address
-<!-- Add any other questions you would like the community to address? -->
+**What are remaining open questions?**
+List questions that may need to be answered before proceeding with an implementation.
