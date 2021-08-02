@@ -20,6 +20,6 @@ echo "OpenSearch Version = $OPENSEARCH_VERSION"
 
 echo "Publishing Artifacts..."
 
-## Custom logic to publish snapshots
+## Publish snapshots
 
 echo "Done!"

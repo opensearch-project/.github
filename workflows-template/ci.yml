@@ -3,9 +3,6 @@ on:
   push:
     branches:
       - "*"
-  pull_request:
-    branches:
-      - "*"
 
 jobs:
   build:
@@ -24,14 +21,20 @@ jobs:
       
       - name: Checkout Project
         uses: actions/checkout@v2
+
+      - name: Checkout OpenSearch
+        uses: actions/checkout@v2
+        with:
+          repository: 'opensearch-project/.github'
+          path: .github
       
       - name: Build and Run Tests
         run: |
-          ./scripts/build.sh
+          ./.github/scripts/build.sh
       
       - name: Run Integ Tests
         run: |
-          ./scripts/integ-test.sh
+          ./.github/scripts/integ-test.sh
       
       - name: Upload Code Coverage
         uses: codecov/codecov-action@v1
@@ -48,4 +51,4 @@ jobs:
       
       - name: Publish Snapshots
         run: |
-          ./scripts/publish-snapshot.sh
+          ./.github/scripts/publish-snapshot.sh

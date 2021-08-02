@@ -19,6 +19,6 @@ echo "OpenSearch Version = $OPENSEARCH_VERSION"
 
 echo "Running Integration Tests..."
 
-## Custom logic to run integration tests
+./gradlew check -Dopensearch.version=$OPENSEARCH_VERSION
 
 echo "Done!"

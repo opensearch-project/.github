@@ -19,6 +19,6 @@ echo "OpenSearch Version = $OPENSEARCH_VERSION"
 
 echo "Assemble artifacts..."
 
-## Custom logic to stage artifacts for release
+## Stage artifacts for release
 
 echo "Done!"

@@ -5,7 +5,7 @@
 
 ##############################################################################
 ##
-## Script to build and run tests.
+## Script to build and run tests. 
 ##
 ##############################################################################
 
@@ -19,6 +19,6 @@ echo "OpenSearch Version = $OPENSEARCH_VERSION"
 
 echo "Build and Run Tests..."
 
-## Custom logic to build the project
+./gradlew build -Dopensearch.version=$OPENSEARCH_VERSION
 
 echo "Done!"

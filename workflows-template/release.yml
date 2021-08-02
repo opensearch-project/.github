@@ -26,6 +26,12 @@ jobs:
       - name: Checkout Project
         uses: actions/checkout@v2
 
+      - name: Checkout OpenSearch
+        uses: actions/checkout@v2
+        with:
+          repository: 'opensearch-project/.github'
+          path: .github
+      
       - name: Stage Artifacts for Release
         run: |
-          ./scripts/publish-staging.sh
+          ./.github/scripts/publish-staging.sh
