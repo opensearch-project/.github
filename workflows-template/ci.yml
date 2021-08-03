@@ -3,6 +3,9 @@ on:
   push:
     branches:
       - "*"
+  pull_request:
+    branches:
+      - "*"
 
 jobs:
   build:
@@ -22,33 +25,18 @@ jobs:
       - name: Checkout Project
         uses: actions/checkout@v2
 
-      - name: Checkout OpenSearch
+      - name: Checkout opensearch-project/.github
         uses: actions/checkout@v2
         with:
           repository: 'opensearch-project/.github'
-          path: .github
+          path: opensearch-github
       
       - name: Build and Run Tests
         run: |
-          ./.github/scripts/build.sh
-      
-      - name: Run Integ Tests
-        run: |
-          ./.github/scripts/integ-test.sh
+          ./opensearch-github/scripts/build.sh
       
       - name: Upload Code Coverage
         uses: codecov/codecov-action@v1
         with:
           file: ./build/reports/jacoco/test/jacocoTestReport.xml
           flags: plugin
-      
-      - name: Configure AWS
-        uses: aws-actions/configure-aws-credentials@v1
-        with:
-          aws-access-key-id: ${{ secrets.AWS_STAGING_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_STAGING_SECRET_ACCESS_KEY }}
-          aws-region: us-east-1
-      
-      - name: Publish Snapshots
-        run: |
-          ./.github/scripts/publish-snapshot.sh
