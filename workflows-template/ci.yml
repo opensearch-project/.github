@@ -21,7 +21,7 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: ${{ matrix.java }}
-      
+        
       - name: Checkout Project
         uses: actions/checkout@v2
 
@@ -31,6 +31,10 @@ jobs:
           repository: 'opensearch-project/.github'
           path: opensearch-github
       
+      - name: DCO Signoff Check
+        run: |
+          ./opensearch-github/scripts/signoff-check.sh 
+          
       - name: Build and Run Tests
         run: |
           ./opensearch-github/scripts/build.sh

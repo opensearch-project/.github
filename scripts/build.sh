@@ -19,6 +19,10 @@ echo "OpenSearch Version = $OPENSEARCH_VERSION"
 
 echo "Build and Run Tests..."
 
+./gradlew clean
+
 ./gradlew build -Dopensearch.version=$OPENSEARCH_VERSION
+
+./gradlew check -Dopensearch.version=$OPENSEARCH_VERSION
 
 echo "Done!"
