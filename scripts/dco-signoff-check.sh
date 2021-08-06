@@ -5,7 +5,7 @@
 
 ##############################################################################
 ##
-## Script to check for signoff presents on commits.
+## Script to check that signoff is present on commits.
 ##
 ##############################################################################
 

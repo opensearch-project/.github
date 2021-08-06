@@ -33,7 +33,7 @@ jobs:
       
       - name: DCO Signoff Check
         run: |
-          ./opensearch-github/scripts/signoff-check.sh 
+          ./opensearch-github/scripts/dco-signoff-check.sh
           
       - name: Build and Run Tests
         run: |
