@@ -1,0 +1,21 @@
+name: CI
+on:
+  push:
+    branches:
+      - "*"
+  pull_request:
+    branches:
+      - "*"
+
+jobs:
+  build:
+    name: Build and Test
+    runs-on: ubuntu-latest
+
+    steps:       
+      - name: Checkout Project
+        uses: actions/checkout@v2
+      
+      - name: DCO Signoff Check
+        run: |
+          ./scripts/dco-signoff-check.sh
