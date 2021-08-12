@@ -92,7 +92,7 @@ You may type this line on your own when writing your commit messages. However, i
 
 ## License Headers
 
-New files in your code contributions should contain the following license header. If you are modifying existing files do not remove or modify existing license headers.
+New files in your code contributions should contain the following license header. If you are modifying existing files with license headers, or including new files that already have license headers, do not remove or modify them without guidance.
 
 ### Java
 
