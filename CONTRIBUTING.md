@@ -6,6 +6,7 @@
   - [Documentation Changes](#documentation-changes)
   - [Contributing Code](#contributing-code)
 - [Developer Certificate of Origin](#developer-certificate-of-origin)
+- [License Headers](#license-headers)
 - [Review Process](#review-process)
 
 ## Contributing to OpenSearch
@@ -88,6 +89,49 @@ Signed-off-by: Jane Smith <jane.smith@email.com>
 ```
 
 You may type this line on your own when writing your commit messages. However, if your user.name and user.email are set in your git configs, you can use `-s` or `– – signoff` to add the `Signed-off-by` line to the end of the commit message.
+
+## License Headers
+
+New files in your code contributions should contain the following license header. If you are modifying existing files do not remove or modify existing license headers.
+
+### Java
+
+```
+/*
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * The OpenSearch Contributors require contributions made to
+ * this file be licensed under the Apache-2.0 license or a
+ * compatible open source license.
+ *
+ * Modifications Copyright OpenSearch Contributors. See
+ * GitHub history for details.
+ */
+```
+
+### Python
+```
+# SPDX-License-Identifier: Apache-2.0
+#
+# The OpenSearch Contributors require contributions made to
+# this file be licensed under the Apache-2.0 license or a
+# compatible open source license.
+#
+# Modifications Copyright OpenSearch Contributors. See
+# GitHub history for details.
+```
+
+### Shell
+```
+# SPDX-License-Identifier: Apache-2.0
+#
+# The OpenSearch Contributors require contributions made to
+# this file be licensed under the Apache-2.0 license or a
+# compatible open source license.
+#
+# Modifications Copyright OpenSearch Contributors. See
+# GitHub history for details.
+```
 
 ## Review Process
 
