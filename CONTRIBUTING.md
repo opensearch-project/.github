@@ -92,45 +92,27 @@ You may type this line on your own when writing your commit messages. However, i
 
 ## License Headers
 
-New files in your code contributions should contain the following license header. If you are modifying existing files do not remove or modify existing license headers.
+New files in your code contributions should contain the following license header. If you are modifying existing files with license headers, or including new files that already have license headers, do not remove or modify them without guidance.
 
 ### Java
 
 ```
 /*
+ * Copyright OpenSearch Contributors
  * SPDX-License-Identifier: Apache-2.0
- *
- * The OpenSearch Contributors require contributions made to
- * this file be licensed under the Apache-2.0 license or a
- * compatible open source license.
- *
- * Modifications Copyright OpenSearch Contributors. See
- * GitHub history for details.
  */
 ```
 
 ### Python
 ```
+# Copyright OpenSearch Contributors
 # SPDX-License-Identifier: Apache-2.0
-#
-# The OpenSearch Contributors require contributions made to
-# this file be licensed under the Apache-2.0 license or a
-# compatible open source license.
-#
-# Modifications Copyright OpenSearch Contributors. See
-# GitHub history for details.
 ```
 
 ### Shell
 ```
+# Copyright OpenSearch Contributors
 # SPDX-License-Identifier: Apache-2.0
-#
-# The OpenSearch Contributors require contributions made to
-# this file be licensed under the Apache-2.0 license or a
-# compatible open source license.
-#
-# Modifications Copyright OpenSearch Contributors. See
-# GitHub history for details.
 ```
 
 ## Review Process
