@@ -20,7 +20,7 @@ Projects create a new branch when they need to start working on 2 separate versi
 
 [OpenSearch](https://github.com/opensearch-project/OpenSearch) typically tracks 3 releases in parallel. For example, given the last major release of 1.0, OpenSearch in this organization maintains the following active branches.
 
-* **main**: The _next major_ release, currently 2.0. This is the branch where all merges take place and code moves fast.
+* **main**: The _next major_ release, currently 2.0. This is the branch where all merges take place, and code moves fast.
 * **1.x**: The _next minor_ release, currently 1.1. Once a change is merged into `main`, decide whether to backport it to `1.x`.
 * **1.0**: The _current_ release, currently 1.0. In between minor releases, only hotfixes (e.g. security) are backported to `1.0`. The next release out of this branch will be 1.0.1.
 
@@ -28,9 +28,10 @@ Label PRs with the next major version label (e.g. `2.0.0`) and merge changes int
 
 ### Plugin Branching
 
-Plugins, such as [job-scheduler](https://github.com/opensearch-project/job-scheduler) aren't as active as OpenSearch, and typically track 2 releases in parallel instead of 3. For example, given the last major release of 1.0, job-scheduler maintains the following active branches.
+Plugins, such as [job-scheduler](https://github.com/opensearch-project/job-scheduler) aren't as active as OpenSearch, and typically track 2 releases in parallel instead of 3. This still translates into 3 branches. For example, given the last major release of 1.0, job-scheduler maintains the following.
 
-* **main**: The _next_ release, currently 1.1. This is the branch where all merges take place and code moves fast.
+* **main**: The _next_ release, currently 1.1. This is the branch where all merges take place, and code moves fast.
+* **1.x**: A common parent branch for the series of 1.x releases. This is where 1.x patches will be made when `main` becomes 2.0.
 * **1.0**: The _current_ release, currently 1.0. This branch's parent is `1.x` to make future merges easier. 'In between minor releases, only hotfixes (e.g. security) are backported to `1.0`. The next release out of this branch will be 1.0.1.
 
 ### Versioning
