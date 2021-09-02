@@ -1,9 +1,12 @@
 - [Overview](#overview)
 - [Branching](#branching)
-    - [OpenSearch Branching](#opensearch-branching)
-    - [Plugin Branching](#plugin-branching)
-    - [Versioning](#versioning)
-    - [Feature Branches](#feature-branches)
+  - [OpenSearch Branching](#opensearch-branching)
+  - [Plugin Branching](#plugin-branching)
+  - [Feature Branches](#feature-branches)
+- [Versioning](#versioning)
+  - [Version Numbers](#version-numbers)
+  - [Incrementing Versions](#incrementing-versions)
+- [Tagging](#tagging)
 - [Release Labels](#release-labels)
 - [Releasing](#releasing)
 - [Backporting](#backporting)
@@ -34,16 +37,31 @@ Plugins, such as [job-scheduler](https://github.com/opensearch-project/job-sched
 * **1.x**: A common parent branch for the series of 1.x releases. This is where 1.x patches will be made when `main` becomes 2.0.
 * **1.0**: The _current_ release, currently 1.0. This branch's parent is `1.x` to make future merges easier. 'In between minor releases, only hotfixes (e.g. security) are backported to `1.0`. The next release out of this branch will be 1.0.1.
 
-### Versioning
-
-Versions are incremented as soon as development starts on a given version to avoid confusion. In the examples above versions are as follows.
-
-* OpenSearch: `main` = 2.0, `1.x` = 1.1, and `1.0` = 1.0
-* job-scheduler: `main` = 1.1, `1.0` = 1.0
-
 ### Feature Branches
 
 Do not creating branches in the upstream repo, use your fork, for the exception of long lasting feature branches that require active collaboration from multiple developers. Name feature branches `feature/<thing>`. Once the work is merged to `main`, please make sure to delete the feature branch.
+
+## Versioning
+
+OpenSearch versioning [follows semver](https://opensearch.org/blog/technical-post/2021/08/what-is-semver/). 
+
+### Version Numbers
+
+The build number of the engine is 3-digit `major.minor.patch` (e.g. `1.1.0`), while plugins use 4 digits (`1.1.0.45`). See [OpenSearch#1093](https://github.com/opensearch-project/OpenSearch/issues/1093) for a proposal to remove this difference. 
+
+### Incrementing Versions
+
+Versions are incremented as soon as development starts on a given version to avoid confusion. In the examples above versions are as follows.
+
+* OpenSearch: `main` = 2.0.0, `1.x` = 1.1.0, and `1.0` = 1.0.0
+* job-scheduler: `main` = 1.1.0.0, `1.0` = 1.0.0.0
+
+## Tagging
+
+Create tags after a release that match the version number.
+
+* [OpenSearch tags](https://github.com/opensearch-project/OpenSearch/tags): [1.0.0](https://github.com/opensearch-project/OpenSearch/releases/tag/1.0.0)
+* [job-scheduler tags](https://github.com/opensearch-project/job-scheduler/tags): [1.0.0.0](https://github.com/opensearch-project/job-scheduler/releases/tag/1.0.0.0)
 
 ## Release Labels
 
@@ -51,9 +69,11 @@ Repositories create consistent release labels, such as `v1.0.0`, `v1.1.0` and `v
 
 ## Releasing
 
-The release process is standard across repositories in this org and is run by a release manager volunteering from amongst [MAINTAINERS](MAINTAINERS.md).
+The OpenSearch release process is centralized.
 
-TODO
+1. Two candidate bundle builds for OpenSearch and OpenSearch Dashboards, produced by [bundle-workflow](https://github.com/opensearch-project/opensearch-build/blob/main/bundle-workflow/README.md), are chosen as release candidates. Those artifacts have successful end-to-end integration, backwards-compatibility and performance tests, and are signed.
+2. Staged maven artifacts are promoted to Maven Central.
+3. Bundles and -min artifacts are published to [opensearch.org](https://opensearch.org/downloads.html).
 
 ## Backporting
 
