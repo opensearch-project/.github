@@ -68,3 +68,6 @@ Make frequent project releases to the community.
 
 Assist, add, and remove [MAINTAINERS](MAINTAINERS.md). Exercise good judgement, and propose high quality contributors to become co-maintainers.
 
+### Describe the repo
+
+Make sure the repo has a well-written, accurate, and complete description. 
