@@ -10,6 +10,7 @@
   - [Use Semver](#use-semver)
   - [Release Frequently](#release-frequently)
   - [Promote Other Maintainers](#promote-other-maintainers)
+  - [Describe the Repo](#describe-the-repo)
   
 ## Overview
 
@@ -68,6 +69,6 @@ Make frequent project releases to the community.
 
 Assist, add, and remove [MAINTAINERS](MAINTAINERS.md). Exercise good judgement, and propose high quality contributors to become co-maintainers.
 
-### Describe the repo
+### Describe the Repo
 
-Make sure the repo has a well-written, accurate, and complete description. 
+Make sure the repo has a well-written, accurate, and complete description. See [opensearch-project/.github#38](https://github.com/opensearch-project/.github/issues/38) for some helpful tips to describe your repo.
