@@ -58,10 +58,12 @@ Versions are incremented as soon as development starts on a given version to avo
 
 ## Tagging
 
-Create tags after a release that match the version number.
+Create tags after a release that match the version number, `major.minor.patch`, without a `v` prefix.
 
 * [OpenSearch tags](https://github.com/opensearch-project/OpenSearch/tags): [1.0.0](https://github.com/opensearch-project/OpenSearch/releases/tag/1.0.0)
 * [job-scheduler tags](https://github.com/opensearch-project/job-scheduler/tags): [1.0.0.0](https://github.com/opensearch-project/job-scheduler/releases/tag/1.0.0.0)
+
+For a discussion on whether to add a prefixing `v` to release tags, see [#35](https://github.com/opensearch-project/.github/issues/35).  
 
 ## Release Labels
 
