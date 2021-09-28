@@ -1,20 +1,18 @@
 - [Overview](#overview)
 - [Current Maintainers](#current-maintainers)
 - [Maintainer Responsibilities](#maintainer-responsibilities)
-  * [Uphold Code of Conduct](#uphold-code-of-conduct)
-  * [Prioritize Security](#prioritize-security)
-  * [Review Pull Requests](#review-pull-requests)
-  * [Triage Open Issues](#triage-open-issues)
-  * [Be Responsive](#be-responsive)
-  * [Maintain Overall Health of the Repo](#maintain-overall-health-of-the-repo)
-  * [Add Continious Integration Checks](#add-continious-integration-checks)
-    + [Developer Certificate of Origin workflow](#developer-certificate-of-origin-workflow)
-  * [Use Semver](#use-semver)
-  * [Release Frequently](#release-frequently)
-  * [Promote Other Maintainers](#promote-other-maintainers)
-  * [Describe the Repo](#describe-the-repo)
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+  - [Uphold Code of Conduct](#uphold-code-of-conduct)
+  - [Prioritize Security](#prioritize-security)
+  - [Review Pull Requests](#review-pull-requests)
+  - [Triage Open Issues](#triage-open-issues)
+  - [Be Responsive](#be-responsive)
+  - [Maintain Overall Health of the Repo](#maintain-overall-health-of-the-repo)
+  - [Add Continious Integration Checks](#add-continious-integration-checks)
+    - [Developer Certificate of Origin Workflow](#developer-certificate-of-origin-workflow)
+  - [Use Semver](#use-semver)
+  - [Release Frequently](#release-frequently)
+  - [Promote Other Maintainers](#promote-other-maintainers)
+  - [Describe the Repo](#describe-the-repo)
   
 ## Overview
 
