@@ -7,6 +7,8 @@
   - [Triage Open Issues](#triage-open-issues)
   - [Be Responsive](#be-responsive)
   - [Maintain Overall Health of the Repo](#maintain-overall-health-of-the-repo)
+  - [Add Continious Integration Checks](#add-continious-integration-checks)
+    - [Developer Certificate of Origin Workflow](#developer-certificate-of-origin-workflow)
   - [Use Semver](#use-semver)
   - [Release Frequently](#release-frequently)
   - [Promote Other Maintainers](#promote-other-maintainers)
@@ -56,6 +58,14 @@ Respond to enhancement requests, and forum posts. Allocate time to reviewing and
 ### Maintain Overall Health of the Repo
 
 Keep the `main` branch at production quality at all times. Backport features as needed. Cut release branches and tags to enable future patches. 
+
+### Add Continious Integration Checks
+
+Add integration checks that validate pull requests and pushes to ease the burden on Pull Request reviewers.
+
+#### Developer Certificate of Origin Workflow
+
+Validates pull requests commits are all signed with the doc, [doc.yml](./workflow/doc.yml).  Example [pull request](https://github.com/opensearch-project/opensearch-ci/pull/16).
 
 ### Use Semver
 
