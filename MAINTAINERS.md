@@ -57,6 +57,14 @@ Respond to enhancement requests, and forum posts. Allocate time to reviewing and
 
 Keep the `main` branch at production quality at all times. Backport features as needed. Cut release branches and tags to enable future patches. 
 
+### Add Continious Integration Checks
+
+Add integration checks that validate pull requests and pushes to ease the burden on Pull Request reviewers
+
+#### Developer Certificate of Origin workflow
+
+Validates pull requests commits are all signed with the doc, [doc.yml](./workflow/doc.yml).  Example [pull request](https://github.com/opensearch-project/opensearch-ci/pull/16).
+
 ### Use Semver
 
 Use and enforce [semantic versioning](https://semver.org/) and do not let breaking changes be made outside of major releases.
