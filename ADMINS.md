@@ -7,6 +7,8 @@ This document explains who the admins are (see below), what they do in this repo
 | Admin           | GitHub ID                               | Affiliation |
 | --------------- | --------------------------------------- | ----------- |
 | Henri Yandell   | [hyandell](https://github.com/hyandell) | Amazon      |
+| Jordan Oliver  | [hyandell](https://github.com/jordanoliver23) | Oracle      |
+| Samuel Herman   | [hyandell](https://github.com/add) | Oracle      |
 
 ## Admin Responsibilities
 
