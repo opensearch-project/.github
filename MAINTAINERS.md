@@ -140,7 +140,7 @@ If a positive decision has been reached, the nomination is accepted and the nomi
 
 ### Adding the New Maintainer 
 
-The Repo [Admin](ADMINS.md) adjusts the new maintainer’s permissions accordingly. The nominating maintainer opens a pull request to add the new maintainer to MAINTAINERS.md, and closes the nomination issue when that is merged and the individual has been given maintainer-level permissions.
+The Repo Admin adjusts the new maintainer’s permissions accordingly. The nominating maintainer opens a pull request to add the new maintainer to MAINTAINERS.md, and closes the nomination issue when that is merged and the individual has been given maintainer-level permissions.
 
 ## Removing a Maintainer
 
