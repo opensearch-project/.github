@@ -18,7 +18,7 @@
   - [Interest](#interest)
   - [Public Confirmation](#public-confirmation)
   - [Maintainer Decision](#maintainer-decision)
-  - [Adding the New Maintainer](#adding-the-new-maintainer)
+  - [Adding a New Maintainer](#adding-a-new-maintainer)
 - [Removing a Maintainer](#removing-a-maintainer)
   - [Moving On](#moving-on)
   - [Inactivity](#inactivity)
@@ -138,7 +138,7 @@ Upon receiving 3 positive maintainer votes, and no vetoes, from other maintainer
 
 If a positive decision has been reached, the nomination is accepted and the nominating maintainer can thus comment on the issue with _"maintainers has been added"_. If a decision cannot be reached for any reason, the nomination is rejected with _"a decision could not be reached"_ with no further explanation necessary.
 
-### Adding the New Maintainer 
+### Adding a New Maintainer
 
 The repo admin adjusts the new maintainer’s permissions accordingly. The nominating maintainer opens a pull request to add the new maintainer to MAINTAINERS.md, and closes the nomination issue when that is merged and the individual has been given maintainer-level permissions.
 
