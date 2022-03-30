@@ -156,4 +156,4 @@ If the maintainers on the project notice that another maintainer is no longer an
 
 ### Negative Impact on the Project
 
-Actions that negatively impact the project will be handled by the Admins, in coordination with other maintainers, in balance with the urgency of the issue. Examples would be [Code of Conduct](CODE_OF_CONDUCT.md) violations and security risks.
+Actions that negatively impact the project will be handled by the Admins, in coordination with other maintainers, in balance with the urgency of the issue. Examples would be [Code of Conduct](CODE_OF_CONDUCT.md) violations, deliberate harmful actions, and security risks.
