@@ -140,7 +140,7 @@ If a positive decision has been reached, the nomination is accepted and the nomi
 
 ### Adding the New Maintainer 
 
-The Repo Admin adjusts the new maintainer’s permissions accordingly. The nominating maintainer opens a pull request to add the new maintainer to MAINTAINERS.md, and closes the nomination issue when that is merged and the individual has been given maintainer-level permissions.
+The repo admin adjusts the new maintainer’s permissions accordingly. The nominating maintainer opens a pull request to add the new maintainer to MAINTAINERS.md, and closes the nomination issue when that is merged and the individual has been given maintainer-level permissions.
 
 ## Removing a Maintainer
 
@@ -156,4 +156,4 @@ If the maintainers on the project notice that another maintainer is no longer an
 
 ### Negative Impact on the Project
 
-Actions that negatively impact the project will be handled by the Admins, in coordination with other maintainers, in balance with the urgency of the issue. Examples would be [Code of Conduct](CODE_OF_CONDUCT.md) violations, deliberate harmful actions, and security risks.
+Actions that negatively impact the project will be handled by the admins, in coordination with other maintainers, in balance with the urgency of the issue. Examples would be [Code of Conduct](CODE_OF_CONDUCT.md) violations, deliberate harmful actions, and security risks.
