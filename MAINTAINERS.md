@@ -99,7 +99,7 @@ You can become a maintainer by actively [contributing](CONTRIBUTING.md) to any p
 
 ### Nomination
 
-Any current maintainer starts an e-mail thread (until we have a better mechanism, e-mails can usually be found via MAINTAINERS.md + DCO) with all other maintainers on that repository to discuss nomination using the template below. In order to be approved, at least 3 positive maintainer votes are necessary, and no vetoes. In rare cases when there are less than 3 maintainers, the positive votes from all maintainers are required. Any disagreements can be escalated to the repo [Admin](ADMINS.md).
+Any current maintainer starts an e-mail thread (until we have a better mechanism, e-mails can usually be found via MAINTAINERS.md + DCO) with all other maintainers on that repository to discuss nomination using the template below. In order to be approved, at least 3 positive maintainer votes are necessary, and no vetoes. In rare cases when there are less than 3 maintainers, the positive votes from all maintainers are required. Any disagreements can be escalated to the repo admin.
 
 > I propose inviting Vacha Shah ([@vachashah](https://github.com/vachashah)) as a co-maintainer on [opensearch-project/OpenSearch](https://github.com/opensearch-project/OpenSearch). 
 > 
@@ -152,7 +152,7 @@ There are plenty of reasons that might cause someone to want to take a step back
 
 ### Inactivity
 
-If the maintainers on the project notice that another maintainer is no longer an active or visible member of the community, the first step will be to tell the repo owner to contact the inactive maintainer to check-in. If the inactive maintainer responds and intends to reengage, no action is required. If the maintainer does not respond after a week, or indicates they no longer wish to be a maintainer, the repo owner can remove the inactive maintainer’s permissions and make a pull request to add them to the "Emeritus" section of the MAINTAINERS.md.
+If the maintainers on the project notice that another maintainer is no longer an active or visible member of the community, the first step will be to tell the repo admin to contact the inactive maintainer to check-in. If the inactive maintainer responds and intends to reengage, no action is required. If the maintainer does not respond after a week, or indicates they no longer wish to be a maintainer, the repo admin can remove the inactive maintainer’s permissions and make a pull request to add them to the "Emeritus" section of the MAINTAINERS.md.
 
 ### Negative Impact on the Project
 
