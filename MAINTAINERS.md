@@ -122,7 +122,7 @@ Individuals accept the nomination by replying, or commenting, for example _"Than
 
 ### Public Confirmation
 
-Upon receiving 3 positive maintainer votes, and no vetoes, from other maintainers, and after having confirmed interest with the nominee, the maintainer opens a public issue in order to make the vote visible to the community. 
+Upon receiving 3 positive maintainer votes, and no vetoes, from other maintainers, and after having confirmed interest with the nominee, the maintainer opens a pull request adding the proposed co-maintainer to MAINTAINERS.md. This makes the vote visible to the community. 
 
 > _Content from the above nomination._
 > 
@@ -132,15 +132,15 @@ Upon receiving 3 positive maintainer votes, and no vetoes, from other maintainer
 > 
 > If you do not support this nomination, we invite you to e-mail all/some of the current [project maintainers](https://github.com/opensearch-project/OpenSearch/blob/main/MAINTAINERS.md) in the next 2 weeks. We will keep your feedback private to this group and discuss offline. We will not publicly post the reasons for a decision not to add this co-maintainer, or publicize your name. 
 > 
-> Anyone, including maintainers, can publicly add +1s as requested in the nomination issue if they support the nomination or contact the maintainers in private if they oppose. The issue stays open for 2 weeks.
+> Anyone, including maintainers, can publicly add +1s as requested in the nomination issue if they support the nomination or contact the maintainers in private if they oppose. The pull request stays open for 2 weeks.
 
 ### Maintainer Decision
 
-If a positive decision has been reached, the nomination is accepted and the nominating maintainer can thus comment on the issue with _"maintainers has been added"_. If a decision cannot be reached for any reason, the nomination is rejected with _"a decision could not be reached"_ with no further explanation necessary.
+If a positive decision has been reached, the nomination is accepted. If a decision cannot be reached for any reason, the nomination is rejected with _"a decision could not be reached"_ with no further explanation necessary, and the pull request is closed.
 
 ### Adding a New Maintainer
 
-The repo admin adjusts the new maintainer’s permissions accordingly. The nominating maintainer opens a pull request to add the new maintainer to MAINTAINERS.md, and closes the nomination issue when that is merged and the individual has been given maintainer-level permissions.
+The repo admin adjusts the new maintainer’s permissions accordingly, and merges the pull request to MAINTAINERS.md.
 
 ## Removing a Maintainer
 
