@@ -101,16 +101,7 @@ You can become a maintainer by actively [contributing](CONTRIBUTING.md) to any p
 
 Any current maintainer starts an e-mail thread (until we have a better mechanism, e-mails can usually be found via MAINTAINERS.md + DCO) with all other maintainers on that repository to discuss nomination using the template below. In order to be approved, at least 3 positive maintainer votes are necessary, and no vetoes. In rare cases when there are less than 3 maintainers, the positive votes from all maintainers are required. Any disagreements can be escalated to the repo admin.
 
-> I propose inviting Vacha Shah ([@vachashah](https://github.com/vachashah)) as a co-maintainer on [opensearch-project/OpenSearch](https://github.com/opensearch-project/OpenSearch). 
-> 
-> Vacha has contributed a lot of automation across many repositories.
-> 
-> - https://github.com/opensearch-project/OpenSearch/pull/877 — Added a broken link checker
-> - https://github.com/opensearch-project/OpenSearch/issues/894 — Fixed broken links across the OpenSearch-Project
-> - https://github.com/opensearch-project/opensearch-build/pull/17  — Updated labels across all OpenSearch repos
-> - https://github.com/opensearch-project/opensearch-plugins/pull/70 — Updated plugin documentation
-> 
-> Vacha has worked tenaciously on non-glamorous tasks, because they raise the overall Engineering bar for the entire project. 
+The nomination should clearly identify the person with their real name and a link to their GitHub profile, and the rationale for the nomination, with concrete example contributions.
 
 ### Interest
 
