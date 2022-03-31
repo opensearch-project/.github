@@ -116,7 +116,7 @@ Any current maintainer starts an e-mail thread (until we have a better mechanism
 
 Upon receiving at least 3 positive maintainer votes, and no vetoes, from other maintainers within a maximum period of 2 weeks, the nominating maintainer asks a potential nominee whether they might be interested in becoming a maintainer on the repository, which typically happens via e-mail obtained via DCO, but may also be a comment to a pull request, following a substantial contribution.
 
-> This is great work, Vacha! Would you be interested in becoming a [co-maintainer](https://github.com/opensearch-project/.github/blob/main/MAINTAINERS.md) on this project? I’d be honored to nominate you.
+> This is great work! Based on your ongoing contributions to the project we have decided that we'd like to invite you to become a co-maintainer for this project. Please let us know whether you accept this nomination.
 
 Individuals accept the nomination by replying, or commenting, for example _"Thank you! I would love to."_
 
