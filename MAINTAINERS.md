@@ -113,7 +113,7 @@ Individuals accept the nomination by replying, or commenting, for example _"Than
 
 ### Public Confirmation
 
-Upon receiving 3 positive maintainer votes, and no vetoes, from other maintainers, and after having confirmed interest with the nominee, the maintainer opens a pull request adding the proposed co-maintainer to MAINTAINERS.md. This makes the proposal and the vote visible to the community.
+Upon receiving 3 positive maintainer votes, and no vetoes, from other maintainers, and after having confirmed interest with the nominee, the maintainer opens a pull request adding the proposed co-maintainer to MAINTAINERS.md, and perform a final vote similar to the nomination process. If the nomination still has 3 positive votes, and no vetoes, from other maintainers, the nomination is accepted. The positive maintainer voters should approve the pull request to show support.
 
 > _Content from the above nomination._
 > 
@@ -127,7 +127,7 @@ Upon receiving 3 positive maintainer votes, and no vetoes, from other maintainer
 
 ### Maintainer Decision
 
-If a positive decision has been reached, the nomination is accepted. If a decision cannot be reached for any reason, the nomination is rejected with _"a decision could not be reached"_ with no further explanation necessary, and the pull request is closed.
+If a positive decision has been reached, the nomination is accepted. If the maintainers cannot reach a positive decision for any reason, the nomination is rejected with _"a decision could not be reached"_ with no further explanation necessary, and the pull request is closed.
 
 ### Adding a New Maintainer
 
