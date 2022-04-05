@@ -69,10 +69,26 @@ For a discussion on whether to add a prefixing `v` to release tags, see [#35](ht
 
 Repositories create consistent release labels, such as `v1.0.0`, `v1.1.0` and `v2.0.0`, as well as `patch` and `backport`. Use release labels to target an issue or a PR for a given release. See [MAINTAINERS](MAINTAINERS.md#triage-open-issues) for more information on triaging issues.
 
-## Releasing
+## Release Scheduling
 
-The OpenSearch release process is centralized.
+The OpenSearch release process is centralized and has several steps along the way.  As part of this process, the Engineering Efficiency team will cut a release ticket and assign an overall release manager for the release.  They will also cut individual tickets per repo for the release with what's expected to go in that release.   
 
+### Release Schedule Date Definitions:
+
+#### Feature freeze
+All code changes that add new capabilities to OpenSearch need to be merged to main and backported to the planned release. Additional merges/backports can happen for bugs fixes and CVEs.  Until we have all plugins using CI, we may continue to have an earlier feature freeze date for OpenSearch core and OpenSearch Dashboards.
+
+#### Code Freeze
+No more changes can be merged to the release branch after this point except in the case of blocking changes.  This generally happens 1 week before the release date for minor versions.
+
+#### Release Date
+Artifacts are made available on opensearch.org or other sources like NPM.
+
+For 2022 we're tracking the overall release dates for OpenSearch [in the forums](https://opensearch.org/blog/partners/2022/02/roadmap-proposal/). 
+
+
+## Day of Release Activities
+Once we reach the Release Date, the following things happen:
 1. Two candidate bundle builds for OpenSearch and OpenSearch Dashboards, produced by [bundle-workflow](https://github.com/opensearch-project/opensearch-build/blob/main/bundle-workflow/README.md), are chosen as release candidates. Those artifacts have successful end-to-end integration, backwards-compatibility and performance tests, and are signed.
 2. Staged maven artifacts are promoted to Maven Central.
 3. Bundles and -min artifacts are published to [opensearch.org](https://opensearch.org/downloads.html).
