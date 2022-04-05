@@ -113,7 +113,7 @@ Individuals accept the nomination by replying, or commenting, for example _"Than
 
 ### Public Confirmation
 
-Upon receiving 3 positive maintainer votes, and no vetoes, from other maintainers, and after having confirmed interest with the nominee, the maintainer opens a pull request adding the proposed co-maintainer to MAINTAINERS.md. This makes the vote visible to the community. 
+Upon receiving 3 positive maintainer votes, and no vetoes, from other maintainers, and after having confirmed interest with the nominee, the maintainer opens a pull request adding the proposed co-maintainer to MAINTAINERS.md. This makes the proposal and the vote visible to the community.
 
 > _Content from the above nomination._
 > 
