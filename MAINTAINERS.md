@@ -143,7 +143,7 @@ There are plenty of reasons that might cause someone to want to take a step back
 
 ### Inactivity
 
-Maintainer status never expires. If a maintainer becomes inactive for a time (usually several months), their account may be deactivated by the repo admin for security reasons. A maintainer can reach out to the repo admin to get their permissions reinstated.
+Maintainer status never expires. If a maintainer becomes inactive for a time (usually several months), the repo admin may revoke maintainer level access to the repository for security reasons. A maintainer can reach out to the repo admin to get their permissions reinstated.
 
 If the repo is left without any maintainers, either by maintainer inactivity or moving on, the repo is considered unmaintained. The repo admin will seek out new maintainers and note the maintenance status in the repo README file.
 
