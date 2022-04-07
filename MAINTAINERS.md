@@ -143,7 +143,7 @@ There are plenty of reasons that might cause someone to want to take a step back
 
 ### Inactivity
 
-If the maintainers on the project notice that another maintainer is no longer an active or visible member of the community, the first step will be to tell the repo admin to contact the inactive maintainer to check-in. If the inactive maintainer responds and reengages, no action is required. If the maintainer does not respond after several weeks, or indicates they no longer wish to be a maintainer, the repo admin can remove the inactive maintainer’s permissions and make a pull request to add them to the "Emeritus" section of the MAINTAINERS.md.
+Maintainer status never expires. If a maintainer becomes inactive for a time (usually several months), their account may be deactivated by the repo admin for security reasons. A maintainer can reach out to the repo admin to get their permissions reinstated.
 
 If the repo is left without any maintainers, either by maintainer inactivity or moving on, the repo is considered unmaintained. The repo admin will seek out new maintainers and note the maintenance status in the repo README file.
 
