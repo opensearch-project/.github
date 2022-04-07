@@ -99,7 +99,7 @@ You can become a maintainer by actively [contributing](CONTRIBUTING.md) to any p
 
 ### Nomination
 
-Any current maintainer starts an e-mail thread (until we have a better mechanism, e-mails can usually be found via MAINTAINERS.md + DCO) with all other maintainers on that repository to discuss nomination using the template below. In order to be approved, at least 3 positive maintainer votes are necessary, and no vetoes. In rare cases when there are less than 3 maintainers, the positive votes from all maintainers are required. Any disagreements can be escalated to the repo admin.
+Any current maintainer starts a private e-mail thread (until we have a better mechanism, e-mails can usually be found via MAINTAINERS.md + DCO) with all other maintainers on that repository to discuss nomination using the template below. In order to be approved, at least 3 positive maintainer votes are necessary, and no vetoes. In rare cases when there are fewer than 3 maintainers, the positive votes from all maintainers are required. Any disagreements can be escalated to the repo admin.
 
 The nomination should clearly identify the person with their real name and a link to their GitHub profile, and the rationale for the nomination, with concrete example contributions.
 
@@ -135,7 +135,7 @@ The repo admin adjusts the new maintainer’s permissions accordingly, and merge
 
 ## Removing a Maintainer
 
-Removing a maintainer is a disruptive action that the community of maintainers should not undertake lightly. There are several reasons a maintainer might be removed from the project, such as inactivity, or taking actions that negatively impact the project.
+Removing a maintainer is a disruptive action that the community of maintainers should not undertake lightly. There are several reasons a maintainer might be removed from the project, such as violating the [code of conduct](https://github.com/opensearch-project/.github/blob/main/CODE_OF_CONDUCT.md), or taking other actions that negatively impact the project.
 
 ### Moving On
 
@@ -149,4 +149,4 @@ If the repo is left without any maintainers, either by maintainer inactivity or 
 
 ### Negative Impact on the Project
 
-Actions that negatively impact the project will be handled by the admins, in coordination with other maintainers, in balance with the urgency of the issue. Examples would be [Code of Conduct](CODE_OF_CONDUCT.md) violations, deliberate harmful actions, and security risks.
+Actions that negatively impact the project will be handled by the admins, in coordination with other maintainers, in balance with the urgency of the issue. Examples would be [Code of Conduct](CODE_OF_CONDUCT.md) violations, deliberate harmful or malicious actions, and security risks.
