@@ -16,9 +16,7 @@
 - [Becoming a Maintainer](#becoming-a-maintainer)
   - [Nomination](#nomination)
   - [Interest](#interest)
-  - [Public Confirmation](#public-confirmation)
-  - [Maintainer Decision](#maintainer-decision)
-  - [Adding a New Maintainer](#adding-a-new-maintainer)
+  - [Addition](#addition)
 - [Removing a Maintainer](#removing-a-maintainer)
   - [Moving On](#moving-on)
   - [Inactivity](#inactivity)
@@ -51,7 +49,7 @@ Note that this repository is monitored and supported 24/7 by Amazon Security, se
 
 ### Review Pull Requests
 
-Review pull requests regularly, comment, suggest, reject, merge and close. Accept only high quality pull-requests. Provide code reviews and guidance on incomming pull requests. Don't let PRs be stale and do your best to be helpful to contributors.
+Review pull requests regularly, comment, suggest, reject, merge and close. Accept only high quality pull-requests. Provide code reviews and guidance on incoming pull requests. Don't let PRs be stale and do your best to be helpful to contributors.
 
 ### Triage Open Issues
 
@@ -111,27 +109,15 @@ Upon receiving at least three positive maintainer votes, and no vetoes, from oth
 
 Individuals accept the nomination by replying, or commenting, for example _"Thank you! I would love to."_
 
-### Public Confirmation
+### Addition
 
-Upon receiving 3 positive maintainer votes, and no vetoes, from other maintainers, and after having confirmed interest with the nominee, the maintainer opens a pull request adding the proposed co-maintainer to MAINTAINERS.md, and perform a final vote similar to the nomination process. If the nomination still has 3 positive votes, and no vetoes, from other maintainers, the nomination is accepted. The positive maintainer voters should approve the pull request to show support.
+Upon receiving three positive maintainer votes, and no vetoes, from other maintainers, and after having confirmed interest with the nominee, the maintainer opens a pull request adding the proposed co-maintainer to MAINTAINERS.md. The pull request is approved and merged.
 
 > _Content from the above nomination._
 > 
-> Here is my +1.
-> 
-> If you support this nomination, please add your +1 or a comment. 
-> 
-> If you do not support this nomination, we invite you to e-mail all/some of the current [project maintainers](https://github.com/opensearch-project/OpenSearch/blob/main/MAINTAINERS.md) in the next two weeks. We will keep your feedback private to this group and discuss offline. We will not publicly post the reasons for a decision not to add this co-maintainer, or publicize your name.
-> 
-> Anyone, including maintainers, can publicly add +1s as requested in the nomination issue if they support the nomination or contact the maintainers in private if they oppose. The pull request stays open for two weeks.
+> The maintainers have voted and agreed to this nomination.
 
-### Maintainer Decision
-
-If a positive decision has been reached, the nomination is accepted. If the maintainers cannot reach a positive decision for any reason, the nomination is rejected with _"a decision could not be reached"_ with no further explanation necessary, and the pull request is closed.
-
-### Adding a New Maintainer
-
-The repo admin adjusts the new maintainer’s permissions accordingly, and merges the pull request to MAINTAINERS.md.
+The repo admin adjusts the new maintainer’s permissions accordingly, and merges the pull request.
 
 ## Removing a Maintainer
 
