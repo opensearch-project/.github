@@ -99,15 +99,15 @@ You can become a maintainer by actively [contributing](CONTRIBUTING.md) to any p
 
 ### Nomination
 
-Any current maintainer starts a private e-mail thread (until we have a better mechanism, e-mails can usually be found via MAINTAINERS.md + DCO) with all other maintainers on that repository to discuss nomination using the template below. In order to be approved, at least 3 positive maintainer votes are necessary, and no vetoes. In rare cases when there are fewer than 3 maintainers, the positive votes from all maintainers are required. Any disagreements can be escalated to the repo admin.
+Any current maintainer starts a private e-mail thread (until we have a better mechanism, e-mail addresses can usually be found via MAINTAINERS.md + DCO) with all other maintainers on that repository to discuss nomination using the template below. In order to be approved, at least three positive maintainer votes are necessary, and no vetoes. In rare cases when there are fewer than three maintainers, the positive votes from all maintainers are required. Any disagreements can be escalated to the repo admin.
 
 The nomination should clearly identify the person with their real name and a link to their GitHub profile, and the rationale for the nomination, with concrete example contributions.
 
 ### Interest
 
-Upon receiving at least 3 positive maintainer votes, and no vetoes, from other maintainers within a maximum period of 2 weeks, the nominating maintainer asks a potential nominee whether they might be interested in becoming a maintainer on the repository, which typically happens via e-mail obtained via DCO, but may also be a comment to a pull request, following a substantial contribution.
+Upon receiving at least three positive maintainer votes, and no vetoes, from other maintainers within a maximum period of two weeks, the nominating maintainer asks a potential nominee whether they might be interested in becoming a maintainer on the repository, which happens via private e-mail message message, but may also be a comment to a pull request, following a substantial contribution.
 
-> This is great work! Based on your ongoing contributions to the project we have decided that we'd like to invite you to become a co-maintainer for this project. Please let us know whether you accept this nomination.
+> This is great work! Based on your ongoing engagement with the project, the current maintainers now invite you to become a co-maintainer for this project. Please respond and let us know if you would like to become maintainer.
 
 Individuals accept the nomination by replying, or commenting, for example _"Thank you! I would love to."_
 
@@ -121,9 +121,9 @@ Upon receiving 3 positive maintainer votes, and no vetoes, from other maintainer
 > 
 > If you support this nomination, please add your +1 or a comment. 
 > 
-> If you do not support this nomination, we invite you to e-mail all/some of the current [project maintainers](https://github.com/opensearch-project/OpenSearch/blob/main/MAINTAINERS.md) in the next 2 weeks. We will keep your feedback private to this group and discuss offline. We will not publicly post the reasons for a decision not to add this co-maintainer, or publicize your name. 
+> If you do not support this nomination, we invite you to e-mail all/some of the current [project maintainers](https://github.com/opensearch-project/OpenSearch/blob/main/MAINTAINERS.md) in the next two weeks. We will keep your feedback private to this group and discuss offline. We will not publicly post the reasons for a decision not to add this co-maintainer, or publicize your name.
 > 
-> Anyone, including maintainers, can publicly add +1s as requested in the nomination issue if they support the nomination or contact the maintainers in private if they oppose. The pull request stays open for 2 weeks.
+> Anyone, including maintainers, can publicly add +1s as requested in the nomination issue if they support the nomination or contact the maintainers in private if they oppose. The pull request stays open for two weeks.
 
 ### Maintainer Decision
 
