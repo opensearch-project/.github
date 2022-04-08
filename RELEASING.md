@@ -7,8 +7,11 @@
   - [Version Numbers](#version-numbers)
   - [Incrementing Versions](#incrementing-versions)
 - [Tagging](#tagging)
-- [Release Labels](#release-labels)
 - [Releasing](#releasing)
+  - [Release Labels](#release-labels)
+  - [Release Schedule](#release-scheduling)
+  - [Release Schedule Date Definitions](#release-schedule-date-definitions)
+  
 - [Backporting](#backporting)
 
 ## Overview
@@ -65,21 +68,23 @@ Create tags after a release that match the version number, `major.minor.patch`, 
 
 For a discussion on whether to add a prefixing `v` to release tags, see [#35](https://github.com/opensearch-project/.github/issues/35).  
 
-## Release Labels
+## Releasing
+
+### Release Labels
 
 Repositories create consistent release labels, such as `v1.0.0`, `v1.1.0` and `v2.0.0`, as well as `patch` and `backport`. Use release labels to target an issue or a PR for a given release. See [MAINTAINERS](MAINTAINERS.md#triage-open-issues) for more information on triaging issues.
 
 ## Release Scheduling
 
-The OpenSearch release process is centralized and has several steps along the way.  As part of this process, the Engineering Efficiency team will cut a release ticket and assign an overall release manager for the release.  They will also cut individual tickets per repo for the release with what's expected to go in that release.   
+Because OpenSearch currently releases as a bundle, the OpenSearch release process is centralized and has several steps along the way.  As the first step in this release process, the Engineering Effectiveness team creates a release ticket in the [opensearch-build repo](https://github.com/opensearch-project/opensearch-build) and assigns it to an overall release manager (example: [2.0 release ticket](https://github.com/opensearch-project/opensearch-build/issues/1650)).  The team also creates individual release issues per repo with what's expected to go in that release. If you have a question about a release, you can always comment on a release issue using @opensearch-project/engineering-effectiveness.  
 
-### Release Schedule Date Definitions:
+### Release Schedule Date Definitions
 
-#### Feature freeze
-All code changes that add new capabilities to OpenSearch need to be merged to main and backported to the planned release. Additional merges/backports can happen for bugs fixes and CVEs.  Until we have all plugins using CI, we may continue to have an earlier feature freeze date for OpenSearch core and OpenSearch Dashboards.
+#### Feature Freeze
+All code changes that add new capabilities to OpenSearch need to be merged to "main" and backported to the planned release. Additional merges/backports can happen for bugs fixes and CVEs.  Until we have all plugins using CI, we may continue to have an earlier feature freeze date for OpenSearch core and OpenSearch Dashboards.
 
 #### Code Freeze
-No more changes can be merged to the release branch after this point except in the case of blocking changes.  This generally happens 1 week before the release date for minor versions.
+This is date where we expect everything is working and there are no known issues.  Freezing the code before the release date gives us a chance to perform long-running performance tests and do other final verifications.  No more changes can be merged to the release branch after this point except for fixes to blocking bugs.  This generally happens 1 week before the release date for minor versions.
 
 #### Release Date
 Artifacts are made available on opensearch.org or other sources like NPM.
