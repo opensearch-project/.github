@@ -121,7 +121,7 @@ The repo admin adjusts the new maintainer’s permissions accordingly, and merge
 
 ## Removing a Maintainer
 
-Removing a maintainer is a disruptive action that the community of maintainers should not undertake lightly. There are several reasons a maintainer might be removed from the project, such as violating the [code of conduct](https://github.com/opensearch-project/.github/blob/main/CODE_OF_CONDUCT.md), or taking other actions that negatively impact the project.
+Removing a maintainer is a disruptive action that the community of maintainers should not undertake lightly. There are several reasons a maintainer will be removed from the project, such as violating the [code of conduct](https://github.com/opensearch-project/.github/blob/main/CODE_OF_CONDUCT.md), or taking other actions that negatively impact the project.
 
 ### Moving On
 
