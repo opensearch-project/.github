@@ -81,7 +81,7 @@ Because OpenSearch currently releases as a bundle, the OpenSearch release proces
 ### Release Schedule Date Definitions
 
 #### Feature Freeze
-All code changes that add new capabilities to OpenSearch need to be merged to "main" and backported to the planned release. Additional merges/backports can happen for bugs fixes and CVEs.  Until we have all plugins using CI, we may continue to have an earlier feature freeze date for OpenSearch core and OpenSearch Dashboards.
+All code changes that add new capabilities to OpenSearch need to be merged to "main" and backported to the planned release. Additional merges/backports can happen for bugs fixes and CVEs.
 
 #### Code Freeze
 This is date where we expect everything is working and there are no known issues.  Freezing the code before the release date gives us a chance to perform long-running performance tests and do other final verifications.  No more changes can be merged to the release branch after this point except for fixes to blocking bugs.  This generally happens 1 week before the release date for minor versions.
