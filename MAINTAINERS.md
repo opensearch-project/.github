@@ -103,7 +103,7 @@ The nomination should clearly identify the person with their real name and a lin
 
 ### Interest
 
-Upon receiving at least three positive maintainer votes, and no vetoes, from other maintainers within a maximum period of two weeks, the nominating maintainer asks a potential nominee whether they might be interested in becoming a maintainer on the repository, which happens via private e-mail message, but may also be a comment to a pull request, following a substantial contribution.
+Upon receiving at least three positive maintainer votes, and no vetoes, from other maintainers within a maximum period of two weeks, the nominating maintainer asks a potential nominee whether they might be interested in becoming a maintainer on the repository via private e-mail message.
 
 > This is great work! Based on your valuable contribution and ongoing engagement with the project, the current maintainers invite you to become a co-maintainer for this project. Please respond and let us know if you accept the invitation to become maintainer.
 
@@ -111,7 +111,7 @@ Individuals accept the nomination by replying, or commenting, for example _"Than
 
 ### Addition
 
-Upon receiving three positive maintainer votes, and no vetoes, from other maintainers, and after having confirmed interest with the nominee, the maintainer opens a pull request adding the proposed co-maintainer to MAINTAINERS.md. The pull request is approved and merged.
+Upon receiving three positive maintainer votes, and no vetoes, from other maintainers, and after having privately confirmed interest with the nominee, the maintainer opens a pull request adding the proposed co-maintainer to MAINTAINERS.md. The pull request is approved and merged.
 
 > _Content from the above nomination._
 > 
