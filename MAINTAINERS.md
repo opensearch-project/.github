@@ -97,7 +97,7 @@ You can become a maintainer by actively [contributing](CONTRIBUTING.md) to any p
 
 ### Nomination
 
-Any current maintainer starts a private e-mail thread (until we have a better mechanism, e-mail addresses can usually be found via MAINTAINERS.md + DCO) with all other maintainers on that repository to discuss nomination using the template below. In order to be approved, at least three positive maintainer votes are necessary, and no vetoes. In rare cases when there are fewer than three maintainers, the positive votes from all maintainers are required. Any disagreements can be escalated to the repo admin.
+Any current maintainer starts a private e-mail thread (until we have a better mechanism, e-mail addresses can usually be found via MAINTAINERS.md + DCO) with all other maintainers on that repository to discuss nomination using the template below. In order to be approved, at least three positive (+1) maintainer votes are necessary, and no vetoes (-1). In rare cases when there are fewer than three maintainers, the positive (+1) votes from all maintainers are required. Any disagreements can be escalated to the repo admin.
 
 The nomination should clearly identify the person with their real name and a link to their GitHub profile, and the rationale for the nomination, with concrete example contributions.
 
@@ -111,7 +111,7 @@ Individuals accept the nomination by replying, or commenting, for example _"Than
 
 ### Addition
 
-Upon receiving three positive maintainer votes, and no vetoes, from other maintainers, and after having privately confirmed interest with the nominee, the maintainer opens a pull request adding the proposed co-maintainer to MAINTAINERS.md. The pull request is approved and merged.
+Upon receiving three positive (+1) maintainer votes, and no vetoes (-1), from other maintainers, and after having privately confirmed interest with the nominee, the maintainer opens a pull request adding the proposed co-maintainer to MAINTAINERS.md. The pull request is approved and merged.
 
 > _Content from the above nomination._
 > 
