@@ -1,3 +1,11 @@
+- [Overview](#overview)
+- [Current Admins](#current-admins)
+- [Admin Responsibilities](#admin-responsibilities)
+  - [Prioritize Security](#prioritize-security)
+  - [Enforce Code of Conduct](#enforce-code-of-conduct)
+  - [Add/Remove Maintainers](#addremove-maintainers)
+  - [Adopt Organizational Best Practices](#adopt-organizational-best-practices)
+
 ## Overview
 
 This document explains who the admins are (see below), what they do in this repo, and how they should be doing it. If you're interested in becoming a maintainer, see [MAINTAINERS](MAINTAINERS.md). If you're interested in contributing, see [CONTRIBUTING](CONTRIBUTING.md).
@@ -21,6 +29,10 @@ Note that this repository is monitored and supported 24/7 by Amazon Security, se
 ### Enforce Code of Conduct
 
 Act on [CODE_OF_CONDUCT](CODE_OF_CONDUCT.md) violations by revoking access, and blocking malicious actors.
+
+### Add/Remove Maintainers
+
+Perform administrative tasks, such as [adding](MAINTAINERS.md#adding-a-new-maintainer) and [removing maintainers](MAINTAINERS.md#removing-a-maintainer).
 
 ### Adopt Organizational Best Practices
 
