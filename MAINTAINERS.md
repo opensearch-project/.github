@@ -7,7 +7,8 @@
   - [Triage Open Issues](#triage-open-issues)
   - [Be Responsive](#be-responsive)
   - [Maintain Overall Health of the Repo](#maintain-overall-health-of-the-repo)
-  - [Manage the Backlog](#manage-the-backlog)
+  - [Manage Backlog](#manage-the-backlog)
+  - [Manage Roadmap](#manage-the-roadmap)
   - [Add Continuous Integration Checks](#add-continuous-integration-checks)
     - [Developer Certificate of Origin Workflow](#developer-certificate-of-origin-workflow)
   - [Use Semver](#use-semver)
@@ -68,9 +69,13 @@ Respond to enhancement requests, and forum posts. Allocate time to reviewing and
 
 Keep the `main` branch at production quality at all times. Backport features as needed. Cut release branches and tags to enable future patches.
 
-### Manage the Backlog
+### Manage Backlog
 
-Ensure the repo has an up-to-date backlog of priorities and planned features tracked on a [GitHub project board](https://docs.github.com/en/issues/organizing-your-work-with-project-boards/managing-project-boards/about-project-boards). Work with the OpenSearch [project-meta maintainers](https://github.com/opensearch-project/project-meta/blob/main/MAINTAINERS.md) to highlight features on the [OpenSearch Roadmap](https://github.com/orgs/opensearch-project/projects/1). There is no prescribed format for a backlog project board, but some examples include the [Alerting Backlog](https://github.com/opensearch-project/alerting/projects/1) and the [Alerting Epics Roadmap](https://github.com/opensearch-project/alerting/projects/2). Be clear about the feature’s triage status, priority, development status, target version, and whether or not it should be elevated to the roadmap. Any feature that you want highlighted on the OpenSearch Roadmap should be tagged with "roadmap".
+Ensure the repo has a prioritized backlog bugs, features, and other GitHub issues. All issues should be tracked in the backlog on a [GitHub project board](https://docs.github.com/en/issues/organizing-your-work-with-project-boards/managing-project-boards/about-project-boards). Be clear about the triage status, priority, development status, and target version. See [Alerting Backlog](https://github.com/opensearch-project/alerting/projects/1) for an example.
+
+### Manage Roadmap
+
+Ensure the repo has a roadmap that highlights planned features. Be clear about the feature’s status, priority, target version, and whether or not it should be elevated to the roadmap. Any feature that you want highlighted on the OpenSearch Roadmap should be tagged with "roadmap". The OpenSearch [project-meta maintainers](https://github.com/opensearch-project/project-meta/blob/main/MAINTAINERS.md) will highlight features tagged "roadmap" on the project wide [OpenSearch Roadmap](https://github.com/orgs/opensearch-project/projects/1). See the [Alerting Epics Roadmap](https://github.com/opensearch-project/alerting/projects/2) for an example.
 
 ### Add Continuous Integration Checks
 
