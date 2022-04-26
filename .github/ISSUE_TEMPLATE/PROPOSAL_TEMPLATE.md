@@ -5,7 +5,6 @@ title: '[PROPOSAL]'
 labels: proposal
 assignees: ''
 ---
-
 ### What are you proposing?
 _In a few sentences, describe the feature and its core capabilities._
 
