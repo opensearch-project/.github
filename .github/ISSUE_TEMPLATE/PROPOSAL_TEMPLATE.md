@@ -15,11 +15,8 @@ _Highlight any research, proposals, requests, issues, forum posts, anecdotes tha
 ### What is the user experience going to be?
 _Describe the feature requirements and or user stories. You may include low-fidelity sketches, wireframes, APIs stubs, or other examples of how a user would use the feature. Using a bulleted list or simple diagrams to outline features is okay. e.g. As a < type of user > , I want to < achieve a goal > so that < for some reason >._
 
-### Why should we build this?
-_Describe the most important user needs, pain points, and the value that this feature will bring to the OpenSearch community, as well as what impact it has if it isn't built. What is preventing you from meeting this need today?_
-
-### Why shouldn't we build this? (Optional, but encouraged)
-_Describe reasons you would not do this work. Are these existing features that can accomplish the task today? Are there alternative approaches that should be considered?_
+### Why should it be built? Any reason not to?
+_Describe the most important user needs, pain points, and the value that this feature will bring to the OpenSearch community, as well as what impact it has if it isn't built, or new risks if it is. What is preventing you from meeting this need today?_
 
 ### What will it take to execute?
 _Describe what it will take to build this feature. Are there any assumptions you may be making that could limit scope or add limitations? Are there performance, cost, or technical constraints that may impact the user experience? Does this feature depend on other feature work? What additional risks are there?_
