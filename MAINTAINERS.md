@@ -7,6 +7,7 @@
   - [Triage Open Issues](#triage-open-issues)
   - [Be Responsive](#be-responsive)
   - [Maintain Overall Health of the Repo](#maintain-overall-health-of-the-repo)
+  - [Manage Roadmap](#manage-roadmap)
   - [Add Continuous Integration Checks](#add-continuous-integration-checks)
     - [Developer Certificate of Origin Workflow](#developer-certificate-of-origin-workflow)
   - [Use Semver](#use-semver)
@@ -66,6 +67,10 @@ Respond to enhancement requests, and forum posts. Allocate time to reviewing and
 ### Maintain Overall Health of the Repo
 
 Keep the `main` branch at production quality at all times. Backport features as needed. Cut release branches and tags to enable future patches. 
+
+### Manage Roadmap
+
+Ensure the repo highlights features that should be elevated to the project roadmap. Be clear about the feature’s status, priority, target version, and whether or not it should be elevated to the roadmap. Any feature that you want highlighted on the OpenSearch Roadmap should be tagged with "roadmap". The OpenSearch [project-meta maintainers](https://github.com/opensearch-project/project-meta/blob/main/MAINTAINERS.md) will highlight features tagged "roadmap" on the project wide [OpenSearch Roadmap](https://github.com/orgs/opensearch-project/projects/1).
 
 ### Add Continuous Integration Checks
 
