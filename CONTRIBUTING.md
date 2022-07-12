@@ -7,6 +7,8 @@
   - [Contributing Code](#contributing-code)
 - [Developer Certificate of Origin](#developer-certificate-of-origin)
 - [License Headers](#license-headers)
+  - [Java](#java)
+  - [Python, Ruby, Shell](#python-ruby-shell)
 - [Review Process](#review-process)
 
 ## Contributing to OpenSearch
@@ -100,19 +102,22 @@ New files in your code contributions should contain the following license header
 /*
  * Copyright OpenSearch Contributors
  * SPDX-License-Identifier: Apache-2.0
- */
+ *
+ * The OpenSearch Contributors require contributions made to
+ * this file be licensed under the Apache-2.0 license or a
+ * compatible open source license.
+ *
+*/
 ```
 
-### Python
+### Python, Ruby, Shell
 ```
 # Copyright OpenSearch Contributors
 # SPDX-License-Identifier: Apache-2.0
-```
-
-### Shell
-```
-# Copyright OpenSearch Contributors
-# SPDX-License-Identifier: Apache-2.0
+#
+# The OpenSearch Contributors require contributions made to
+# this file be licensed under the Apache-2.0 license or a
+# compatible open source license.
 ```
 
 ## Review Process
