@@ -5,20 +5,36 @@ title: '[PROPOSAL]'
 labels: proposal
 assignees: ''
 ---
+## What/Why
 ### What are you proposing?
 _In a few sentences, describe the feature and its core capabilities._
 
-### How did you come up with this proposal?
-_Highlight any research, proposals, requests, issues, forum posts, anecdotes that signal this is the right thing to build. Highlight opportunities for additional research._
+### What users have sked for this feature?
+_Include links to GitHub Issues, Forums, Stack Overflow, Twitter, Etc_
+
+### What problems are you trying to solve?
+_Summarize the core use cases and user problems and needs you are trying to solve. Describe the most important user needs, pain points and jobs as expressed by the user asks above. Template: When \<a situation arises> , a \<type of user> wants to \<do something>, so they can \<expected outcome>. (Example: When **searching by postal code**, **a buyer** wants to **be required to enter a valid code** so they **don’t waste time searching for a clearly invalid postal code.**)_
+
+### What is the developer experience going to be?
+_Does this have a REST API? If so, please describe the API and any impact it may have to existing APIs. In a brief summary (not a spec), highlight what new REST APIs or changes to REST APIs are planned. as well as any other API, CLI or Configuration changes that are planned as part of this feature._
+
+#### Are there any security considerations? 
+Describe if the feature has any security considerations or impact. What is the security model of the new APIs? Features should be integrated into the OpenSearch security suite and so if they are not, we should highlight the reasons here.
+
+#### Are there any breaking changes to the API
+_If this feature will require breaking changes to any APIs, ouline what those are and why they are needed_
 
 ### What is the user experience going to be?
-_Describe the feature requirements and or user stories. You may include low-fidelity sketches, wireframes, APIs stubs, or other examples of how a user would use the feature. Using a bulleted list or simple diagrams to outline features is okay. e.g. As a < type of user > , I want to < achieve a goal > so that < for some reason >._
+_Describe the feature requirements and or user stories. You may include low-fidelity sketches, wireframes, APIs stubs, or other examples of how a user would use the feature via CLI, OpenSearch Dashboards, REST API, etc. Using a bulleted list or simple diagrams to outline features is okay. If this is net new functionality, call this out as well._
+
+#### Are there breaking changes to the User Experience?
+_Will this change the existing user experience? Will this be a breaking change from a user flow or user experience perspective?_
 
 ### Why should it be built? Any reason not to?
-_Describe the most important user needs, pain points, and the value that this feature will bring to the OpenSearch community, as well as what impact it has if it isn't built, or new risks if it is. What is preventing you from meeting this need today?_
+_Describe the value that this feature will bring to the OpenSearch community, as well as what impact it has if it isn't built, or new risks if it is. Highlight any research, proposals, requests, issues, forum posts, anecdotes that signal this is the right thing to build. Highlight opportunities for additional research._
 
 ### What will it take to execute?
 _Describe what it will take to build this feature. Are there any assumptions you may be making that could limit scope or add limitations? Are there performance, cost, or technical constraints that may impact the user experience? Does this feature depend on other feature work? What additional risks are there?_
 
-### What are remaining open questions?
-_List questions that may need to be answered before proceeding with an implementation._
+### What are the remaining open questions?
+_What are known enhancements to this feature? Any enhancements that may be out of scope but that we will want to track long term? List any other open questions that may need to be answered before proceeding with an implementation._
