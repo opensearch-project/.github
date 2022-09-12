@@ -19,7 +19,7 @@ _Summarize the core use cases and user problems and needs you are trying to solv
 _Does this have a REST API? If so, please describe the API and any impact it may have to existing APIs. In a brief summary (not a spec), highlight what new REST APIs or changes to REST APIs are planned. as well as any other API, CLI or Configuration changes that are planned as part of this feature._
 
 #### Are there any security considerations? 
-Describe if the feature has any security considerations or impact. What is the security model of the new APIs? Features should be integrated into the OpenSearch security suite and so if they are not, we should highlight the reasons here.
+_Describe if the feature has any security considerations or impact. What is the security model of the new APIs? Features should be integrated into the OpenSearch security suite and so if they are not, we should highlight the reasons here._
 
 #### Are there any breaking changes to the API
 _If this feature will require breaking changes to any APIs, ouline what those are and why they are needed. What is the path to minimizing impact? (example, add new API and deprecate the old one)_
