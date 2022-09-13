@@ -37,6 +37,9 @@ If you've upgraded to the latest version and you can't find it in our open issue
 
 If you've thought of a way that OpenSearch could be better, we want to hear about it. We track feature requests using GitHub, so please feel free to open an issue which describes the feature you would like to see, why you need it, and how it should work.
 
+### Feature Proposals
+If you've thought of a new feature that would make OpenSearch better, and would like contribute code toward building it, a feature proposal is the first step to helping the community better understand what you are planning to contribute, why it should be built, and collaborate on ensuring you have all the data points you need for implementation. When a feature makes it to the Roadmap, we often times link to the feature proposal to help the community understand what we are building.
+
 ### Documentation Changes
 
 TODO
