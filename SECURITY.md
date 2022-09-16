@@ -14,17 +14,17 @@ The OpenSearch Security Team is a subset of the project’s maintainers responsi
 
 The OpenSearch Security Team will address reported issues on a best effort basis, prioritizing them based on several factors, including severity.
 
-### Current members
+### Current Members
 
 | Security Team member     | GitHub Alias                                  | Affiliation |
 | ------------------------ | --------------------------------------------- | ----------- |
-| Dave Lago                | [davidlago](https://github.com/davidlago)     | AWS         |
-| Charlotte Henkle         | [CEHENKLE](https://github.com/CEHENKLE)       | AWS         |
-| Daniel (dB.) Doubrovkine | [dblock](https://github.com/dblock)           | AWS         |
-| Anirudha (Ani) Jadhav    | [anirudha](https://github.com/anirudha)       | AWS         |
-| Sean Neumann             | [seanneumann](https://github.com/seanneumann) | AWS         |
-| Anan Zhuang              | [ananzh](https://github.com/ananzh)           | AWS         |
-| Eli Fisher               | [elfisher](https://github.com/elfisher)       | AWS         |
+| Dave Lago                | [davidlago](https://github.com/davidlago)     | Amazon      |
+| Charlotte Henkle         | [CEHENKLE](https://github.com/CEHENKLE)       | Amazon      |
+| Daniel (dB.) Doubrovkine | [dblock](https://github.com/dblock)           | Amazon      |
+| Anirudha (Ani) Jadhav    | [anirudha](https://github.com/anirudha)       | Amazon      |
+| Sean Neumann             | [seanneumann](https://github.com/seanneumann) | Amazon      |
+| Anan Zhuang              | [ananzh](https://github.com/ananzh)           | Amazon      |
+| Eli Fisher               | [elfisher](https://github.com/elfisher)       | Amazon      |
 
 ## Process
 
@@ -39,14 +39,14 @@ Anyone finding an issue that is already publicly disclosed (for example, a CVE i
 
 During an embargo period, the OpenSearch Security Team may be required to make potentially controversial decisions in private, since they cannot confer with the community without breaking the embargo. The team will attempt to make such decisions following the guidance of this document and, where necessary, their own best judgement. Following the embargo period, on a best effort basis, the Security Team will disclose any such decisions, including the reasoning behind them, in the interests of transparency and to help provide guidance should a similar decision be required in the future.
 
-## Embargo schedule
+## Embargo Schedule
 
 Embargo periods will be negotiated on a case-by-case basis depending on the severity of the issue and availability of the fix, where a general starting point is to release an advisory to the pre-disclosure list within 2 weeks of the initial notification, and publicly releasing the advisory within 4 weeks of the advisory pre-release.
 
 When a discoverer reports a problem to us and requests longer delays than we would consider ideal, we will honor such a request if reasonable. If a discoverer wants an accelerated disclosure compared to what we would prefer, we naturally do not have the power to insist that a discoverer waits for us to be ready and will honor the date specified by the discoverer.
-Naturally, if a vulnerability is being exploited in the wild, we will make immediately public release of the advisory and patch(es.)
+Naturally, if a vulnerability is being exploited in the wild, we will make immediately public release of the patch(es.)
 
-## Pre-disclosure list
+## Pre-disclosure List
 
 We maintain a pre-disclosure list of contributors, vendors and operators of OpenSearch for two main reasons:
 
