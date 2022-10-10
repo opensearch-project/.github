@@ -30,7 +30,7 @@ The OpenSearch Security Team will address reported issues on a best effort basis
 
 Anyone finding an issue that is already publicly disclosed (for example, a CVE in one of the project’s dependencies) should feel free to create an issue and discuss openly on GitHub. The process below is only intended for issues that have not been publicly disclosed yet.
 
-1. We request that instead of opening a GitHub issue, it is reported via email at opensearch-security@amazon.com.
+1. We request that instead of opening a GitHub issue, it is reported via email at opensearch-security@amazon.com. Please include a description of the issue, and any other information that could help in the reproduction and creation of a fix (version numbers, configuration values, reproduction steps...)
 2. The OpenSearch Security Team will negotiate the conditions for an embargo period and a disclosure timeline with the discoverer (see [Embargo schedule](#embargo-schedule)).
 3. After the vulnerability is confirmed, if no CVE number is already reserved, the OpenSearch Security Team will reserve one, and communicate it to the discoverer and all parties in the pre-disclosure list (see [Pre-disclosure list](#pre-disclosure-list)).
 4. As soon as our advisory is available, we will send it, including patches, to members of the pre-disclosure list. In the event that we do not have a patch available 2 working weeks before the disclosure date, we aim to send an advisory that reflects the current state of knowledge to the pre-disclosure list. An updated advisory will be published as soon as available. At this stage, the advisory will be clearly marked with the embargo date.
