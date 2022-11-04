@@ -67,7 +67,7 @@ Repositories create consistent release labels, such as `v1.0.0`, `v1.1.0` and `v
 
 ## Releasing
 
-See [releasing-opensearch](README.md#releasing-opensearch) for information on our release process.
+See the [releasing opensearch](README.md#releasing-opensearch) section in [README](README.md) for information on our release process.
 
 ## Backporting
 
