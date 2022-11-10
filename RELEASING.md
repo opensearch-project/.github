@@ -67,11 +67,7 @@ Repositories create consistent release labels, such as `v1.0.0`, `v1.1.0` and `v
 
 ## Releasing
 
-The OpenSearch release process is centralized.
-
-1. Two candidate bundle builds for OpenSearch and OpenSearch Dashboards, produced by [bundle-workflow](https://github.com/opensearch-project/opensearch-build/blob/main/bundle-workflow/README.md), are chosen as release candidates. Those artifacts have successful end-to-end integration, backwards-compatibility and performance tests, and are signed.
-2. Staged maven artifacts are promoted to Maven Central.
-3. Bundles and -min artifacts are published to [opensearch.org](https://opensearch.org/downloads.html).
+See [Releasing OpenSearch](https://github.com/opensearch-project/opensearch-build/blob/main/README.md#releasing-opensearch).
 
 ## Backporting
 
