@@ -18,9 +18,10 @@
 * Need help? Try [Forums](https://forum.opensearch.org/)
 * [Project Principles](https://opensearch.org/about.html#principles-for-development)
 * [Contributing to OpenSearch](CONTRIBUTING.md)
-* [Maintainer Responsibilities](MAINTAINERS.md)
+* [Maintainer Responsibilities](RESPONSIBILITIES.md)
 * [Release Management](RELEASING.md)
-* [Admin Responsibilities](ADMINS.md)
+* [Organization Admins](ADMINS.md)
+* [Repo Maintainers](MAINTAINERS.md)
 * [Security](SECURITY.md)
 
 ## Code of Conduct
