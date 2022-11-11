@@ -12,13 +12,15 @@ This document explains who the admins are (see below), what they do in this repo
 
 ## Current Admins
 
-| Admin           | GitHub ID                               | Affiliation |
-| --------------- | --------------------------------------- | ----------- |
-| Henri Yandell   | [hyandell](https://github.com/hyandell) | Amazon      |
+| Admin              | GitHub ID                               | Affiliation |
+| ------------------ | --------------------------------------- | ----------- |
+| Charlotte Henkle   | [CEHENKLE](https://github.com/CEHENKLE) | Amazon      |
+| Daniel Doubrovkine | [dblock](https://github.com/dblock)     | Amazon      |
+| Henri Yandell      | [hyandell](https://github.com/hyandell) | Amazon      |
 
 ## Admin Responsibilities
 
-As an admin you own stewartship of the repository and its settings. Admins have [admin-level permissions on a repository](https://docs.github.com/en/organizations/managing-access-to-your-organizations-repositories/repository-permission-levels-for-an-organization). Use those privileges to serve the community and protect the repository as follows.
+As an admin you own stewardship of the repository and its settings. Admins have [admin-level permissions on a repository](https://docs.github.com/en/organizations/managing-access-to-your-organizations-repositories/repository-permission-levels-for-an-organization). Use those privileges to serve the community and protect the repository as follows.
 
 ### Prioritize Security
 
