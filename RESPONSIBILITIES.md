@@ -7,6 +7,7 @@
   - [Triage Open Issues](#triage-open-issues)
   - [Be Responsive](#be-responsive)
   - [Maintain Overall Health of the Repo](#maintain-overall-health-of-the-repo)
+    - [Keep Dependencies up to Date](#keep-dependencies-up-to-date)
   - [Manage Roadmap](#manage-roadmap)
   - [Add Continuous Integration Checks](#add-continuous-integration-checks)
     - [Developer Certificate of Origin Workflow](#developer-certificate-of-origin-workflow)
@@ -22,7 +23,7 @@
   - [Moving On](#moving-on)
   - [Inactivity](#inactivity)
   - [Negative Impact on the Project](#negative-impact-on-the-project)
-   
+
 ## Overview
 
 This document explains who maintainers are, what they do in various repos of opensearch-project, and how they should be doing it. If you're interested in contributing, see [CONTRIBUTING](CONTRIBUTING.md).
@@ -51,7 +52,7 @@ Review pull requests regularly, comment, suggest, reject, merge and close. Accep
 
 ### Triage Open Issues
 
-Manage labels, review issues regularly, and triage by labelling them. 
+Manage labels, review issues regularly, and triage by labelling them.
 
 All repositories in this organization have a standard set of labels, including `bug`, `documentation`, `duplicate`, `enhancement`, `good first issue`, `help wanted`, `blocker`, `invalid`, `question`, `wontfix`, and `untriaged`, along with release labels, such as `v1.0.0`, `v1.1.0`, `v2.0.0`, `patch`, and `backport`.
 
@@ -59,11 +60,17 @@ Use labels to target an issue or a PR for a given release, add `help wanted` to 
 
 ### Be Responsive
 
-Respond to enhancement requests, and forum posts. Allocate time to reviewing and commenting on issues and conversations as they come in. 
+Respond to enhancement requests, and forum posts. Allocate time to reviewing and commenting on issues and conversations as they come in.
 
 ### Maintain Overall Health of the Repo
 
-Keep the `main` branch at production quality at all times. Backport features as needed. Cut release branches and tags to enable future patches. 
+Keep the `main` branch at production quality at all times. Backport features as needed. Cut release branches and tags to enable future patches.
+
+#### Keep Dependencies up to Date
+
+Maintaining up-to-date dependencies on third party projects reduces the risk of security vulnerabilities. The Open Source Security Foundation (OpenSSF) [recommends](https://github.com/ossf/scorecard/blob/c26bea648d0ef252de841ba59a55e8d67fe30271/docs/checks.md#dependency-update-tool) either [dependabot](https://docs.github.com/en/code-security/dependabot) or [renovatebot](https://docs.renovatebot.com/).
+ - Dependabot is integrated with GitHub and can be enabled simply by adding a [`dependabot.yml`](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuring-dependabot-version-updates) file to the repo. This will create individual pull requests for each dependency update that can be tracked via tags.
+ - Renovatebot requires installation of the [`forking-renovate`](https://github.com/apps/forking-renovate) app which will generate a pull request to set itself up. The dependency update pull requests have more information on version age, adoption rate, and percent of successful tests of those who have upgraded. In addition, a centralized dashboard issue provides visibility into all available version updates even if the PR has not yet been generated.
 
 ### Manage Roadmap
 
@@ -116,7 +123,7 @@ Individuals accept the nomination by replying, or commenting, for example _"Than
 Upon receiving three positive (+1) maintainer votes, and no vetoes (-1), from other maintainers, and after having privately confirmed interest with the nominee, the maintainer opens a pull request adding the proposed co-maintainer to MAINTAINERS.md. The pull request is approved and merged.
 
 > _Content from the above nomination._
-> 
+>
 > The maintainers have voted and agreed to this nomination.
 
 The repo admin adjusts the new maintainer’s permissions accordingly, and merges the pull request.
