@@ -9,7 +9,6 @@
   - [Maintain Overall Health of the Repo](#maintain-overall-health-of-the-repo)
   - [Manage Roadmap](#manage-roadmap)
   - [Add Continuous Integration Checks](#add-continuous-integration-checks)
-    - [Developer Certificate of Origin Workflow](#developer-certificate-of-origin-workflow)
   - [Use Semver](#use-semver)
   - [Release Frequently](#release-frequently)
   - [Promote Other Maintainers](#promote-other-maintainers)
@@ -72,10 +71,6 @@ Ensure the repo highlights features that should be elevated to the project roadm
 ### Add Continuous Integration Checks
 
 Add integration checks that validate pull requests and pushes to ease the burden on Pull Request reviewers.
-
-#### Developer Certificate of Origin Workflow
-
-Validates pull requests commits are all signed with DCO, [dco.yml](./workflow/dco.yml).  Example [pull request](https://github.com/opensearch-project/opensearch-ci/pull/16).
 
 ### Use Semver
 
