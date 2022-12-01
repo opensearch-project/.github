@@ -82,7 +82,9 @@ By making a contribution to this project, I certify that:
     involved.
  ```
 
-We require that every contribution to OpenSearch is signed with a Developer Certificate of Origin. Additionally, please use your real name. We do not accept anonymous contributors nor those utilizing pseudonyms.
+We require that every contribution to OpenSearch is signed with a Developer Certificate of Origin. DCO checks are enabled via a [DCO workflow app](https://github.com/apps/dco) across the entire opensearch-project organization, and your PR will fail CI without it.
+
+Additionally, we kindly ask you to use your real name. We do not accept anonymous contributors, nor those utilizing pseudonyms.
 
 Each commit must include a DCO which looks like this
 
@@ -90,7 +92,9 @@ Each commit must include a DCO which looks like this
 Signed-off-by: Jane Smith <jane.smith@email.com>
 ```
 
-You may type this line on your own when writing your commit messages. However, if your user.name and user.email are set in your git configs, you can use `-s` or `– – signoff` to add the `Signed-off-by` line to the end of the commit message.
+You may type this line on your own when writing your commit messages. However, if your `user.name` and `user.email` are set in your `git config`, you can use `-s` or `––signoff` to add the `Signed-off-by` line to the end of the commit message automatically.
+
+Forgot to add DCO to a commit? Amend it with `git commit --amend -s`. 
 
 ## License Headers
 
