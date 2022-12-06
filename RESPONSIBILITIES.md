@@ -7,6 +7,7 @@
   - [Triage Open Issues](#triage-open-issues)
   - [Be Responsive](#be-responsive)
   - [Maintain Overall Health of the Repo](#maintain-overall-health-of-the-repo)
+    - [Keep Dependencies up to Date](#keep-dependencies-up-to-date)
   - [Manage Roadmap](#manage-roadmap)
   - [Add Continuous Integration Checks](#add-continuous-integration-checks)
   - [Use Semver](#use-semver)
@@ -21,7 +22,7 @@
   - [Moving On](#moving-on)
   - [Inactivity](#inactivity)
   - [Negative Impact on the Project](#negative-impact-on-the-project)
-   
+
 ## Overview
 
 This document explains who maintainers are, what they do in various repos of opensearch-project, and how they should be doing it. If you're interested in contributing, see [CONTRIBUTING](CONTRIBUTING.md).
@@ -50,7 +51,7 @@ Review pull requests regularly, comment, suggest, reject, merge and close. Accep
 
 ### Triage Open Issues
 
-Manage labels, review issues regularly, and triage by labelling them. 
+Manage labels, review issues regularly, and triage by labelling them.
 
 All repositories in this organization have a standard set of labels, including `bug`, `documentation`, `duplicate`, `enhancement`, `good first issue`, `help wanted`, `blocker`, `invalid`, `question`, `wontfix`, and `untriaged`, along with release labels, such as `v1.0.0`, `v1.1.0`, `v2.0.0`, `patch`, and `backport`.
 
@@ -58,11 +59,17 @@ Use labels to target an issue or a PR for a given release, add `help wanted` to 
 
 ### Be Responsive
 
-Respond to enhancement requests, and forum posts. Allocate time to reviewing and commenting on issues and conversations as they come in. 
+Respond to enhancement requests, and forum posts. Allocate time to reviewing and commenting on issues and conversations as they come in.
 
 ### Maintain Overall Health of the Repo
 
-Keep the `main` branch at production quality at all times. Backport features as needed. Cut release branches and tags to enable future patches. 
+Keep the `main` branch at production quality at all times. Backport features as needed. Cut release branches and tags to enable future patches.
+
+#### Keep Dependencies up to Date
+
+Maintaining up-to-date dependencies on third party projects reduces the risk of security vulnerabilities. The Open Source Security Foundation (OpenSSF) [recommends](https://github.com/ossf/scorecard/blob/main/docs/checks.md#dependency-update-tool) either [dependabot](https://docs.github.com/en/code-security/dependabot) or [renovatebot](https://docs.renovatebot.com/). Both of these applications generate Pull Requests for dependency version updates.
+ - Renovate is integrated as part of the Remediate app in [Mend for Github](https://github.com/apps/mend-for-github-com), which is enabled on all opensearch-project repositories. It can be enabled in the `.whitesource` configuration file as described in the [Mend Remediate and Renovate](https://docs.mend.io/bundle/integrations/page/mend_remediate_and_renovate.html#Integration-with-Mend-Renovate) documentation. The [Merge Confidence](https://docs.renovatebot.com/merge-confidence/) feature can be configured to provide maintainers more information on the age, adoption rate, and percent test passing rate of other repositories. Mend maintains a "Dependency Dashboard" Issue in the repository with centralized information on pending version update PRs.
+ - Dependabot is integrated with GitHub and can be enabled by adding a [`dependabot.yml`](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuring-dependabot-version-updates) file to the repo. Dependabot does not have any centralized management dashboard, so maintainers may use tags or other PR filters to track pending updates.
 
 ### Manage Roadmap
 
@@ -111,7 +118,7 @@ Individuals accept the nomination by replying, or commenting, for example _"Than
 Upon receiving three positive (+1) maintainer votes, and no vetoes (-1), from other maintainers, and after having privately confirmed interest with the nominee, the maintainer opens a pull request adding the proposed co-maintainer to MAINTAINERS.md. The pull request is approved and merged.
 
 > _Content from the above nomination._
-> 
+>
 > The maintainers have voted and agreed to this nomination.
 
 The repo admin adjusts the new maintainer’s permissions accordingly, and merges the pull request.
