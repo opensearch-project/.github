@@ -5,6 +5,7 @@
   - [Prioritize Security](#prioritize-security)
   - [Review Pull Requests](#review-pull-requests)
   - [Triage Open Issues](#triage-open-issues)
+    - [Automatically Label Issues](#automatically-label-issues)
   - [Be Responsive](#be-responsive)
   - [Maintain Overall Health of the Repo](#maintain-overall-health-of-the-repo)
     - [Keep Dependencies up to Date](#keep-dependencies-up-to-date)
@@ -56,6 +57,10 @@ Manage labels, review issues regularly, and triage by labelling them.
 All repositories in this organization have a standard set of labels, including `bug`, `documentation`, `duplicate`, `enhancement`, `good first issue`, `help wanted`, `blocker`, `invalid`, `question`, `wontfix`, and `untriaged`, along with release labels, such as `v1.0.0`, `v1.1.0`, `v2.0.0`, `patch`, and `backport`.
 
 Use labels to target an issue or a PR for a given release, add `help wanted` to good issues for new community members, and `blocker` for issues that scare you or need immediate attention. Request for more information from a submitter if an issue is not clear. Create new labels as needed by the project.
+
+#### Automatically Label Issues
+
+There are many tools available in GitHub for controlling labels on issues and pull requests.  Use standard issue templates in the [./.github/ISSUE_TEMPLATE](./.github/ISSUE_TEMPLATE) directory to apply appropriate labels such as `bug` and `untriaged`.  Repositories can choose to use GitHub actions such as [add-untriaged.yml](.github\workflows\add-untriaged.yml) to apply labels automatically.
 
 ### Be Responsive
 
