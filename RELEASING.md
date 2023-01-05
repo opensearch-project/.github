@@ -9,6 +9,7 @@
 - [Tagging](#tagging)
 - [Release Labels](#release-labels)
 - [Releasing](#releasing)
+  - [Security Reviews](#security-reviews)
 - [Backporting](#backporting)
 
 ## Overview
@@ -68,6 +69,22 @@ Repositories create consistent release labels, such as `v1.0.0`, `v1.1.0` and `v
 ## Releasing
 
 See [Releasing OpenSearch](https://github.com/opensearch-project/opensearch-build/blob/main/README.md#releasing-opensearch).
+
+### Security Reviews 
+
+If you discover a potential security issue in this project we ask that you notify the OpenSearch Security Team by email at opensearch-security@amazon.com. Please do not create a public GitHub issue. See [SECURITY.md](SECURITY.md) for more information on the security response process.
+
+The OpenSearch Project currently performs security reviews before releasing signed artifacts. These are typically conducted for any of the following:
+
+* Releases from a new GitHub repository, such as a new plugin or extension, client, or tool. 
+* Major new features added to an existing application, including significant UX or API changes. 
+* Changes to authentication, authorization, cryptography, or other security-impacting functions. 
+* New software or infrastructure deployed to support the project, such as CI/CD. 
+* New 3rd-party providers or vendors being used by the project. 
+
+The review process consists of building a threat model for the proposed change and optionally engaging a specialist to perform additional testing, such as a penetration testing. This process is done in parallel and in private within the project, during development, and usually takes 4-10 weeks. A repository maintainer will assess the scope of the new changes, initiate and manage a security review, provide public updates, and, if needed, communicate privately by email with the contributors. Please add a note in your pull request if you believe a security review is warranted. 
+
+Please see [opensearch-project/.github#81](https://github.com/opensearch-project/.github/issues/81) for a discussion on improving this and other security-related processes.​
 
 ## Backporting
 
