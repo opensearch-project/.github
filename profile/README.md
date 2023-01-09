@@ -1,4 +1,4 @@
-![OpenSearch Banner](banner.jpg)
+![OpenSearch logo and name on top of a dark blue background with a slight honeycomb pattern](https://raw.githubusercontent.com/opensearch-project/.github/main/profile/banner.jpg)
 
 OpenSearch is a community-driven, Apache 2.0-licensed open source search and analytics suite that makes it easy to ingest, search, visualize, and analyze data. Developers build with OpenSearch for use cases such as application search, log analytics, data observability, data ingestion, and more.
 
