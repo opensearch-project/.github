@@ -1,6 +1,5 @@
 - [Overview](#overview)
 - [Current Maintainers](#current-maintainers)
-- [Emeritus](#emeritus)
 
 ## Overview
 
@@ -8,15 +7,10 @@ This document contains a list of maintainers in this repo. See [opensearch-proje
 
 ## Current Maintainers
 
-| Maintainer         | GitHub ID                                                 | Affiliation |
-| ------------------ | --------------------------------------------------------- | ----------- |
-| Charlotte Henkle   | [CEHENKLE](https://github.com/CEHENKLE)                   | Amazon      |
-| Daniel Doubrovkine | [dblock](https://github.com/dblock)                       | Amazon      |
-| Marc Handalian     | [mch2](https://github.com/mch2)                           | Amazon      |
-| Peter Nied         | [peternied](https://github.com/peternied)                 | Amazon      |
-| Sarat Vemulapalli  | [saratvemulapalli](https://github.com/saratvemulapalli)   | Amazon      |
-
-## Emeritus
-
-| Maintainer         | GitHub ID                                                 | Affiliation |
-| ------------------ | --------------------------------------------------------- | ----------- |
+| Maintainer         | GitHub ID                                               | Affiliation |
+| ------------------ | ------------------------------------------------------- | ----------- |
+| Charlotte Henkle   | [CEHENKLE](https://github.com/CEHENKLE)                 | Amazon      |
+| Daniel Doubrovkine | [dblock](https://github.com/dblock)                     | Amazon      |
+| Marc Handalian     | [mch2](https://github.com/mch2)                         | Amazon      |
+| Peter Nied         | [peternied](https://github.com/peternied)               | Amazon      |
+| Sarat Vemulapalli  | [saratvemulapalli](https://github.com/saratvemulapalli) | Amazon      |
