@@ -2,7 +2,7 @@
 - [First Things First](#first-things-first)
 - [Ways to Contribute](#ways-to-contribute)
   - [Bug Reports](#bug-reports)
-  - [Feature Requests](#feature-requests)
+  - [Feature Requests \& Proposals](#feature-requests--proposals)
   - [Documentation Changes](#documentation-changes)
   - [Contributing Code](#contributing-code)
 - [Developer Certificate of Origin](#developer-certificate-of-origin)
@@ -10,6 +10,7 @@
   - [Java](#java)
   - [Python, Ruby, Shell](#python-ruby-shell)
 - [Review Process](#review-process)
+- [Feature branches](#feature-branches)
 
 ## Contributing to OpenSearch
 
@@ -133,3 +134,17 @@ During the PR process, expect that there will be some back-and-forth. Please try
 If we accept the PR, a [maintainer](MAINTAINERS.md) will merge your change and usually take care of backporting it to appropriate branches ourselves.
 
 If we reject the PR, we will close the pull request with a comment explaining why. This decision isn't always final: if you feel we have misunderstood your intended change or otherwise think that we should reconsider then please continue the conversation with a comment on the PR and we'll do our best to address any further points you raise.
+
+## Feature branches
+
+For long running features that need collaboration between multiple members of the community, we use feature branches. We use a hybrid of the feature branch development model and the continuous integration development model. Maintainers of a repository can create a feature branch and a corrsponding label associated with the feature. Each feature branch will have the following safeguards:
+
+1. High frequency integration: PR's to main are raised not once the feature is complete, but whenever we reach the closest integration point during development. e.g. once the plugin is bootstrapped, or a core feature is complete. we also frequently rebase changes from main back into the feature branch
+    1. This makes the integration frequency much higher allowing us to catch integration issues much quicker.
+    2. This still lets collaboratively develop on a big feature that is not ready for main
+2. Treat feature branch PR's the same as PR's to main. i.e. CI is run on all PR's, no incomplete work should be merged, Tests are necessary for all PR's etc.
+   1. This maintains the code quality going into each feature making the integration to main PR's much easier and quicker
+   2. More visibility during development since it gives reviewers the necessary time to review each PR.
+3. Feature specific labels: This helps identify feature related issues and PR's.
+
+All the safeguard here are not rules but guidelines and should be adopted by each repository based on their specific requirements. This is to ensure that feature branch development is less likely to have code quality issues and massive merge to main PR's.
