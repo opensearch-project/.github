@@ -1,0 +1,11 @@
+{
+  "name": "Validate Gradle Wrapper",
+  "description": "Validate Gradle Wrapper starter workflow.",
+  "categories": [
+      "Gradle"
+  ],
+  "filePatterns": [
+      "^gradlew$",
+      "^gradlew.bat$"
+  ]
+}
