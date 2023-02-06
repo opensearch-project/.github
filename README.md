@@ -2,6 +2,7 @@
 
 - [Welcome!](#welcome)
 - [Project Resources](#project-resources)
+- [Project Style Guidelines](#project-style-guidelines)
 - [Code of Conduct](#code-of-conduct)
 - [License](#license)
 - [Copyright](#copyright)
@@ -23,6 +24,10 @@
 * [Organization Admins](ADMINS.md)
 * [Repo Maintainers](MAINTAINERS.md)
 * [Security](SECURITY.md)
+
+## Project Style Guidelines
+
+The [OpenSearch Project style guidelines](https://github.com/opensearch-project/documentation-website/blob/main/STYLE_GUIDE.md) and [OpenSearch terms](https://github.com/opensearch-project/documentation-website/blob/main/TERMS.md) documents provide style standards and terminology to be observed when creating OpenSearch Project content.
 
 ## Code of Conduct
 
