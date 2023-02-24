@@ -74,10 +74,10 @@ To create issues, leave comments, or submit pull requests, you'll need a GitHub 
 1. **Do (2 min) Sign up for an account** by navigating to https://github.com/ and following the prompts ([source](https://docs.github.com/en/get-started/onboarding/getting-started-with-your-github-account#1-creating-an-account)).
 2. **Do (4 min) [Verify your email address](https://docs.github.com/en/get-started/signing-up-for-github/verifying-your-email-address)**
 3. Recommended - Do (20 min) Set up GitHub to connect with SSH
-  1. [Check for existing SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys)
-  2. [Generate new SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
-  3. [Add a new SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
-  4. [Test your SSH connection](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection)
+    1. [Check for existing SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys)
+    2. [Generate new SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+    3. [Add a new SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+    4. [Test your SSH connection](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection)
 4. Recommended - Do (8 min) [Configure 2-factor authentication](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication)
 5. Optional - Read (5 min) If you're new to using GitHub or git, we recommend reviewing “[Using GitHub's tools and processes](https://docs.github.com/en/get-started/onboarding/getting-started-with-your-github-account#part-2-using-githubs-tools-and-processes)”
 
