@@ -40,14 +40,14 @@ We model our way of working on “[the Apache Way](https://apache.org/theapachew
 - *Community Over Code:* A healthy community is a higher priority than good code. Strong communities can always rectify problems with their code, whereas an unhealthy community will likely struggle to maintain a codebase in a sustainable manner.
 - *Earned Authority:* All individuals are given the opportunity to participate, but their influence is based on publicly earned merit – what they contribute to the community. Merit lies with the individual, does not expire, is not influenced by employment status or employer, and is non-transferable (merit earned in one project cannot be applied to another).
 - *Open Communications:* All communications related to code and decision-making should be publicly accessible to ensure asynchronous collaboration, as necessitated by a globally-distributed community.
-- *Community of Peers:* Individuals participate, not organizations. Roles are equal irrespective of title, votes hold equal weight, and contributions are made on a volunteer basis (even if paid to work on code).
+- *Community of Peers:* Individuals participate, not organizations. Roles are equal irrespective of title, votes hold equal weight, and contributions are made on a voluntary basis (even if paid to work on code).
 - *Progress over Perfection:* Struggling with a test failure? Can't quite figure out why that data structure isn't doing what you expect? Feeling defeated by the complexities of that massively distributed compute engine? The community idea exists to help each other through difficult problems. So fail early, commit often, ask for help, and don't be afraid.
 
 ### Contributor expectations
 
 Contributors are subject to a code of conduct, and it's essential that all contributions are original work.
 
-- **Read (6 min) [the Amazon Open Source Code of Conduct](https://aws.github.io/code-of-conduct)**
+- **Read (6 min) [the OpenSearch code of conduct](https://opensearch.org/codeofconduct.html)**
 - **Read (6 min) [the OpenSearch CONTRIBUTING guide](https://github.com/opensearch-project/.github/blob/main/CONTRIBUTING.md)**
   - Please make sure you understand the implications of the [Developer Certificate of Origin](https://github.com/opensearch-project/.github/blob/main/CONTRIBUTING.md#developer-certificate-of-origin)
 

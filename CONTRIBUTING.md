@@ -95,7 +95,7 @@ Each commit must include a DCO which looks like this
 Signed-off-by: Jane Smith <jane.smith@email.com>
 ```
 
-You may type this line on your own when writing your commit messages. However, if your `user.name` and `user.email` are set in your `git config`, you can use `-s` or `––signoff` to add the `Signed-off-by` line to the end of the commit message automatically.
+You may type this line on your own when writing your commit messages. However, if your `user.name` and `user.email` are set in your `git config`, you can use `-s` or `--signoff` to add the `Signed-off-by` line to the end of the commit message automatically.
 
 Forgot to add DCO to a commit? Amend it with `git commit --amend -s`.
 
