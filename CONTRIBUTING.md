@@ -22,6 +22,8 @@ OpenSearch is a community project that is built and maintained by people just li
 
 2. **Only submit your own work**  (or work you have sufficient rights to submit) - Please make sure that any code or documentation you submit is your work or you have the rights to submit. We respect the intellectual property rights of others, and as part of contributing, we'll ask you to sign your contribution with a "Developer Certificate of Origin" (DCO) that states you have the rights to submit this work and you understand we'll use your contribution. There's more information about this topic in the [DCO section](#developer-certificate-of-origin).
 
+3. When you're ready to start, we have [a step-by-step onboarding guide](ONBOARDING.md) to help you get oriented.
+
 ## Ways to Contribute
 
 ### Bug Reports
@@ -93,9 +95,9 @@ Each commit must include a DCO which looks like this
 Signed-off-by: Jane Smith <jane.smith@email.com>
 ```
 
-You may type this line on your own when writing your commit messages. However, if your `user.name` and `user.email` are set in your `git config`, you can use `-s` or `––signoff` to add the `Signed-off-by` line to the end of the commit message automatically.
+You may type this line on your own when writing your commit messages. However, if your `user.name` and `user.email` are set in your `git config`, you can use `-s` or `--signoff` to add the `Signed-off-by` line to the end of the commit message automatically.
 
-Forgot to add DCO to a commit? Amend it with `git commit --amend -s`. 
+Forgot to add DCO to a commit? Amend it with `git commit --amend -s`.
 
 ## License Headers
 
