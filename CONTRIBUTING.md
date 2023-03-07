@@ -99,6 +99,15 @@ You may type this line on your own when writing your commit messages. However, i
 
 Forgot to add DCO to a commit? Amend it with `git commit --amend -s`.
 
+### Troubleshooting Failed DCO Checks
+
+Note that the DCO workflow app requires signatures on every commit that's part of a PR.
+
+If you've already signed all your commits and your PR still fails the DCO check, it's likely because the email address you signed the commit with doesn't match the one on your GitHub account. There are a couple ways to solve this:
+
+1. **If you want your email address to be public:** 1. Go to https://github.com/settings/emails and uncheck "Keep my email address private". 2. Following the [GitHub documentation](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address#setting-your-commit-email-address-in-git), set your commit email address to your primary GitHub email address.
+2. **If you want your email address to remain private:** 1. Go to https://github.com/settings/emails and make sure "Keep my email address private" is checked. 2. Following the [GitHub documentation](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address#setting-your-commit-email-address-in-git), set your commit email address to the `*@users.noreply.github.com` email listed in the "Keep my email addresses private" setting.
+
 ## License Headers
 
 New files in your code contributions should contain the following license header. If you are modifying existing files with license headers, or including new files that already have license headers, do not remove or modify them without guidance.
