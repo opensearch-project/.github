@@ -10,7 +10,8 @@
   - [Java](#java)
   - [Python, Ruby, Shell](#python-ruby-shell)
 - [Review Process](#review-process)
-- [Feature Branches](#feature-branches)
+- [Using Feature Branches](#using-feature-branches)
+- [Experimental Features](#experimental-features)
 
 ## Contributing to OpenSearch
 
@@ -137,18 +138,21 @@ If we accept the PR, a [maintainer](MAINTAINERS.md) will merge your change and u
 
 If we reject the PR, we will close the pull request with a comment explaining why. This decision isn't always final: if you feel we have misunderstood your intended change or otherwise think that we should reconsider then please continue the conversation with a comment on the PR and we'll do our best to address any further points you raise.
 
-## Feature Branches
+## Using Feature Branches
 
-For long running features that need collaboration between multiple members of the community, we use feature branches. We use a hybrid of the feature branch development model and the continuous integration development model. Maintainers of a repository can create a feature branch, a corresponding label associated with the feature and a meta issue associated with the feature. Each feature branch will have the following safeguards:
+Our recommended approach for development is doing frequent small PR merges to main. This lets us catch integration issues earlier, makes it easier to review your PRs and makes your development visible to everyone.  It's okay if it's not the complete feature, as long as the PR won’t break a build or any existing functionality. 
 
-1. High frequency integration: PR's to `main` are raised not once the feature is complete, but whenever we reach the closest integration point during development. For example, once the plugin is bootstrapped, or a core feature is complete. We also frequently rebase changes from main back into the feature branch.
-    1. This makes the integration frequency much higher and allows us to catch integration issues much quicker.
-    2. This still lets collaboratively develop on a big feature that is not ready for main.
-2. Treat feature branch PR's the same as PR's to `main`. CI should run on all PR's, no incomplete work should be merged, tests are necessary, etc.
-   1. This maintains the code quality going into each feature making the integration to main PR's much easier and quicker.
-   2. More visibility during development since it gives reviewers the necessary time to review each PR.
-3. Feature specific labels: This helps identify feature related issues and PR's.
+But sometimes it may be useful to create a feature branch.  This allows you work on long-running disruptive features in isolation.   The reason we don't recommend it is because it still requires maintainer access to merge changes, and the overhead of rebasing is high.  If you do want to use a feature branch:
+  
+1. Treat feature branch PR's the same as PR's to `main`. CI should run on all PR's, no incomplete work should be merged, tests are necessary, etc.
+   a. This maintains the code quality going into each feature making the integration to main PR's much easier and quicker.
+   b. More visibility during development since it gives reviewers the necessary time to review each PR.
+2. Please use Feature specific labels: This helps identify feature related issues and PR's.
 
 All the safeguard here are not rules but guidelines and should be adopted by each repository based on their specific requirements. This is to ensure that feature branch development is less likely to have code quality issues and massive merge to main PR's.
 
 For contributors looking to add a new feature that would require the creation of a feature branch, the process begins by opening an issue in the repo with the feature proposal. Depending on the nature of the feature, the maintainers of the project can decide to create a feature branch and use this model.
+
+## Experimental Features
+
+Experimental releases are used to gather early feedback on features. Features should only be marked experimental if there is a high likelihood that API or experience will change. We strongly advise people to avoid using experimental features in production as there is no guarantee the API or experience won't change before release. It is best to avoid experimental feature releases unless it is necessary. Our goal is to have all experimental features into production or removed within 2 minor releases.  We generally use [Feature Flags](https://github.com/opensearch-project/OpenSearch/blob/main/DEVELOPER_GUIDE.md#experimental-development) to isolate experimental features in backend code.
