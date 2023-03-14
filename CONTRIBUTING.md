@@ -10,7 +10,8 @@
   - [Java](#java)
   - [Python, Ruby, Shell](#python-ruby-shell)
 - [Review Process](#review-process)
-- [Feature Branches](#feature-branches)
+- [Using Feature Branches](#using-feature-branches)
+- [Experimental Features](#experimental-features)
 
 ## Contributing to OpenSearch
 
@@ -139,7 +140,7 @@ If we reject the PR, we will close the pull request with a comment explaining wh
 
 ## Using Feature Branches
 
-Our recommend approach for development is doing frequent small PR merges to main. This lets us catch integration issues earlier and makes the development visible to everyone.  It's okay if it's not the complete feature, as long as the PR won’t break a build or any existing functionality at least. 
+Our recommended approach for development is doing frequent small PR merges to main. This lets us catch integration issues earlier, makes it easier to review your PRs and makes your development visible to everyone.  It's okay if it's not the complete feature, as long as the PR won’t break a build or any existing functionality. 
 
 But sometimes it may be useful to create a feature branch.  This allows you work on long-running disruptive features in isolation.   The reason we don't recommend it is because it still requires maintainer access to merge changes, and the overhead of rebasing is high.  If you do want to use a feature branch:
   
