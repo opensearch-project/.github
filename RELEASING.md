@@ -68,7 +68,51 @@ Repositories create consistent release labels, such as `v2.9.0`, `v1.0.0`, `v1.1
 
 ## Releasing
 
-See [Releasing OpenSearch](https://github.com/opensearch-project/opensearch-build/blob/main/README.md#releasing-opensearch).
+OpenSearch follows semver, which means we will only release breaking changes in major versions. All minor versions are compatible with every other minor version for that major. For example, 1.2.0 will work with 1.3.2, 1.4.1, etc, but may not work with 2.0.
+
+For minor version releases, OpenSearch uses a “release-train” model. Approximately every six weeks we release a new minor version which includes all the new features and fixes that are ready to go. Having a set release schedule makes sure OpenSearch is releasing in a predictable way and prevents a backlog of unreleased changes.
+
+In contrast, OpenSearch releases new major versions only when there are a critical mass of breaking changes (e.g. changes that are incompatible with existing APIs). These tend to be tied to Lucene major version releases, and will be announced in the forums at least 4 weeks prior to the release date.
+
+Please note: Both the roadmap and the release dates reflect intentions rather than firm commitments and may change as we learn more or encounters unexpected issues. If dates do need to change, we will be as transparent as possible, and log all changes in the changelog at the bottom of this page  
+
+### Release Process for Minor Releases
+
+Summary:
+1. OpenSearch runs a release train for minors that starts ~every 6 weeks.  Major releases are rare, contain breaking changes, and have their own release process. 
+1. The start dates for our release windows will be published at the beginning of the year.  Any plug-in/component that meets the entrance criteria on the window start date will be picked up for that release.  If they aren't ready, we'll version bump the last released version and the release becomes a no-op for them.  We will not hold a release for any component.
+1. Once the release candidate is generated, we'll enter the "release window".  This is a time for final quality testing and polishing documentation as well as performance testing.  Bug fixes can go in during this time, but no new features will be added. 
+1. We will check every day and post on the release issue about the status of the exit criteria.  When all the exit criteria have been met for all release components, we'll announce that the candidate is ready, and release it 2 days later (unless that falls on Friday, in which case we'll release on Monday)
+1. If we cannot clear the exit criteria within 2 weeks from the start of the window, we will cancel that release window and try again in the next window.
+
+
+At the beginning of every year, the project will publish on [OpenSearch.org](https://opensearch.org/releases.html) the “release windows start” dates for the year.  These dates will be spaced out ~6 weeks, and will mark the start of the release window.  
+
+#### Entrance criteria to start release window:
+* Documentation draft PRs are up and in tech review for all component changes.
+* Sanity testing is done for all components.
+* Code coverage is up (all new code has tests).
+* Release notes are ready and available for all components.
+* Roadmap is up-to-date (information is available to create release highlights).
+* Release ticket is cut, and there's a forum post announcing the start of the window.
+* [Any necessary security reviews](##Security-Reviews) are complete. 
+
+All components and plugins that are currently released as the OpenSearch bundle will have a chance to join the releases.  If a component has not met the entrance criteria by the start of the window, or does not have any changes for that release, we will increment the last released version and add it to the release.
+
+Once the release candidate has been generated, the project will officially enter the release window for that release.  Every day, the release manager will update the release ticket on the status of the release.  
+
+#### Exit criteria to close release window (and make artifacts available):
+* Performance tests are run, results are posted to the release ticket and there no unexpected regressions
+* Documentation has been fully reviewed and signed off by the documentation community.
+* All integration tests are passing
+* Release blog is ready
+
+When all exit criteria have been met, the project will announce the release date -- generally 2 days later, unless that would fall on a Friday or a weekend, in which case we will release on the following Monday. If we cannot meet the exit criteria within 2 weeks of the freeze date, we will skip this minor and release on the next scheduled date.
+
+### Release Process for Major Releases
+OpenSearch releases new major versions only when there are a critical mass of breaking changes (e.g. changes that are incompatible with existing APIs). These tend to be tied to Lucene major version releases, and will be announced in the forums at least 4 weeks prior to the release date.  Once we become aware of the need for a major version, we will start a major version release window which will be similar to a minor release, except for two things:  Participation is mandatory for all components  2) the window will be at least 4 weeks long to accommodate the testing required. 
+
+For the actual step to build a release, please see [Releasing OpenSearch](https://github.com/opensearch-project/opensearch-build/blob/main/README.md#releasing-opensearch).
 
 ### Security Reviews 
 
