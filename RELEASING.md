@@ -74,8 +74,6 @@ For minor version releases, OpenSearch uses a “release-train” model. Approxi
 
 In contrast, OpenSearch releases new major versions only when there are a critical mass of breaking changes (e.g. changes that are incompatible with existing APIs). These tend to be tied to Lucene major version releases, and will be announced in the forums at least 4 weeks prior to the release date.
 
-Please note: Both the roadmap and the release dates reflect intentions rather than firm commitments and may change as we learn more or encounters unexpected issues. If dates do need to change, we will be as transparent as possible, and log all changes in the changelog at the bottom of this page  
-
 ### Release Process for Minor Releases
 
 Summary:
@@ -110,7 +108,7 @@ Once the release candidate has been generated, the project will officially enter
 When all exit criteria have been met, the project will announce the release date -- generally 2 days later, unless that would fall on a Friday or a weekend, in which case we will release on the following Monday. If we cannot meet the exit criteria within 2 weeks of the freeze date, we will skip this minor and release on the next scheduled date.
 
 ### Release Process for Major Releases
-OpenSearch releases new major versions only when there are a critical mass of breaking changes (e.g. changes that are incompatible with existing APIs). These tend to be tied to Lucene major version releases, and will be announced in the forums at least 4 weeks prior to the release date.  Once we become aware of the need for a major version, we will start a major version release window which will be similar to a minor release, except for two things:  Participation is mandatory for all components  2) the window will be at least 4 weeks long to accommodate the testing required. 
+OpenSearch only does major releases when there are significant breaking changes that are ready for release.  Once we become aware of the need for a major version, we will start a major version release window which will be similar to a minor release, except for two things:  Participation is mandatory for all components and the release window will be at least 4 weeks long to accommodate the testing required. 
 
 For the actual step to build a release, please see [Releasing OpenSearch](https://github.com/opensearch-project/opensearch-build/blob/main/README.md#releasing-opensearch).
 
