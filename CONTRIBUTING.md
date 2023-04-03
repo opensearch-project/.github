@@ -6,6 +6,7 @@
   - [Documentation Changes](#documentation-changes)
   - [Contributing Code](#contributing-code)
 - [Developer Certificate of Origin](#developer-certificate-of-origin)
+  - [Troubleshooting Failed DCO Checks](#troubleshooting-failed-dco-checks)
 - [License Headers](#license-headers)
   - [Java](#java)
   - [Python, Ruby, Shell](#python-ruby-shell)
@@ -90,7 +91,7 @@ We require that every contribution to OpenSearch is signed with a Developer Cert
 
 Additionally, we kindly ask you to use your real name. We do not accept anonymous contributors, nor those utilizing pseudonyms.
 
-Each commit must include a DCO which looks like this
+Each commit must include a DCO which looks like this, which includes a real name and a valid email address where you can receive emails:
 
 ```
 Signed-off-by: Jane Smith <jane.smith@email.com>
@@ -99,6 +100,17 @@ Signed-off-by: Jane Smith <jane.smith@email.com>
 You may type this line on your own when writing your commit messages. However, if your `user.name` and `user.email` are set in your `git config`, you can use `-s` or `--signoff` to add the `Signed-off-by` line to the end of the commit message automatically.
 
 Forgot to add DCO to a commit? Amend it with `git commit --amend -s`.
+
+### Troubleshooting Failed DCO Checks
+
+The DCO workflow app requires signatures on every commit that's part of a PR.
+
+If you've already signed all your commits and your PR still fails the DCO check, it's likely because the email address you signed the commit with doesn't match the one on your GitHub account.
+
+To fix:
+
+1. Go to [your GitHub email settings](https://github.com/settings/emails) and uncheck "Keep my email address private".
+2. Following the [GitHub documentation](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address#setting-your-commit-email-address-in-git), set your commit email address to your primary GitHub email address.
 
 ## License Headers
 
