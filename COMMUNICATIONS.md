@@ -38,6 +38,7 @@ After you join OpenSearch workspace you will be automatically added to the follo
 
 There are dedicated channels for the following (note that participants might be directed to more specific channels based on the nature of the discussion):
 
+  * **#admin-requests** - slack related feature requests and questions for the administration team.
   * **#dev** - primary channel for development questions. This is a good place to start for participants interested in OpenSearch development but are not sure which channels to join.
   * **#core** -  primary channel for core OpenSearch. General questions and discussions about the core can be asked here.
   * **#dashboards** - primary channel for Dashboards. General questions and discussions about dashboards can be asked here.
