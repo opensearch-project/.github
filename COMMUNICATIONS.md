@@ -20,7 +20,7 @@ The following guidelines include a Getting Started for steps to register and set
 
 _Join Workspace_
 
-  * Register your account at https://opensearch.slack.com. You will be required to enroll in two-factor authentication to ensure the best possible security of your account.
+  * Visit the [slack landing page](https://opensearch.org/slack.html) on OpenSearch.org for information on registering your account. You will be required to enroll in two-factor authentication to ensure the best possible security of your account.
 
 _Update Profile_
 
