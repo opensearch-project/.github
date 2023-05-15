@@ -138,7 +138,7 @@ There are plenty of reasons that might cause someone to want to take a step back
 
 ### Inactivity
 
-Maintainer status never expires. If a maintainer becomes inactive for a time (usually several months), the repo admin may revoke maintainer level access to the repository for security reasons. A maintainer can reach out to the repo admin to get their permissions reinstated.
+Maintainer status never expires. If a maintainer becomes inactive for a time (usually several months), or a maintainer can confirm that they are no longer involved with the project for any reason, the repo admin may make a pull request to move them to the "Emeritus" section of the MAINTAINERS.md, remove them from CODEOWNERS, and upon merging the pull request, revoke the maintainer level access. Any past maintainer can be reinstated via another pull request, and have their permissions restored by the repo admin at any time upon request.
 
 If the repo is left without any maintainers, either by maintainer inactivity or moving on, the repo is considered unmaintained. The repo admin will seek out new maintainers and note the maintenance status in the repo README file.
 
