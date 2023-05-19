@@ -1,18 +1,18 @@
 ---
 name: 🎆 Feature request
 about: Request a feature in this project
-title: '[FEATURE]'
+title: 'top_metrics aggregation'
 labels: 'enhancement, untriaged'
 assignees: ''
 ---
 ### Is your feature request related to a problem?
-_A clear and concise description of what the problem is, e.g. I'm always frustrated when [...]._
+We would like OpenSearch to impliment top_metrics aggregation which is available in ElasticSearch  
 
 ### What solution would you like?
-_A clear and concise description of what you want to happen._
+A solution compatible with this https://www.elastic.co/guide/en/elasticsearch/reference/7.10/search-aggregations-metrics-top-metrics.html  
 
 ### What alternatives have you considered?
-_A clear and concise description of any alternative solutions or features you've considered._
+Licensing ElasticSearch which is not an option for us
 
 ### Do you have any additional context?
-_Add any other context or screenshots about the feature request here._
+This feature was available in the free distro of ElasticSearch prior to the fork to OpenElastic but it didnlt make it across to OpenSearch
