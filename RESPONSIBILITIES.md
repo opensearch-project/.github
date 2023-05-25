@@ -38,7 +38,7 @@ Maintainers are active and visible members of the community, and have [maintain-
 
 ### Uphold Code of Conduct
 
-Model the behavior set forward by the [Code of Conduct](CODE_OF_CONDUCT.md) and raise any violations to other maintainers and [org admin](https://github.com/orgs/opensearch-project/teams/admin).
+Model the behavior set forward by the [Code of Conduct](CODE_OF_CONDUCT.md) and raise any violations to other maintainers and [members of the admin team](https://github.com/orgs/opensearch-project/teams/admin).
 
 ### Prioritize Security
 
@@ -106,7 +106,7 @@ You can become a maintainer by actively [contributing](CONTRIBUTING.md) to any p
 
 ### Nomination
 
-Any current maintainer starts a private e-mail thread (until we have a better mechanism, e-mail addresses can usually be found via MAINTAINERS.md + DCO) with all other maintainers on that repository to discuss nomination using the template below. In order to be approved, at least three positive (+1) maintainer votes are necessary, and no vetoes (-1). In rare cases when there are fewer than three maintainers, the positive (+1) votes from all maintainers are required. Any disagreements can be escalated to the [org admin](https://github.com/orgs/opensearch-project/teams/admin).
+Any current maintainer starts a private e-mail thread (until we have a better mechanism, e-mail addresses can usually be found via MAINTAINERS.md + DCO) with all other maintainers on that repository to discuss nomination using the template below. In order to be approved, at least three positive (+1) maintainer votes are necessary, and no vetoes (-1). In rare cases when there are fewer than three maintainers, the positive (+1) votes from all maintainers are required. Any disagreements can be escalated to the [members of the admin team](https://github.com/orgs/opensearch-project/teams/admin).
 
 The nomination should clearly identify the person with their real name and a link to their GitHub profile, and the rationale for the nomination, with concrete example contributions.
 
@@ -126,7 +126,7 @@ Upon receiving three positive (+1) maintainer votes, and no vetoes (-1), from ot
 >
 > The maintainers have voted and agreed to this nomination.
 
-The [org admin](https://github.com/orgs/opensearch-project/teams/admin) adjusts the new maintainer’s permissions accordingly, and merges the pull request.
+The [members of the admin team](https://github.com/orgs/opensearch-project/teams/admin) adjusts the new maintainer’s permissions accordingly, and merges the pull request.
 
 ## Removing a Maintainer
 
@@ -134,14 +134,14 @@ Removing a maintainer is a disruptive action that the community of maintainers s
 
 ### Moving On
 
-There are plenty of reasons that might cause someone to want to take a step back or even a hiatus from a project. Existing maintainers can choose to leave the project at any time, with or without reason, by making a pull request to move themselves to the "Emeritus" section of MAINTAINERS.md, and asking an admin to remove their permissions.
+There are plenty of reasons that might cause someone to want to take a step back or even a hiatus from a project. Existing maintainers can choose to leave the project at any time, with or without reason, by making a pull request to move themselves to the "Emeritus" section of MAINTAINERS.md, and asking an [members of the admin team](https://github.com/orgs/opensearch-project/teams/admin) to remove their permissions.
 
 ### Inactivity
 
-Maintainer status never expires. If a maintainer becomes inactive for a time (usually several months), or a maintainer can confirm that they are no longer involved with the project for any reason, the [org admin](https://github.com/orgs/opensearch-project/teams/admin) may make a pull request to move them to the "Emeritus" section of the MAINTAINERS.md, remove them from CODEOWNERS, and upon merging the pull request, revoke the maintainer level access. Any past maintainer can be reinstated via another pull request, and have their permissions restored by the [org admin](https://github.com/orgs/opensearch-project/teams/admin) at any time upon request.
+Maintainer status never expires. If a maintainer becomes inactive for a time (usually several months), or a maintainer can confirm that they are no longer involved with the project for any reason, the [members of the admin team](https://github.com/orgs/opensearch-project/teams/admin) may make a pull request to move them to the "Emeritus" section of the MAINTAINERS.md, remove them from CODEOWNERS, and upon merging the pull request, revoke the maintainer level access. Any past maintainer can be reinstated via another pull request, and have their permissions restored by the [org admin](https://github.com/orgs/opensearch-project/teams/admin) at any time upon request.
 
-If the repo is left without any maintainers, either by maintainer inactivity or moving on, the repo is considered unmaintained. The [org admin](https://github.com/orgs/opensearch-project/teams/admin) will seek out new maintainers and note the maintenance status in the repo README file.
+If the repo is left without any maintainers, either by maintainer inactivity or moving on, the repo is considered unmaintained. The [members of the admin team](https://github.com/orgs/opensearch-project/teams/admin) will seek out new maintainers and note the maintenance status in the repo README file.
 
 ### Negative Impact on the Project
 
-Actions that negatively impact the project will be handled by the [org admin](https://github.com/orgs/opensearch-project/teams/admin), in coordination with other maintainers, in balance with the urgency of the issue. Examples would be [Code of Conduct](CODE_OF_CONDUCT.md) violations, deliberate harmful or malicious actions, and security risks.
+Actions that negatively impact the project will be handled by the [members of the admin team](https://github.com/orgs/opensearch-project/teams/admin), in coordination with other maintainers, in balance with the urgency of the issue. Examples would be [Code of Conduct](CODE_OF_CONDUCT.md) violations, deliberate harmful or malicious actions, and security risks.
