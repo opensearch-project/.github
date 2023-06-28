@@ -1,6 +1,6 @@
 - [Overview](#overview)
 - [Current Admins](#current-admins)
-- [Admin Responsibilities](#admin-responsibilities)
+- [Admin Permissions](#admin-permissions)
   - [Prioritize Security](#prioritize-security)
   - [Enforce Code of Conduct](#enforce-code-of-conduct)
   - [Add/Remove Maintainers](#addremove-maintainers)
@@ -8,19 +8,27 @@
 
 ## Overview
 
-This document explains who the admins are (see below), what they do in this repo, and how they should be doing it. If you're interested in becoming a maintainer, see [MAINTAINERS](MAINTAINERS.md). If you're interested in contributing, see [CONTRIBUTING](CONTRIBUTING.md).
+This document explains who the admins are (see below), what they do in opensearch-project, and how they should be doing it. They are added with Admin-level permissions to every repositories in opensearch-project organization.  If you're interested in becoming a maintainer, see [MAINTAINERS](MAINTAINERS.md). If you're interested in contributing, see [CONTRIBUTING](CONTRIBUTING.md).
 
 ## Current Admins
 
 | Admin              | GitHub ID                               | Affiliation |
 | ------------------ | --------------------------------------- | ----------- |
-| Charlotte Henkle   | [CEHENKLE](https://github.com/CEHENKLE) | Amazon      |
 | Daniel Doubrovkine | [dblock](https://github.com/dblock)     | Amazon      |
-| Henri Yandell      | [hyandell](https://github.com/hyandell) | Amazon      |
+| Nick Knize         | [nknize](https://github.com/nknize)     | Amazon      |
+| Peter Nied         | [peternied](https://github.com/peternied)     | Amazon      |
+| William Beckler    | [wbeckler](https://github.com/wbeckler) | Amazon      |
+| Rishabh Singh      | [rishabh6788](https://github.com/rishabh6788) | Amazon      |
+| Prudhvi Godithi    | [prudhvigodithi](https://github.com/prudhvigodithi) | Amazon      |
+| Sayali Gaikawad    | [gaiksaya](https://github.com/gaiksaya) | Amazon      |
+| Peter Zhu          | [peterzhuamazon](https://github.com/peterzhuamazon) | Amazon      |
+| Barani bbarani     | [bbarani](https://github.com/bbarani) | Amazon      |
+| Charlotte Henkle   | [CEHENKLE](https://github.com/CEHENKLE) | Amazon      |
+| Zelin Hao          | [zelinh](https://github.com/CEHENKLE) | Amazon      |
 
-## Admin Responsibilities
+## Admin Permissions
 
-As an admin you own stewardship of the repository and its settings. Admins have [admin-level permissions on a repository](https://docs.github.com/en/organizations/managing-access-to-your-organizations-repositories/repository-permission-levels-for-an-organization). Use those privileges to serve the community and protect the repository as follows.
+Admins have [admin-level permissions on a repository](https://docs.github.com/en/organizations/managing-access-to-your-organizations-repositories/repository-permission-levels-for-an-organization). Use those privileges to serve the community and protect the repository as follows.
 
 ### Prioritize Security
 
