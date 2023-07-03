@@ -48,7 +48,15 @@ Note that this repository is monitored and supported 24/7 by Amazon Security, se
 
 ### Review Pull Requests
 
-Review pull requests regularly, comment, suggest, reject, merge and close. Accept only high quality pull-requests. Provide code reviews and guidance on incoming pull requests. Don't let PRs be stale and do your best to be helpful to contributors.
+It's our responsibility to make sure the content and code in pull requests is correct and of high quality before it gets merged. Here are some best practices:
+- Triage incoming pull requests within 1-2 days. Never let a PR sit longer than a week without at least commenting on it.
+- Review and test the content. Be helpful, and provide constructive and specific feedback.
+- If you don’t have a testing environment available or the capacity to test the code, let the contributor know that there will be a delay as you look for a colleague to assist you.
+- Make sure documentation contributions follow the [OpenSearch Project style guidelines](https://github.com/opensearch-project/documentation-website/blob/main/STYLE_GUIDE.md).
+- Make sure documentation contributions are formatted correctly, as described in [Formatting.md](https://github.com/opensearch-project/documentation-website/blob/main/FORMATTING_GUIDE.md).
+- Don't let PRs get stale. But if a PR has been sitting for a long time (over 3 months) and we’ve exhausted all of our resources, get SDM approval before closing.
+- If there are significant changes to be made to a PR and the contributor is not responsive, a maintainer can close the PR or take it over and merge it.
+  
 
 ### Triage Open Issues
 
