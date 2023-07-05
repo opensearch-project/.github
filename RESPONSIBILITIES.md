@@ -48,15 +48,13 @@ Note that this repository is monitored and supported 24/7 by Amazon Security, se
 
 ### Review Pull Requests
 
-It's our responsibility to make sure the content and code in pull requests is correct and of high quality before it gets merged. Here are some best practices:
-- Triage incoming pull requests within 1-2 days. Never let a PR sit longer than a week without at least commenting on it.
-- Review and test the content. Be helpful, and provide constructive and specific feedback.
-- If you don’t have a testing environment available or the capacity to test the code, let the contributor know that there will be a delay as you look for a colleague to assist you.
-- Make sure documentation contributions follow the [OpenSearch Project style guidelines](https://github.com/opensearch-project/documentation-website/blob/main/STYLE_GUIDE.md).
-- Make sure documentation contributions are formatted correctly, as described in [Formatting.md](https://github.com/opensearch-project/documentation-website/blob/main/FORMATTING_GUIDE.md).
-- Don't let PRs get stale. But if a PR has been sitting for a long time (over 3 months) and we’ve exhausted all of our resources, get SDM approval before closing.
-- If there are significant changes to be made to a PR and the contributor is not responsive, a maintainer can close the PR or take it over and merge it.
-  
+It's our responsibility to ensure the content and code in pull requests are correct and of high quality before they are merged. Here are some best practices:
+
+- Leverage the issue triaging process to review pull requests and assign them to maintainers for review.
+- In cases of uncertainty on how to proceed, search for related issues and reference the pull request to find additional collaborators.
+- When providing feedback on pull requests, make sure your feedback is actionable to guide the pull request towards a conclusion.
+- If a pull request is valuable but isn't gaining traction, consider reaching out to fulfill the necessary requirements. This way, the pull request can be merged, even if the work is done by several individuals.
+- Lastly, strive for progress, not perfection.
 
 ### Triage Open Issues
 
