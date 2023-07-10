@@ -48,7 +48,13 @@ Note that this repository is monitored and supported 24/7 by Amazon Security, se
 
 ### Review Pull Requests
 
-Review pull requests regularly, comment, suggest, reject, merge and close. Accept only high quality pull-requests. Provide code reviews and guidance on incoming pull requests. Don't let PRs be stale and do your best to be helpful to contributors.
+It's our responsibility to ensure the content and code in pull requests are correct and of high quality before they are merged. Here are some best practices:
+
+- Leverage the issue triaging process to review pull requests and assign them to maintainers for review.
+- In cases of uncertainty on how to proceed, search for related issues and reference the pull request to find additional collaborators.
+- When providing feedback on pull requests, make sure your feedback is actionable to guide the pull request towards a conclusion.
+- If a pull request is valuable but isn't gaining traction, consider reaching out to fulfill the necessary requirements. This way, the pull request can be merged, even if the work is done by several individuals.
+- Lastly, strive for progress, not perfection.
 
 ### Triage Open Issues
 
