@@ -22,11 +22,11 @@ Projects create a new branch when they need to start working on 2 separate versi
 
 ### OpenSearch Branching
 
-[OpenSearch](https://github.com/opensearch-project/OpenSearch) typically tracks 3 releases in parallel. For example, given the last major release of 1.0, OpenSearch in this organization maintains the following active branches.
+[OpenSearch](https://github.com/opensearch-project/OpenSearch) typically tracks 3 releases in parallel. For example, given the last major release of 2.0, OpenSearch in this organization maintains the following active branches.
 
-* **main**: The _next major_ release, currently 2.0. This is the branch where all merges take place, and code moves fast.
-* **1.x**: The _next minor_ release, currently 1.1. Once a change is merged into `main`, decide whether to backport it to `1.x`.
-* **1.0**: The _current_ release, currently 1.0. In between minor releases, only hotfixes (e.g. security) are backported to `1.0`. The next release out of this branch will be 1.0.1.
+* **main**: The _next major_ release, currently 3.0. This is the branch where all merges take place, and code moves fast.
+* * **2.x**: The _next minor_ release. Once a change is merged into `main`, decide whether to backport it to `2.x`.
+* **1.3**: The _next patch_ release. Once a change is merged into `main`, decide whether to backport it to `1.3`.
 
 Label PRs with the next major version label (e.g. `2.0.0`) and merge changes into `main`. Label PRs that you believe need to be backported as `1.x` and `1.0`. Backport PRs by checking out the versioned branch, cherry-pick changes and open a PR against each target backport branch.
 
