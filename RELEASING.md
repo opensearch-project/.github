@@ -50,8 +50,8 @@ The build number of the engine is 3-digit `major.minor.patch` (e.g. `2.9.0`), wh
 
 Versions are incremented as soon as development starts on a given version to avoid confusion. In the examples above versions are as follows.
 
-* OpenSearch: `main` = 3.0.0, `2.x` = 2.10.0 `1.x` = 1.4.0, and `1.3` = 1.3.12
-* job-scheduler: `main` = 3.0.0.0, `2.x` = 2.10.0.0 , `1.x` = 1.4.0.0 and `1.3` = 1.3.12.0
+* OpenSearch: `main` = 3.0.0, `2.x` = 2.10.0 `1.x` = 1.4.0, and `1.2` = 1.2.5
+* job-scheduler: `main` = 3.0.0.0, `2.x` = 2.10.0.0 , `1.x` = 1.4.0.0 and `1.2` = 1.2.5.0
 
 ## Tagging
 
