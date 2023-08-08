@@ -22,13 +22,13 @@ Projects create a new branch when they need to start working on 2 separate versi
 
 ### OpenSearch Branching
 
-[OpenSearch](https://github.com/opensearch-project/OpenSearch) typically tracks 3 releases in parallel. For example, given the last major release of 1.0, OpenSearch in this organization maintains the following active branches.
+[OpenSearch](https://github.com/opensearch-project/OpenSearch) typically tracks 3 releases in parallel. For example, given the last major release of 2.0, OpenSearch in this organization maintains the following active branches.
 
-* **main**: The _next major_ release, currently 2.0. This is the branch where all merges take place, and code moves fast.
-* **1.x**: The _next minor_ release, currently 1.1. Once a change is merged into `main`, decide whether to backport it to `1.x`.
-* **1.0**: The _current_ release, currently 1.0. In between minor releases, only hotfixes (e.g. security) are backported to `1.0`. The next release out of this branch will be 1.0.1.
+* **main**: The _next major_ release, currently 3.0. This is the branch where all merges take place, and code moves fast.
+* * **2.x**: The _next minor_ release. Once a change is merged into `main`, decide whether to backport it to `2.x`.
+* **1.3**: The _next patch_ release. Once a change is merged into `main`, decide whether to backport it to `1.3`.
 
-Label PRs with the next major version label (e.g. `2.0.0`) and merge changes into `main`. Label PRs that you believe need to be backported as `1.x` and `1.0`. Backport PRs by checking out the versioned branch, cherry-pick changes and open a PR against each target backport branch.
+Label PRs with the next major version label (e.g. `3.0.0`) and merge changes into `main`. Label PRs that you believe need to be backported as `2.x`, `1.x` and `1.3`. Backport PRs by checking out the versioned branch, cherry-pick changes and open a PR against each target backport branch.
 
 ### Plugin Branching
 
@@ -44,14 +44,14 @@ OpenSearch versioning [follows semver](https://opensearch.org/blog/technical-pos
 
 ### Version Numbers
 
-The build number of the engine is 3-digit `major.minor.patch` (e.g. `1.1.0`), while plugins use 4 digits (`1.1.0.45`). See [OpenSearch#1093](https://github.com/opensearch-project/OpenSearch/issues/1093) for a proposal to remove this difference. 
+The build number of the engine is 3-digit `major.minor.patch` (e.g. `2.9.0`), while plugins use 4 digits (`2.9.0.45`). See [OpenSearch#1093](https://github.com/opensearch-project/OpenSearch/issues/1093) for a proposal to remove this difference. 
 
 ### Incrementing Versions
 
 Versions are incremented as soon as development starts on a given version to avoid confusion. In the examples above versions are as follows.
 
-* OpenSearch: `main` = 2.0.0, `1.x` = 1.1.0, and `1.0` = 1.0.0
-* job-scheduler: `main` = 1.1.0.0, `1.0` = 1.0.0.0
+* OpenSearch: `main` = 3.0.0, `2.x` = 2.10.0 `1.x` = 1.4.0, and `1.2` = 1.2.5
+* job-scheduler: `main` = 3.0.0.0, `2.x` = 2.10.0.0 , `1.x` = 1.4.0.0 and `1.2` = 1.2.5.0
 
 ## Tagging
 
@@ -64,7 +64,7 @@ For a discussion on whether to add a prefixing `v` to release tags, see [#35](ht
 
 ## Release Labels
 
-Repositories create consistent release labels, such as `v1.0.0`, `v1.1.0` and `v2.0.0`, as well as `patch` and `backport`. Use release labels to target an issue or a PR for a given release. See [MAINTAINERS](MAINTAINERS.md#triage-open-issues) for more information on triaging issues.
+Repositories create consistent release labels, such as `v2.9.0`, `v1.0.0`, `v1.1.0` and `v2.0.0`, as well as `patch` and `backport`. Use release labels to target an issue or a PR for a given release. See [MAINTAINERS](MAINTAINERS.md#triage-open-issues) for more information on triaging issues.
 
 ## Releasing
 
@@ -88,15 +88,15 @@ Please see [opensearch-project/.github#81](https://github.com/opensearch-project
 
 ## Backporting
 
-This project follows [semantic versioning](https://semver.org/spec/v2.0.0.html). Backwards-incompatible changes always result in a new major version and will __never__ be backported. Small improvements and features will be backported to a new minor version (e.g. `1.1`). Security fixes will be backported to a new patch version (e.g. `1.0.1`).
+This project follows [semantic versioning](https://semver.org/spec/v2.0.0.html). Backwards-incompatible changes always result in a new major version and will __never__ be backported. Small improvements and features will be backported to a new minor version (e.g. `2.9.0`). Security fixes will be backported to a new patch version (e.g. `2.9.1`).
 
 Here are the commands we typically run to backport changes to release branches:
 
-1. Checkout the target release branch and pull the latest changes from `upstream`. In the examples below, our target release branch is `1.x`.
+1. Checkout the target release branch and pull the latest changes from `upstream`. In the examples below, our target release branch is `2.x`.
 
 ```
-git checkout 1.x
-git pull upstream 1.x
+git checkout 2.x
+git pull upstream 2.x
 ```
 
 2. Create a local branch for the backport. A convenient naming convention is _backport-\[PR-id\]-\[target-release-branch\]_.
