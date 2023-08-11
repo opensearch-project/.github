@@ -44,7 +44,11 @@ If you've thought of a way that OpenSearch could be better, we want to hear abou
 
 ### Documentation Changes
 
-TODO
+There are two types of documentation in OpenSearch: developer documentation, which describes how OpenSearch is designed internally, and user documentation, which describes how to use OpenSearch. 
+
+Developer documentation is maintained in the repository to which it pertains. The workflow for contributing developer documentation is the same as the one for contributing code.
+
+User documentation is maintained in the [documentation-website](https://github.com/opensearch-project/documentation-website/) repo. You can find the rendered documentation at [opensearch.org/docs](https://opensearch.org/docs). To learn how to contribute user documentation, see the [contribution guidelines](https://github.com/opensearch-project/documentation-website/blob/main/CONTRIBUTING.md).
 
 ### Contributing Code
 
