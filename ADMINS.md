@@ -9,23 +9,25 @@
 
 ## Overview
 
-This document explains who the admins are (see below), what they do in opensearch-project, and how they should be doing it. They are added with Admin-level permissions to every repositories in opensearch-project organization. If you're interested in becoming a maintainer, see [MAINTAINERS](MAINTAINERS.md). If you're interested in contributing, see [CONTRIBUTING](CONTRIBUTING.md).
+This document explains who the admins are (see below), what they do in opensearch-project, and how they should be doing it. These individuals are members of an "admin" GitHub team that is given Admin-level permissions to every repository in opensearch-project organization. These are individuals that worked on creating the OpenSearch fork, and those that currently support the organization-wide infrastructure, such as the public [CI/CD](https://build.ci.opensearch.org/).
+
+If you're interested in becoming a maintainer, see [MAINTAINERS](MAINTAINERS.md). If you're interested in contributing, see [CONTRIBUTING](CONTRIBUTING.md).
 
 ## Current Admins
 
-| Admin              | GitHub ID                               | Affiliation |
-| ------------------ | --------------------------------------- | ----------- |
-| Daniel Doubrovkine | [dblock](https://github.com/dblock)     | Amazon      |
-| Nick Knize         | [nknize](https://github.com/nknize)     | Amazon      |
-| Peter Nied         | [peternied](https://github.com/peternied)     | Amazon      |
-| William Beckler    | [wbeckler](https://github.com/wbeckler) | Amazon      |
-| Rishabh Singh      | [rishabh6788](https://github.com/rishabh6788) | Amazon      |
+| Admin              | GitHub ID                                           | Affiliation |
+| ------------------ | --------------------------------------------------- | ----------- |
+| Daniel Doubrovkine | [dblock](https://github.com/dblock)                 | Amazon      |
+| Nick Knize         | [nknize](https://github.com/nknize)                 | Amazon      |
+| Peter Nied         | [peternied](https://github.com/peternied)           | Amazon      |
+| William Beckler    | [wbeckler](https://github.com/wbeckler)             | Amazon      |
+| Rishabh Singh      | [rishabh6788](https://github.com/rishabh6788)       | Amazon      |
 | Prudhvi Godithi    | [prudhvigodithi](https://github.com/prudhvigodithi) | Amazon      |
-| Sayali Gaikawad    | [gaiksaya](https://github.com/gaiksaya) | Amazon      |
+| Sayali Gaikawad    | [gaiksaya](https://github.com/gaiksaya)             | Amazon      |
 | Peter Zhu          | [peterzhuamazon](https://github.com/peterzhuamazon) | Amazon      |
-| Barani bbarani     | [bbarani](https://github.com/bbarani) | Amazon      |
-| Charlotte Henkle   | [CEHENKLE](https://github.com/CEHENKLE) | Amazon      |
-| Zelin Hao          | [zelinh](https://github.com/CEHENKLE) | Amazon      |
+| Barani Bikshandi   | [bbarani](https://github.com/bbarani)               | Amazon      |
+| Charlotte Henkle   | [CEHENKLE](https://github.com/CEHENKLE)             | Amazon      |
+| Zelin Hao          | [zelinh](https://github.com/CEHENKLE)               | Amazon      |
 
 ## Admin Permissions
 
