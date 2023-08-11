@@ -4,7 +4,7 @@
   - [Prioritize Security](#prioritize-security)
   - [Enforce Code of Conduct](#enforce-code-of-conduct)
   - [Add/Remove Maintainers](#addremove-maintainers)
-  - [Adopt Organizational Best Practices](#adopt-organizational-best-practices)
+  - [Adopt Organizational Practices](#adopt-organizational-practices)
 - [New Repos](#new-repos)
 
 ## Overview
@@ -49,9 +49,9 @@ Perform administrative tasks, such as [adding](RESPONSIBILITIES.md#adding-a-new-
 
 Please note that maintainers typically do not have admin-level permissions in their repos in this organization. Admin-level permissions allow for sensitive and destructive actions, such as managing security, or deleting a repository. Therefore, admin access in opensearch-project was designed to be deliberately centralized in ways that requires that two people to make any one sensitive change. If you need to perform an admin function, such as adding or removing a maintainer, please [follow the maintainer nomination process](RESPONSIBILITIES.md#becoming-a-maintainer), then ask to effect permissions by tagging `@admin` in your pull request, or the [#maintainers channel on the public Slack](https://opensearch.slack.com/archives/C05L60S4UBT). One of the above-mentioned admins will make this change for you.
 
-### Adopt Organizational Best Practices
+### Adopt Organizational Practices
 
-Adopt organizational best practices, work in the open, and collaborate with other admins by opening issues before making process changes. Prefer consistency, and avoid diverging from practices in the opensearch-project organization.
+Adopt organizational practices documented in this repo, work in the open, and collaborate with other admins by opening issues before making process changes. Prefer consistency, and avoid diverging from practices in the opensearch-project rganization.
 
 ## New Repos
 
