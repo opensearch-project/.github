@@ -11,7 +11,7 @@
 - [Releasing](#releasing)
   - [Release Process for OpenSearch Bundle Minor Releases and Patch Releases](#Release-Process-for-OpenSearch-Bundle-Minor-Releases-and-Patch-Releases)
     - [Entrance criteria to start release window](#Entrance-criteria-to-start-release-window)
-    - [Exit criteria to close release window \(and make artifacts available\)](#Exit-criteria-to-close-release-window-\(and-make-artifacts-available\))
+    - [Exit criteria to close release window](#Exit-criteria-to-close-release-window))
 - [Security Reviews](#security-reviews)
 - [Backporting](#backporting)
 
@@ -98,7 +98,7 @@ Please note:  This process is for regularly scheduled minor and patch releases. 
 * Release ticket is cut, and there's a forum post announcing the start of the window.
 * [Any necessary security reviews](##Security-Reviews) are complete. 
 
-#### Exit criteria to close release window (and make artifacts available)
+#### Exit criteria to close release window
 * Performance tests are run, results are posted to the release ticket and there no unexpected regressions
 * Documentation has been fully reviewed and signed off by the documentation community.
 * All integration tests are passing
