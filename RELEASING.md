@@ -9,7 +9,10 @@
 - [Tagging](#tagging)
 - [Release Labels](#release-labels)
 - [Releasing](#releasing)
-  - [Security Reviews](#security-reviews)
+  - [Release Process for OpenSearch Bundle Minor Releases and Patch Releases](#Release-Process-for-OpenSearch-Bundle-Minor-Releases-and-Patch-Releases)
+    - [Entrance Criteria to Start Release Window](#Entrance-Criteria-to-Start-Release-Window)
+    - [Exit Criteria to Close Release Window](#Exit-Criteria-to-Close-Release-Window)
+- [Security Reviews](#security-reviews)
 - [Backporting](#backporting)
 
 ## Overview
@@ -68,7 +71,45 @@ Repositories create consistent release labels, such as `v2.9.0`, `v1.0.0`, `v1.1
 
 ## Releasing
 
-See [Releasing OpenSearch](https://github.com/opensearch-project/opensearch-build/blob/main/README.md#releasing-opensearch).
+OpenSearch follows semver, which means we will only release breaking changes in major versions. All minor versions are compatible with every other minor version for that major. For example, 1.2.0 will work with 1.3.2, 1.4.1, etc, but may not work with 2.0.
+
+OpenSearch uses a “release-train” model. For minor version, that train leaves approximately every six weeks we release a new minor version which includes all the new features and fixes that are ready to go. Having a set release schedule makes sure OpenSearch is releasing in a predictable way and prevents a backlog of unreleased changes.
+
+In contrast, OpenSearch releases new major versions only when there are a critical mass of breaking changes (e.g. changes that are incompatible with existing APIs). These tend to be tied to Lucene major version releases, and will be announced in the forums at least 4 weeks prior to the release date.
+
+### Release Process for OpenSearch Bundle Minor Releases and Patch Releases
+
+At the beginning of every year, the project will publish on [OpenSearch.org](https://opensearch.org/releases.html) the “release windows start” dates for the year.  These dates will be spaced out ~6 weeks.
+
+On release window start date:
+1. We generate the first candidate with all plug-ins/components that have met the entrance criteria. If a plug-in/component hasn't met all of the criteria, we'll version bump the last released version and release that.  Once the release window opens and the first candidate is generated, no additioanl features can be added, and we will not delay the start of a release window for any plug-in/component.
+1. During the release window we will do final quality testing, documentation and performance testing.  Bug fixes can be added in during this time, but no new features will be added. 
+1. We will generate a new candidate every day and post on the release issue about the status of the exit criteria.  When all the exit criteria have been met, we'll announce that the candidate is ready and release it 2 days later (unless that falls on Friday, in which case we'll release on Monday)
+1. If we cannot clear the exit criteria within 2 weeks from the start of the window (1 week for patch releases), we will cancel that release window and try again in the next window.
+
+Please note:  This process is for regularly scheduled minor and patch releases.  For "hot" patches (patches required for security or other urgent issues) we will build, test and release as quickly as possible.
+
+#### Entrance Criteria to Start Release Window
+* Documentation draft PRs are up and in tech review for all component changes.
+* Sanity testing is done for all components.
+* Code coverage has not decreased (all new code has tests).
+* Release notes are ready and available for all components.
+* Roadmap is up-to-date (information is available to create release highlights).
+* Release ticket is cut, and there's a forum post announcing the start of the window.
+* [Any necessary security reviews](##Security-Reviews) are complete. 
+
+#### Exit Criteria to Close Release Window
+* Performance tests are run, results are posted to the release ticket and there no unexpected regressions
+* Documentation has been fully reviewed and signed off by the documentation community.
+* All integration tests are passing
+* Release blog is ready
+
+### Release Process for OpenSearch Major Releases
+
+OpenSearch only does major releases when there are significant breaking changes that are ready for release.  Once we become aware of the need for a major version, we will start a major version release window which will be similar to a minor release, except for two things:  Participation is mandatory for all components and the release window will be at least 4 weeks long to accommodate the testing required. 
+
+For the actual steps to build a release, please see [Releasing OpenSearch](https://github.com/opensearch-project/opensearch-build/blob/main/README.md#releasing-opensearch).
+
 
 ### Security Reviews 
 
