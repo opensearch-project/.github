@@ -10,8 +10,8 @@
 - [Release Labels](#release-labels)
 - [Releasing](#releasing)
   - [Release Process for OpenSearch Bundle Minor Releases and Patch Releases](#Release-Process-for-OpenSearch-Bundle-Minor-Releases-and-Patch-Releases)
-    - [Entrance criteria to start release window](#Entrance-criteria-to-start-release-window)
-    - [Exit criteria to close release window](#Exit-criteria-to-close-release-window)
+    - [Entrance Criteria to Start Release Window](#Entrance-Criteria-to-Start-Release-Window)
+    - [Exit Criteria to Close Release Window](#Exit-Criteria-to-Close-Release-Window)
 - [Security Reviews](#security-reviews)
 - [Backporting](#backporting)
 
@@ -89,7 +89,7 @@ On release window start date:
 
 Please note:  This process is for regularly scheduled minor and patch releases.  For "hot" patches (patches required for security or other urgent issues) we will build, test and release as quickly as possible.
 
-#### Entrance criteria to start release window
+#### Entrance Criteria to Start Release Window
 * Documentation draft PRs are up and in tech review for all component changes.
 * Sanity testing is done for all components.
 * Code coverage has not decreased (all new code has tests).
@@ -98,7 +98,7 @@ Please note:  This process is for regularly scheduled minor and patch releases. 
 * Release ticket is cut, and there's a forum post announcing the start of the window.
 * [Any necessary security reviews](##Security-Reviews) are complete. 
 
-#### Exit criteria to close release window
+#### Exit Criteria to Close Release Window
 * Performance tests are run, results are posted to the release ticket and there no unexpected regressions
 * Documentation has been fully reviewed and signed off by the documentation community.
 * All integration tests are passing
