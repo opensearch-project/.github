@@ -129,7 +129,7 @@ Please see [opensearch-project/.github#81](https://github.com/opensearch-project
 
 ## Backporting
 
-This project follows [semantic versioning](https://semver.org/spec/v2.0.0.html). Backwards-incompatible changes always result in a new major version and will __never__ be backported. Small improvements and features will be backported to a new minor version (e.g. `2.9.0`). Security fixes will be backported to a new patch version (e.g. `2.9.1`).
+This project follows [semantic versioning](https://semver.org/spec/v2.0.0.html). Backwards-incompatible changes always result in a new major version and will __never__ be backported. Small improvements and features will be backported to a new minor version (e.g. `2.9.0`). Security fixes and backward compatible bug fixes will be backported to a new patch version (e.g. `2.9.1`).
 
 Here are the commands we typically run to backport changes to release branches:
 
