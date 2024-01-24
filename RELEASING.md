@@ -110,6 +110,16 @@ OpenSearch only does major releases when there are significant breaking changes 
 
 For the actual steps to build a release, please see [Releasing OpenSearch](https://github.com/opensearch-project/opensearch-build/blob/main/README.md#releasing-opensearch).
 
+### Release Process for Changing Release Date
+
+In the OpenSearch project, we strive for consistent and predictable release schedule as multiple organizations and users depend on the software for their own projects and businesses.
+However, sometimes a release date needs to move to accommodate engineering delays in critical components that affect the key properties of the software such as 
+performance, reliability, availability, or security. In order to move a release date, we will ensure:
+
+* There is a publicly documented justification for moving the release date.
+* The justification is circulated 2 weeks or more prior to the original release date.
+* The organization coordinating the release is in favor of moving the release date.
+* A majority of the leadership committee agree by vote to move the release date.
 
 ### Security Reviews 
 
