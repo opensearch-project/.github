@@ -19,10 +19,8 @@ The OpenSearch Security Team will address reported issues on a best effort basis
 | Security Team member     | GitHub Alias                                  | Affiliation |
 | ------------------------ | --------------------------------------------- | ----------- |
 | Dave Lago                | [davidlago](https://github.com/davidlago)     | Amazon      |
-| Charlotte Henkle         | [CEHENKLE](https://github.com/CEHENKLE)       | Amazon      |
 | Daniel (dB.) Doubrovkine | [dblock](https://github.com/dblock)           | Amazon      |
 | Anirudha (Ani) Jadhav    | [anirudha](https://github.com/anirudha)       | Amazon      |
-| Sean Neumann             | [seanneumann](https://github.com/seanneumann) | Amazon      |
 | Anan Zhuang              | [ananzh](https://github.com/ananzh)           | Amazon      |
 | Eli Fisher               | [elfisher](https://github.com/elfisher)       | Amazon      |
 
