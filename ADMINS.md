@@ -26,7 +26,6 @@ If you're interested in becoming a maintainer, see [MAINTAINERS](MAINTAINERS.md)
 | Sayali Gaikawad    | [gaiksaya](https://github.com/gaiksaya)             | Amazon      |
 | Peter Zhu          | [peterzhuamazon](https://github.com/peterzhuamazon) | Amazon      |
 | Barani Bikshandi   | [bbarani](https://github.com/bbarani)               | Amazon      |
-| Charlotte Henkle   | [CEHENKLE](https://github.com/CEHENKLE)             | Amazon      |
 | Zelin Hao          | [zelinh](https://github.com/CEHENKLE)               | Amazon      |
 
 ## Admin Permissions
