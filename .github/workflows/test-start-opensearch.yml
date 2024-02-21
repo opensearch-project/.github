@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - uses: ./ # Use the action
+    - uses: ../actions/start-opensearch
       with:
         opensearch-version: 3.0.0
         security-enabled: false
@@ -38,7 +38,7 @@ jobs:
         url: https://aws.oss.sonatype.org/service/local/artifact/maven/redirect?r=snapshots&g=org.opensearch.plugin&a=opensearch-security&v=3.0.0.0-SNAPSHOT&p=zip
         filename: security.zip
 
-    - uses: ./ # Use the action
+    - uses: ../actions/start-opensearch
       with:
         opensearch-version: 3.0.0
         security-enabled: true
