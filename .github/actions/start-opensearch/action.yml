@@ -1,0 +1,171 @@
+name: 'Launch OpenSearch with or without plugins'
+description: 'Downloads latest build of OpenSearch, optionally installs plugins, and then starts OpenSearch on localhost:9200'
+
+inputs:
+  opensearch-version:
+    description: 'The version of OpenSearch that should be used, e.g "3.0.0"'
+    required: true
+
+  plugins:
+    description: 'A comma separated list of plugins to install. Leave empty to not install any. Each entry should be a full path prefixed with `file: `, for example: `file:$(pwd)/my-plugin.zip`'
+    required: false
+
+  security-enabled:
+    description: 'Whether security is enabled'
+    required: true
+
+  admin-password:
+    description: 'The admin password uses for the cluster'
+    required: false
+
+  security_config_file:
+    description: 'Path to a security config file to replace the default. Leave empty if security is not enabled or using the default config'
+    required: false
+
+runs:
+  using: "composite"
+  steps:
+
+    # Configure longpath names if on Windows
+    - name: Enable Longpaths if on Windows
+      if: ${{ runner.os == 'Windows' }}
+      run: git config --system core.longpaths true
+      shell: pwsh
+
+    - name: Set up JDK
+      uses: actions/setup-java@v1
+      with:
+        java-version: 11
+
+    # Download OpenSearch
+    - name: Download OpenSearch for Windows
+      uses: peternied/download-file@v2
+      if: ${{ runner.os == 'Windows' }}
+      with:
+        url: https://artifacts.opensearch.org/snapshots/core/opensearch/${{ inputs.opensearch-version }}-SNAPSHOT/opensearch-min-${{ inputs.opensearch-version }}-SNAPSHOT-windows-x64-latest.zip
+
+
+    - name: Download OpenSearch for Linux
+      uses: peternied/download-file@v2
+      if: ${{ runner.os == 'Linux' }}
+      with:
+        url: https://artifacts.opensearch.org/snapshots/core/opensearch/${{ inputs.opensearch-version }}-SNAPSHOT/opensearch-min-${{ inputs.opensearch-version }}-SNAPSHOT-linux-x64-latest.tar.gz
+
+    # Extract downloaded zip
+    - name: Extract downloaded tar
+      if: ${{ runner.os == 'Linux' }}
+      run: |
+        tar -xzf opensearch-*.tar.gz
+        rm -f opensearch-*.tar.gz
+      shell: bash
+
+    - name: Extract downloaded zip
+      if: ${{ runner.os == 'Windows' }}
+      run: |
+        tar -xzf opensearch-min-${{ inputs.opensearch-version }}-SNAPSHOT-windows-x64-latest.zip
+        del opensearch-min-${{ inputs.opensearch-version }}-SNAPSHOT-windows-x64-latest.zip
+      shell: pwsh
+
+    - name: Install plugin(s) into OpenSearch for Linux
+      if: ${{ runner.os == 'Linux'}}
+      run: |
+        chmod +x ./opensearch-${{ inputs.opensearch-version }}-SNAPSHOT/bin/opensearch-plugin
+        plugins="${{ inputs.plugins }}"
+        if [ -n "$plugins" ]; then
+          echo "$plugins" | tr ',' '\n' | while read -r plugin; do
+            /bin/bash -c "yes | ./opensearch-${{ inputs.opensearch-version }}-SNAPSHOT/bin/opensearch-plugin install ${plugin}"
+          done
+        fi
+      shell: bash
+
+    - name: Install plugin(s) into OpenSearch for Windows
+      if: ${{ runner.os == 'Windows' && inputs.plugins != '' }}
+      run: |
+        $pluginNames = "${{ inputs.plugins }}" -split ','
+        if ($pluginNames.Length -gt 0) {
+          foreach ($plugin in $pluginNames) {
+            'y' | .\opensearch-${{ inputs.opensearch-version }}-SNAPSHOT\bin\opensearch-plugin.bat install ${plugin}
+          }
+        }
+      shell: pwsh
+
+    - name: Replace security configuration file if applicable
+      if: ${{ inputs.security_config_file != '' }}
+      run: |
+          mv ${{ inputs.security_config_file }} ./opensearch-${{ inputs.opensearch-version }}-SNAPSHOT/config/opensearch-security/config.yml
+      shell: bash
+
+    # Setup security if it's enabled
+    - name: Setup security demo configuration
+      if: ${{ runner.os == 'Linux' && inputs.security-enabled == 'true' }}
+      run: |
+        echo "running linux security demo configuration setup"
+        export OPENSEARCH_INITIAL_ADMIN_PASSWORD=${{ inputs.admin-password }}
+        chmod +x  ./opensearch-${{ inputs.opensearch-version }}-SNAPSHOT/plugins/opensearch-security/tools/install_demo_configuration.sh
+        /bin/bash -c "yes | ./opensearch-${{ inputs.opensearch-version }}-SNAPSHOT/plugins/opensearch-security/tools/install_demo_configuration.sh -t"
+        echo "plugins.security.unsupported.restapi.allow_securityconfig_modification: true" >> ./opensearch-${{ inputs.opensearch-version }}-SNAPSHOT/config/opensearch.yml
+      shell: bash
+
+    - name: Setup security demo configuration for Windows
+      if: ${{ runner.os == 'Windows' && inputs.security-enabled == 'true' }}
+      run: |
+        echo "running windows security demo configuration setup"
+        export OPENSEARCH_INITIAL_ADMIN_PASSWORD=${{ inputs.admin-password }}
+        chmod +x  ./opensearch-${{ inputs.opensearch-version }}-SNAPSHOT/plugins/opensearch-security/tools/install_demo_configuration.bat
+        /bin/bash -c "yes | ./opensearch-${{ inputs.opensearch-version }}-SNAPSHOT/plugins/opensearch-security/tools/install_demo_configuration.bat -t"
+        echo "plugins.security.unsupported.restapi.allow_securityconfig_modification: true" >> ./opensearch-${{ inputs.opensearch-version }}-SNAPSHOT/config/opensearch.yml
+      shell: bash
+
+    - name: Use more space
+      run: |
+        echo '' >> ./opensearch-${{ inputs.opensearch-version }}-SNAPSHOT/config/opensearch.yml
+        echo "cluster.routing.allocation.disk.threshold_enabled: false" >> ./opensearch-${{ inputs.opensearch-version }}-SNAPSHOT/config/opensearch.yml
+      shell: bash
+
+    # Run OpenSearch
+    - name: Run OpenSearch with plugin on Linux
+      if: ${{ runner.os == 'Linux'}}
+      run: /bin/bash -c "./opensearch-${{ inputs.opensearch-version }}-SNAPSHOT/bin/opensearch &"
+      shell: bash
+
+    - name: Run OpenSearch with plugin on Windows
+      if: ${{ runner.os == 'Windows'}}
+      run: start .\opensearch-${{ inputs.opensearch-version }}-SNAPSHOT\bin\opensearch.bat
+      shell: pwsh
+
+    # Give the OpenSearch process some time to boot up before sending any requires, might need to increase the default time!
+    - name: Sleep while OpenSearch starts
+      uses: peternied/action-sleep@v1
+      with:
+        seconds: 30
+
+     # Verify that the server is operational
+    - name: Check OpenSearch Running on Linux
+      if: ${{ runner.os != 'Windows'}}
+      run: |
+        if [ "${{ inputs.security-enabled }}" == "true" ]; then
+          curl https://localhost:9200/_cat/plugins -u 'admin:${{ inputs.admin-password }}' -k -v --fail-with-body
+        else
+          curl http://localhost:9200/_cat/plugins -v
+        fi
+      shell: bash
+
+    - name: Check OpenSearch Running on Windows
+      if: ${{ runner.os == 'Windows'}}
+      run: |
+        if ("${{ inputs.security-enabled }}" -eq "true") {
+          $credentialBytes = [Text.Encoding]::ASCII.GetBytes("admin:${{ inputs.admin-password }}")
+          $encodedCredentials = [Convert]::ToBase64String($credentialBytes)
+          $baseCredentials = "Basic $encodedCredentials"
+          $Headers = @{ Authorization = $baseCredentials }
+          $url = 'https://localhost:9200/_cat/plugins'
+        } else {
+          $Headers = @{ }
+          $url = 'http://localhost:9200/_cat/plugins'
+        }
+        Invoke-WebRequest -SkipCertificateCheck -Uri $url -Headers $Headers;
+      shell: pwsh
+
+    - if: always()
+      run: cat ./opensearch-${{ inputs.opensearch-version }}-SNAPSHOT/logs/opensearch.log
+      shell: bash

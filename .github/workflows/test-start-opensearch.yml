@@ -1,0 +1,50 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test-no-plugins:
+    strategy:
+      fail-fast: false
+      matrix:
+        platform: [windows-latest, ubuntu-latest]
+    runs-on: ${{ matrix.platform }}
+    steps:
+    - uses: actions/checkout@v4
+
+    - uses: ./ # Use the action
+      with:
+        opensearch-version: 3.0.0
+        security-enabled: false
+
+    - name: Checks that OpenSearch is healthy
+      run: curl http://localhost:9200/_cat/plugins -v
+      shell: bash
+
+  test-with-security:
+    strategy:
+      fail-fast: false
+      matrix:
+        platform: [windows-latest, ubuntu-latest]
+    runs-on: ${{ matrix.platform }}
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Download security plugin
+      uses: suisei-cn/actions-download-file@v1.4.0
+      with:
+        url: https://aws.oss.sonatype.org/service/local/artifact/maven/redirect?r=snapshots&g=org.opensearch.plugin&a=opensearch-security&v=3.0.0.0-SNAPSHOT&p=zip
+        filename: security.zip
+
+    - uses: ./ # Use the action
+      with:
+        opensearch-version: 3.0.0
+        security-enabled: true
+        plugins: "file:${{ github.workspace }}/security.zip"
+        admin-password: "myStrongPassword123!"
+
+    - name: Checks that OpenSearch is healthy
+      run: curl https://localhost:9200/_cat/plugins -u 'admin:myStrongPassword123!' -k -v
+      shell: bash
