@@ -19,8 +19,6 @@ If you're interested in becoming a maintainer, see [MAINTAINERS](MAINTAINERS.md)
 | ------------------ | --------------------------------------------------- | ----------- |
 | Daniel Doubrovkine | [dblock](https://github.com/dblock)                 | Amazon      |
 | Nick Knize         | [nknize](https://github.com/nknize)                 | Amazon      |
-| Peter Nied         | [peternied](https://github.com/peternied)           | Amazon      |
-| William Beckler    | [wbeckler](https://github.com/wbeckler)             | Amazon      |
 | Rishabh Singh      | [rishabh6788](https://github.com/rishabh6788)       | Amazon      |
 | Prudhvi Godithi    | [prudhvigodithi](https://github.com/prudhvigodithi) | Amazon      |
 | Sayali Gaikawad    | [gaiksaya](https://github.com/gaiksaya)             | Amazon      |
