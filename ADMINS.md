@@ -18,7 +18,6 @@ If you're interested in becoming a maintainer, see [MAINTAINERS](MAINTAINERS.md)
 | Admin              | GitHub ID                                           | Affiliation |
 | ------------------ | --------------------------------------------------- | ----------- |
 | Daniel Doubrovkine | [dblock](https://github.com/dblock)                 | Amazon      |
-| Nick Knize         | [nknize](https://github.com/nknize)                 | Amazon      |
 | Rishabh Singh      | [rishabh6788](https://github.com/rishabh6788)       | Amazon      |
 | Prudhvi Godithi    | [prudhvigodithi](https://github.com/prudhvigodithi) | Amazon      |
 | Sayali Gaikawad    | [gaiksaya](https://github.com/gaiksaya)             | Amazon      |
