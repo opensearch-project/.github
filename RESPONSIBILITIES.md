@@ -56,6 +56,17 @@ It's our responsibility to ensure the content and code in pull requests are corr
 - If a pull request is valuable but isn't gaining traction, consider reaching out to fulfill the necessary requirements. This way, the pull request can be merged, even if the work is done by several individuals.
 - Lastly, strive for progress, not perfection.
 
+### Merging a Pull Request 
+
+It is important that commit messages are helpful in understanding the reasons for a given commit and maintain good commit hygiene by only keeping the relevant information. 
+
+When a PR is going to be merged, our repositories are set to automatically squash the commits into a single commit. This process needs human intervention to produce high quality commit messages, with the following steps to be followed as much as possible:
+
+- The commit subject is clean and conveys what is being merged.
+- The commit body should include the details (if any) about the commit, typically inline with the PR description.
+- The commit body should include the 'Signed-Off-By:*' for all committers involved in the change.
+- There need to be a matching 'Signed-Off-By:' line for the `This commit will be authored by *` email address otherwise backport DCO checks will fail.
+
 ### Triage Open Issues
 
 Manage labels, review issues regularly, and triage by labelling them.
