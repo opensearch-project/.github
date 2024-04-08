@@ -4,6 +4,7 @@
   - [Uphold Code of Conduct](#uphold-code-of-conduct)
   - [Prioritize Security](#prioritize-security)
   - [Review Pull Requests](#review-pull-requests)
+  - [Merging a Pull Request](#merging-a-pull-request) 
   - [Triage Open Issues](#triage-open-issues)
     - [Automatically Label Issues](#automatically-label-issues)
   - [Be Responsive](#be-responsive)
@@ -60,9 +61,9 @@ It's our responsibility to ensure the content and code in pull requests are corr
 
 It is important that commit messages are helpful in understanding the reasons for a given commit and maintain good commit hygiene by only keeping the relevant information. 
 
-When a PR is going to be merged, our repositories are set to automatically squash the commits into a single commit. This process needs human intervention to produce high quality commit messages, with the following steps to be followed as much as possible:
+Most repositories in [opensearch-project](https://github.com/opensearch-project) are configured to require commits to be squashed into a single commit when merging pull requests. This process needs human intervention to produce high quality commit messages. When merging pull requests, edit merge messages by following these steps as much as possible:
 
-- The commit subject is clean and conveys what is being merged.
+- The commit subject should be concise and clearly convey what is being merged.
 - The commit body should include the details (if any) about the commit, typically inline with the PR description.
 - The commit body should include the 'Signed-Off-By:*' for all committers involved in the change.
 - There need to be a matching 'Signed-Off-By:' line for the `This commit will be authored by *` email address otherwise backport DCO checks will fail.
