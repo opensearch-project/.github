@@ -61,7 +61,7 @@ It's our responsibility to ensure the content and code in pull requests are corr
 
 It is important that commit messages are helpful in understanding the reasons for a given commit and maintain good commit hygiene by only keeping the relevant information. 
 
-Most repositories in [opensearch-project](https://github.com/opensearch-project) are configured to require commits to be squashed into a single commit when merging pull requests. This process needs human intervention to produce high quality commit messages. When merging pull requests, edit merge messages by following these steps as much as possible:
+Most repositories in [opensearch-project](https://github.com/opensearch-project) are configured to require commits to be squashed into a single commit when merging pull requests. If the pull request contains multiple commits then messages from all commits will be appended into a single message, which usually requires editing to produce a high quality commit message. When merging pull requests, edit commit messages by following these steps as much as possible:
 
 - The commit subject should be concise and clearly convey what is being merged.
 - The commit body should include the details (if any) about the commit, typically inline with the PR description.
