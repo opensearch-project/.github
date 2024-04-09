@@ -65,7 +65,7 @@ Most repositories in [opensearch-project](https://github.com/opensearch-project)
 
 - The commit subject should be concise and clearly convey what is being merged.
 - The commit body should include the details (if any) about the commit, typically inline with the PR description.
-- The commit body should include the 'Signed-off-by:*' for all committers involved in the change and thereby indicating that they agree to the [DCO](https://github.com/opensearch-project/.github/blob/main/CONTRIBUTING.md#developer-certificate-of-origin).
+- The commit body should include the 'Signed-off-by:*' for all committers involved in the change and thereby indicating that the contributors agree to the [DCO](https://github.com/opensearch-project/.github/blob/main/CONTRIBUTING.md#developer-certificate-of-origin).
 - There need to be a matching 'Signed-Off-By:' line for the `This commit will be authored by *` email address otherwise backport DCO checks will fail.
 
 ### Triage Open Issues
