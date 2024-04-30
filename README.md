@@ -21,7 +21,7 @@
 * [Contributing to OpenSearch](CONTRIBUTING.md)
 * [Onboarding Guide](ONBOARDING.md)
 * [Maintainer Responsibilities](RESPONSIBILITIES.md)
-* [Feature Proposal Process](NEW_FEATURE_PROPOSAL.md)
+* [Feature Proposal Process](FEATURES.md)
 * [Release Management](RELEASING.md)
 * [Organization Admins](ADMINS.md)
 * [Repo Maintainers](MAINTAINERS.md)

@@ -1,30 +1,5 @@
-# Streamlining the feature proposal process for OpenSearch
 
-## Introduction:
-
-OpenSearch is a fast-growing community-contributed project and currently has around 600+ contributors contributing to 110+ public GitHub repositories on a day to day basis. Open source contributions can take various forms, such as: Code contributions: writing, modifying, or optimizing source code to add new features, fix bugs, or improve performance.
-
-This document will focus on streamlining the feature proposal process for OpenSearch. Currently the contributors who are interested in developing a feature create a GitHub proposal on the respective repository and submit it for community review. The maintainers of the repo reviews the proposal along with the community in a public forum and provide their inputs as needed.
-
-Even though OpenSearch has a standardized GitHub proposal [template](https://github.com/opensearch-project/.github/blob/main/.github/ISSUE_TEMPLATE/PROPOSAL_TEMPLATE.md), it doesn’t always suit the needs of the requester hence the feature requester tends to create a proposal that adheres to their needs. The proposal is also used as a placeholder for capturing discussions, reviewing design, tracking the tasks spanning across multiple versions, discussing open questions thereby creating ambiguity on the finalized scope of the tasks associated with a feature pertaining to specific release.
-
-## Goal:
-
-The goal of this document is to establish a seamless process for submitting a feature proposal that underlies the OpenSearch project’s commitment to the following principles of development:
-- Open source like we mean it
-- A level playing field
-- Made with your input
-- Open to contribution
-
-When successful, this new process will provide:
-- Simplicity in suggesting and adding features
-- Assurances to contributors that their contributions will be evaluated
-- A trackable format that can be centralized for at-a-glance, project-wide proposals
-- Clear ability to track a feature at release version granularity
-- Open communication and discussion on upcoming features
-- Clear workflows for maintainers
-
-## Feature proposal process:
+# Feature proposal process:
 
 The feature proposal is an issue filed on a repo in OpenSearch which outlines the statement of the problem (technical design is not needed).The issue doesn’t have to contain implementation or design details but it's recommended to include ideas of possible fixes. The primary goal is to brainstorm the solutions along with the community beginning from this feature proposal phase. The issue is tagged “[feature-proposal]” and each repo should have their own template or a fallback on a standard feature proposal template. The maintainers will triage the feature proposal and ask follow-up questions as needed. The maintainer’s job is to determine if the proposal meets the end-result criteria:
 - is a feature,
@@ -41,7 +16,7 @@ From this point, the maintainers will engage you on the feature proposal in the 
 
 The criteria to continue with a feature proposal are as follows:
 
-- ___Is the proposal describing a feature?__
+- __Is the proposal describing a feature?__
  The feature proposal isn’t meant for bug fixes, refactoring, or refinement to existing features. Sometimes this line can be fuzzy so the maintainers will help clarify.
 - __Does this feature fit in the scope of the repo and project?__
 Some things might be good ideas but they might not fit either with the project as a whole in the specific repo in which the issue was posted. In the latter case, the maintainers will help you determine the right home and transfer the issue.
