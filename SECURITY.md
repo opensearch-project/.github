@@ -18,7 +18,7 @@ The OpenSearch Security Team will address reported issues on a best effort basis
 
 | Security Team member     | GitHub Alias                                  | Affiliation |
 | ------------------------ | --------------------------------------------- | ----------- |
-| Dave Lago                | [davidlago](https://github.com/davidlago)     | Amazon      |
+| Kunal Khatua             | [kkhatua](https://github.com/kkhatua)         | Amazon      |
 | Daniel (dB.) Doubrovkine | [dblock](https://github.com/dblock)           | Amazon      |
 | Anirudha (Ani) Jadhav    | [anirudha](https://github.com/anirudha)       | Amazon      |
 | Anan Zhuang              | [ananzh](https://github.com/ananzh)           | Amazon      |
