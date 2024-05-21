@@ -4,7 +4,7 @@
 
 Security issues happen as part of the normal lifecycle of software development of OpenSearch. This document describes the process for reporting these issues, responding to these issues, and ensuring we treat them not only with the appropriate priority but also with respect for the discoverers, software providers and their users, and the OpenSearch community in general.
 
-If you discover a potential security issue in this project we ask that you notify the OpenSearch Security Team via email to opensearch-security@amazon.com. Please do **not** create a public GitHub issue.
+If you discover a potential security issue in this project we ask that you notify the OpenSearch Security Team via email to security@opensearch.org. Please do **not** create a public GitHub issue.
 
 *Giving credit where credit is due, this policy is heavily influenced by the [Xen Project’s security response process](https://xenproject.org/developers/security-policy/), that was put to the test during the [embargo period for XSA-108 back in 2014](https://xenproject.org/2014/10/22/xen-project-security-policy-improvements-get-involved/) and improved its clarity around managing the pre-disclosure list and the deployment of fixes during embargo. We are standing on the shoulders of these battle-tested giants.*
 
@@ -28,7 +28,7 @@ The OpenSearch Security Team will address reported issues on a best effort basis
 
 Anyone finding an issue that is already publicly disclosed (for example, a CVE in one of the project’s dependencies) should feel free to create an issue and discuss openly on GitHub. The process below is only intended for issues that have not been publicly disclosed yet.
 
-1. We request that instead of opening a GitHub issue, it is reported via email at opensearch-security@amazon.com. Please include a description of the issue, and any other information that could help in the reproduction and creation of a fix (version numbers, configuration values, reproduction steps...)
+1. We request that instead of opening a GitHub issue, it is reported via email at security@opensearch.org. Please include a description of the issue, and any other information that could help in the reproduction and creation of a fix (version numbers, configuration values, reproduction steps...)
 2. The OpenSearch Security Team will negotiate the conditions for an embargo period and a disclosure timeline with the discoverer (see [Embargo schedule](#embargo-schedule)).
 3. After the vulnerability is confirmed, if no CVE number is already reserved, the OpenSearch Security Team will reserve one, and communicate it to the discoverer and all parties in the pre-disclosure list (see [Pre-disclosure list](#pre-disclosure-list)).
 4. As soon as our advisory is available, we will send it, including patches, to members of the pre-disclosure list. In the event that we do not have a patch available 2 working weeks before the disclosure date, we aim to send an advisory that reflects the current state of knowledge to the pre-disclosure list. An updated advisory will be published as soon as available. At this stage, the advisory will be clearly marked with the embargo date.
