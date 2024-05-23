@@ -76,6 +76,8 @@ All repositories in this organization have a standard set of labels, including `
 
 Use labels to target an issue or a PR for a given release, add `help wanted` to good issues for new community members, and `blocker` for issues that scare you or need immediate attention. Request for more information from a submitter if an issue is not clear. Create new labels as needed by the project.
 
+See [TRIAGING](TRIAGING.md) for more information on how to attend triage meetings.
+
 #### Automatically Label Issues
 
 There are many tools available in GitHub for controlling labels on issues and pull requests.  Use standard issue templates in the [./.github/ISSUE_TEMPLATE](./.github/ISSUE_TEMPLATE) directory to apply appropriate labels such as `bug` and `untriaged`.  Repositories can choose to use GitHub actions such as [add-untriaged.yml](./.github/workflows/add-untriaged.yml) to apply labels automatically.
