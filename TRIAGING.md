@@ -22,7 +22,7 @@ During each meeting we seek to address all new issues. However, should we run ou
 
 Meetings are hosted regularly and can be joined via the links posted on the [OpenSearch Meetup Group](https://www.meetup.com/opensearch/events/) list of events. The events are typically titled `Development Backlog & Triage Meeting`.
 
-After joining the Zoom meeting, you can enable your video/voice to join the discussion. If you do not have a webcam or microphone available, you can still join in via the text chat.
+After joining the virtual meeting, you can enable your video/voice to join the discussion. If you do not have a webcam or microphone available, you can still join in via the text chat.
 
 If you have an issue you'd like to bring forth please consider getting a link to the issue so it can be presented to everyone in the meeting.
 
@@ -58,3 +58,7 @@ No. Due to the sensitive nature of security vulnerabilities, please report all p
 ### Who should I contact if I have further questions?
 
 We recommend using the [forum](https://forum.opensearch.org/) or [public Slack](https://opensearch.org/slack.html).
+
+### Code of Conduct
+
+All hosts and participants involved in Triage are expected to follow the [OpenSearch Project Code of Conduct](CODE_OF_CONDUCT.md).
