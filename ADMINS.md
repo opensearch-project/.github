@@ -16,13 +16,12 @@ If you're interested in becoming a maintainer, see [MAINTAINERS](MAINTAINERS.md)
 ## Current Admins
 
 | Admin              | GitHub ID                                           | Affiliation |
-| ------------------ | --------------------------------------------------- | ----------- |
+|--------------------| --------------------------------------------------- | ----------- |
 | Daniel Doubrovkine | [dblock](https://github.com/dblock)                 | Amazon      |
 | Rishabh Singh      | [rishabh6788](https://github.com/rishabh6788)       | Amazon      |
 | Prudhvi Godithi    | [prudhvigodithi](https://github.com/prudhvigodithi) | Amazon      |
 | Sayali Gaikawad    | [gaiksaya](https://github.com/gaiksaya)             | Amazon      |
 | Peter Zhu          | [peterzhuamazon](https://github.com/peterzhuamazon) | Amazon      |
-| Barani Bikshandi   | [bbarani](https://github.com/bbarani)               | Amazon      |
 | Zelin Hao          | [zelinh](https://github.com/CEHENKLE)               | Amazon      |
 
 ## Admin Permissions
