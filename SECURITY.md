@@ -73,7 +73,7 @@ Pre-disclosure list members are allowed to share fixes to embargoed issues, anal
 
 ## Pre-disclosure list application process
 
-Organizations who meet the criteria above (i.e. significant work needed post-disclosure to remediate the issue and/or ability to help create or test the potential fixes) should contact the OpenSearch Security Team via email at opensearch-security@amazon.com if they wish to be added to the pre-disclosure list. In the email, you must include:
+Organizations who meet the criteria above (i.e. significant work needed post-disclosure to remediate the issue and/or ability to help create or test the potential fixes) should contact the OpenSearch Security Team via email at security@opensearch.org if they wish to be added to the pre-disclosure list. In the email, you must include:
 
 * The name of your organization
 * How you’re using OpenSearch
