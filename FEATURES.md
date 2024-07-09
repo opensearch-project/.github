@@ -1,10 +1,10 @@
 
-- [Feature Proposals](#feature-proposals)
+- [Feature proposals](#feature-proposals)
   - [Creating meta-issue(s)](#creating-meta-issues)
   - [Writing the code](#writing-the-code)
   - [High level flow](#high-level-flow)
 
-# Feature Proposals
+# Feature proposals
 
 A feature proposal is an issue filed on a repo in OpenSearch which outlines the statement of the problem, technical design is not needed. The issue doesn’t have to contain implementation or design details but it's recommended to include ideas of possible fixes. The primary goal is to brainstorm the solutions along with the community beginning from this feature proposal phase. The issue is tagged “[feature-proposal]” and each repo should have their own template or a fallback on a standard feature proposal template. The maintainers will triage the feature proposal and ask follow-up questions as needed. The maintainer’s job is to determine if the proposal meets the end-result criteria:
 - is a feature,
@@ -52,11 +52,11 @@ The goal for this process is to have a single point of entry for all comers want
 |------|--------|-----|---------|
 |1     | New proposal issue | Contributor / Feature Proposal Owner | Add label: [Enhancement] |
 |2     | Conversation on issue |Maintainer, Contributor, Community| ✅ Feature? ✅ Scope? ✅ Distinct? ✅ Conflict? ✅ Atomic? |
-|3     | Create new meta-issue(s) and link the sub-tasks involved in delivering this feature | Maintainer, Contributor, Feature proposal owner | ✅ The proposal issue and design PR are linked to the parent meta / child meta-issue., ✅ Child meta-issue that tracks all corresponding to targeted OpenSearch release version is created, ✅ The child meta-issue and the corresponding tasks are labelled with targeted OpenSearch version |
+|3     | Create new meta-issue(s) and link the sub-tasks involved in delivering this feature | Maintainer, Contributor, Feature Proposal Owner | ✅ The proposal issue and design PR are linked to the parent meta / child meta-issue., ✅ Child meta-issue that tracks all corresponding to targeted OpenSearch release version is created, ✅ The child meta-issue and the corresponding tasks are labelled with targeted OpenSearch version |
 |4     | Add meta-issue(s) card specific to a release version to public roadmap | Maintainer | ✅ Add child meta-issue card to estimated release version |
-|5    | Pull request of feature code | Maintainer, Contributor, Feature proposal owner | ✅ Update the GitHub issues associated with a meta-issue on regular basis ✅ Move the issues to respective release as needed when working through the issues |
-|6    | Code review of feature code | Maintainer, Contributor, Feature proposal owner, Community
+|5    | Pull request of feature code | Maintainer, Contributor, Feature Proposal Owner | ✅ Update the GitHub issues associated with a meta-issue on regular basis ✅ Move the issues to respective release as needed when working through the issues |
+|6    | Code review of feature code | Maintainer, Contributor, Feature Proposal Owner, Community
 |7    | Approval of code, Maintainer | ✅ Work with the maintainer to get the approval to merge the code |
 |8    | Merging of feature code | Maintainer | ✅ Maintainer will merge the code and add appropriate backport labels |
-|9    | Repeat step 4 to 7 |  Maintainer, Contributor, Feature proposal owner, Community | ✅ Repeat the steps until all meta-issues / Child meta-issues are closed |
+|9    | Repeat step 4 to 7 |  Maintainer, Contributor, Feature Proposal Owner, Community | ✅ Repeat the steps until all meta-issues / Child meta-issues are closed |
 |10    | Close the proposal issue | Maintainer | ✅ Close the proposal once all the meta-issues are closed |
