@@ -4,6 +4,7 @@
   - [Uphold Code of Conduct](#uphold-code-of-conduct)
   - [Prioritize Security](#prioritize-security)
   - [Review Pull Requests](#review-pull-requests)
+  - [Merging a Pull Request](#merging-a-pull-request) 
   - [Triage Open Issues](#triage-open-issues)
     - [Automatically Label Issues](#automatically-label-issues)
   - [Be Responsive](#be-responsive)
@@ -56,6 +57,17 @@ It's our responsibility to ensure the content and code in pull requests are corr
 - If a pull request is valuable but isn't gaining traction, consider reaching out to fulfill the necessary requirements. This way, the pull request can be merged, even if the work is done by several individuals.
 - Lastly, strive for progress, not perfection.
 
+### Merging a Pull Request 
+
+It is important that commit messages are helpful in understanding the reasons for a given commit and maintain good commit hygiene by only keeping the relevant information. 
+
+Most repositories in [opensearch-project](https://github.com/opensearch-project) are configured to require commits to be squashed into a single commit when merging pull requests. If the pull request contains multiple commits then messages from all commits will be appended into a single message, which usually requires editing to produce a high quality commit message. When merging pull requests, edit commit messages by following these steps as much as possible:
+
+- The commit subject should be concise (ideally within 50 characters) and clearly convey what is being merged.
+- The commit body should include the details (if any, and possibly within 72 characters) about the commit, typically inline with the PR description.
+- The commit body should include the 'Signed-off-by:*' for all committers involved in the change and thereby indicating that all code contributors agree to the [DCO](https://github.com/opensearch-project/.github/blob/main/CONTRIBUTING.md#developer-certificate-of-origin).
+- There need to be a matching 'Signed-Off-By:' line for the `This commit will be authored by *` email address otherwise backport DCO checks will fail.
+
 ### Triage Open Issues
 
 Manage labels, review issues regularly, and triage by labelling them.
@@ -63,6 +75,8 @@ Manage labels, review issues regularly, and triage by labelling them.
 All repositories in this organization have a standard set of labels, including `bug`, `documentation`, `duplicate`, `enhancement`, `good first issue`, `help wanted`, `blocker`, `invalid`, `question`, `wontfix`, and `untriaged`, along with release labels, such as `v1.0.0`, `v1.1.0`, `v2.0.0`, `patch`, and `backport`.
 
 Use labels to target an issue or a PR for a given release, add `help wanted` to good issues for new community members, and `blocker` for issues that scare you or need immediate attention. Request for more information from a submitter if an issue is not clear. Create new labels as needed by the project.
+
+See [TRIAGING](TRIAGING.md) for more information on how to attend triage meetings.
 
 #### Automatically Label Issues
 

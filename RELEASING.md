@@ -123,7 +123,7 @@ performance, reliability, availability, or security. In order to move a release 
 
 ### Security Reviews 
 
-If you discover a potential security issue in this project we ask that you notify the OpenSearch Security Team by email at opensearch-security@amazon.com. Please do not create a public GitHub issue. See [SECURITY.md](SECURITY.md) for more information on the security response process.
+If you discover a potential security issue in this project we ask that you notify the OpenSearch Security Team by email at security@opensearch.org. Please do not create a public GitHub issue. See [SECURITY.md](SECURITY.md) for more information on the security response process.
 
 The OpenSearch Project currently performs security reviews before releasing signed artifacts. These are typically conducted for any of the following:
 

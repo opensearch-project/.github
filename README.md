@@ -24,6 +24,7 @@
 * [Release Management](RELEASING.md)
 * [Organization Admins](ADMINS.md)
 * [Repo Maintainers](MAINTAINERS.md)
+* [Issue Triage](TRIAGING.md)
 * [Security](SECURITY.md)
 
 ## Project Style Guidelines
