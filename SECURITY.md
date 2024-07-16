@@ -16,13 +16,14 @@ The OpenSearch Security Team will address reported issues on a best effort basis
 
 ### Current Members
 
-| Security Team member     | GitHub Alias                                  | Affiliation |
-| ------------------------ | --------------------------------------------- | ----------- |
-| Kunal Khatua             | [kkhatua](https://github.com/kkhatua)         | Amazon      |
-| Daniel (dB.) Doubrovkine | [dblock](https://github.com/dblock)           | Amazon      |
-| Anirudha (Ani) Jadhav    | [anirudha](https://github.com/anirudha)       | Amazon      |
-| Anan Zhuang              | [ananzh](https://github.com/ananzh)           | Amazon      |
-| Eli Fisher               | [elfisher](https://github.com/elfisher)       | Amazon      |
+| Security Team member     | GitHub Alias                                                | Affiliation |
+| ------------------------ | ----------------------------------------------------------- | ----------- |
+| Kunal Khatua             | [kkhatua](https://github.com/kkhatua)                       | Amazon      |
+| Daniel (dB.) Doubrovkine | [dblock](https://github.com/dblock)                         | Amazon      |
+| Varun Lodaya             | [varun-lodaya](https://github.com/varun-lodaya)             | Amazon      |
+| Prabhat Chathurvedi      | [prabhat-chaturvedi](https://github.com/prabhat-chaturvedi) | Amazon      |
+| Craig Perkins            | [cwperks](https://github.com/cwperks)                       | Amazon      |
+| Eli Fisher               | [elfisher](https://github.com/elfisher)                     | Amazon      |
 
 ## Process
 
