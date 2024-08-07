@@ -19,6 +19,7 @@
 * Need help? Try [Forums](https://forum.opensearch.org/)
 * [Project Principles](https://opensearch.org/about.html#principles-for-development)
 * [Contributing to OpenSearch](CONTRIBUTING.md)
+* [Proposing Features](FEATURES.md)
 * [Onboarding Guide](ONBOARDING.md)
 * [Maintainer Responsibilities](RESPONSIBILITIES.md)
 * [Release Management](RELEASING.md)
