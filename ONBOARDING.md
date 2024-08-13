@@ -81,8 +81,11 @@ To create issues, leave comments, or submit pull requests, you'll need a GitHub 
 4. Recommended - Do (8 min) [Configure 2-factor authentication](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication)
 5. Optional - Read (5 min) If you're new to using GitHub or git, we recommend reviewing “[Using GitHub's tools and processes](https://docs.github.com/en/get-started/onboarding/getting-started-with-your-github-account#part-2-using-githubs-tools-and-processes)”
 
-### OpenSearch forum account
+### OpenSearch forum & Slack accounts
 
-There are multiple ways to [connect with the OpenSearch community](https://opensearch.org/connect.html), but [the forum](https://forum.opensearch.org/) is the best place to start
+There are multiple ways to [connect with the OpenSearch community](https://opensearch.org/connect.html), [the forum](https://forum.opensearch.org/) and [Slack](https://www.opensearch.org/slack.html) are the best places to start
 
 - **Do (2 min)** [create an OpenSearch forum](https://forum.opensearch.org/) account
+- **Do (2 min)** [create an OpenSearch Slack](https://www.opensearch.org/slack.html) account
+
+Refer to the ['COMMUNICATIONS'](https://github.com/opensearch-project/community/blob/main/COMMUNICATIONS.md) file for additional information

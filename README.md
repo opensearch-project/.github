@@ -17,6 +17,8 @@
 * [Downloads](https://opensearch.org/downloads.html)
 * [Documentation](https://opensearch.org/docs/latest/)
 * Need help? Try [Forums](https://forum.opensearch.org/)
+* Talk to other developers? [Slack](https://opensearch.org/slack.html)
+* [Communications](https://github.com/opensearch-project/community/blob/main/COMMUNICATIONS.md)
 * [Project Principles](https://opensearch.org/about.html#principles-for-development)
 * [Contributing to OpenSearch](CONTRIBUTING.md)
 * [Onboarding Guide](ONBOARDING.md)
