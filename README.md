@@ -21,6 +21,7 @@
 * [Communications](https://github.com/opensearch-project/community/blob/main/COMMUNICATIONS.md)
 * [Project Principles](https://opensearch.org/about.html#principles-for-development)
 * [Contributing to OpenSearch](CONTRIBUTING.md)
+* [Proposing Features](FEATURES.md)
 * [Onboarding Guide](ONBOARDING.md)
 * [Maintainer Responsibilities](RESPONSIBILITIES.md)
 * [Release Management](RELEASING.md)
