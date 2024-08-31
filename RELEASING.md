@@ -12,6 +12,8 @@
   - [Release Process for OpenSearch Bundle Minor Releases and Patch Releases](#Release-Process-for-OpenSearch-Bundle-Minor-Releases-and-Patch-Releases)
     - [Entrance Criteria to Start Release Window](#Entrance-Criteria-to-Start-Release-Window)
     - [Exit Criteria to Close Release Window](#Exit-Criteria-to-Close-Release-Window)
+    - [Release Process for OpenSearch Major Releases](#Release-Process-for-OpenSearch-Major-Releases)
+    - [Release Process for Changing Release Date](#Release-Process-for-Changing-Release-Date)
 - [Security Reviews](#security-reviews)
 - [Backporting](#backporting)
 
