@@ -8,12 +8,12 @@
   - [Incrementing Versions](#incrementing-versions)
 - [Tagging](#tagging)
 - [Release Labels](#release-labels)
-- [Releasing](#releasing)
-  - [Release Process for OpenSearch Bundle Minor Releases and Patch Releases](#Release-Process-for-OpenSearch-Bundle-Minor-Releases-and-Patch-Releases)
+- [Release Process](#release-process)
+  - [OpenSearch Bundle Minor Releases and Patch Releases](#OpenSearch-Bundle-Minor-Releases-and-Patch-Releases)
     - [Entrance Criteria to Start Release Window](#Entrance-Criteria-to-Start-Release-Window)
     - [Exit Criteria to Close Release Window](#Exit-Criteria-to-Close-Release-Window)
-    - [Release Process for OpenSearch Major Releases](#Release-Process-for-OpenSearch-Major-Releases)
-    - [Release Process for Changing Release Date](#Release-Process-for-Changing-Release-Date)
+  - [OpenSearch Major Releases](#OpenSearch-Major-Releases)
+  - [Changing Release Date](#Changing-Release-Date)
 - [Security Reviews](#security-reviews)
 - [Backporting](#backporting)
 
@@ -71,7 +71,7 @@ For a discussion on whether to add a prefixing `v` to release tags, see [#35](ht
 
 Repositories create consistent release labels, such as `v2.9.0`, `v1.0.0`, `v1.1.0` and `v2.0.0`, as well as `patch` and `backport`. Use release labels to target an issue or a PR for a given release. See [MAINTAINERS](MAINTAINERS.md#triage-open-issues) for more information on triaging issues.
 
-## Releasing
+## Release Process
 
 OpenSearch follows semver, which means we will only release breaking changes in major versions. All minor versions are compatible with every other minor version for that major. For example, 1.2.0 will work with 1.3.2, 1.4.1, etc, but may not work with 2.0.
 
@@ -79,7 +79,7 @@ OpenSearch uses a “release-train” model. For minor version, that train leave
 
 In contrast, OpenSearch releases new major versions only when there are a critical mass of breaking changes (e.g. changes that are incompatible with existing APIs). These tend to be tied to Lucene major version releases, and will be announced in the forums at least 4 weeks prior to the release date.
 
-### Release Process for OpenSearch Bundle Minor Releases and Patch Releases
+### OpenSearch Bundle Minor Releases and Patch Releases
 
 At the beginning of every year, the project will publish on [OpenSearch.org](https://opensearch.org/releases.html) the “release windows start” dates for the year.  These dates will be spaced out ~6 weeks.
 
@@ -106,13 +106,13 @@ Please note:  This process is for regularly scheduled minor and patch releases. 
 * All integration tests are passing
 * Release blog is ready
 
-### Release Process for OpenSearch Major Releases
+### OpenSearch Major Releases
 
 OpenSearch only does major releases when there are significant breaking changes that are ready for release.  Once we become aware of the need for a major version, we will start a major version release window which will be similar to a minor release, except for two things:  Participation is mandatory for all components and the release window will be at least 4 weeks long to accommodate the testing required. 
 
 For the actual steps to build a release, please see [Releasing OpenSearch](https://github.com/opensearch-project/opensearch-build/blob/main/README.md#releasing-opensearch).
 
-### Release Process for Changing Release Date
+### Changing Release Date
 
 In the OpenSearch project, we strive for consistent and predictable release schedule as multiple organizations and users depend on the software for their own projects and businesses.
 However, sometimes a release date needs to move to accommodate engineering delays in critical components that affect the key properties of the software such as 
@@ -121,7 +121,7 @@ performance, reliability, availability, or security. In order to move a release 
 * There is a publicly documented justification for moving the release date.
 * The justification is circulated 2 weeks or more prior to the original release date.
 * The organization coordinating the release is in favor of moving the release date.
-* A majority of the leadership committee agree by vote to move the release date.
+* The leadership committee has voted to move the release date with a simple majority.
 
 ### Security Reviews 
 
