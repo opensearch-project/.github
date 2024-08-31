@@ -7,7 +7,7 @@ OpenSearch is a community-driven, Apache 2.0-licensed open source search and ana
 We are built 🧱 by the community for the community. If you would like to contribute there are many ways:
 
 - We have [a step-by-step onboarding guide](../ONBOARDING.md) to help you get oriented and prepared to contribute.
-- 👀 Check out a project's `CONTRIBUTING.md` file to learn how to contribute.
+- 👀 Check out a project's [`CONTRIBUTING.md`](../CONTRIBUTING.md) file to learn how to contribute.
 - [Blogs](https://github.com/opensearch-project/project-website) and [Documentation Updates](https://github.com/opensearch-project/documentation-website)!
 - Finally, make sure to try [OpenSearch](https://opensearch.org/docs/latest/opensearch/install/docker/) 🔎, [OpenSearch Dashboards](https://playground.opensearch.org/auth/anonymous) 🖥, and our Plugins/Client Libraries 📚 and leave feedback!
 
@@ -16,9 +16,12 @@ We are built 🧱 by the community for the community. If you would like to contr
 There are several places where our community meets make sure to check them out!
 
 - 📝 [Forum](https://forum.opensearch.org/)
+- 💬 [Slack](https://opensearch.org/slack.html)
+- 🗣️ [User Groups & Triage meetings](https://www.meetup.com/pro/opensearchproject/)
 - ▶️ [YouTube](https://www.youtube.com/c/OpenSearchProject)
-- 🐤 [Twitter](https://twitter.com/OpenSearchProj)
 - 🧑‍💼 [LinkedIn](https://www.linkedin.com/company/opensearch-project/)
+- 🐘 [Mastodon](https://fosstodon.org/@OpenSearchProject)
+- 🐤 [Twitter](https://twitter.com/OpenSearchProj)
 
 ----
 
