@@ -1,7 +1,10 @@
 contact_links:
-  - name: OpenSearch Community Support
-    url: https://discuss.opendistrocommunity.dev/
-    about: Please ask and answer questions here.
-  - name: AWS/Amazon Security
-    url: https://aws.amazon.com/security/vulnerability-reporting/
-    about: Please report security vulnerabilities here.
+  - name: 💬 OpenSearch Community Slack Workspace
+    url: https://opensearch.org/slack.html
+    about: Chat with community members and maintainers here.
+  - name: 🤷 OpenSearch Community Forum
+    url: https://forum.opensearch.org/
+    about: Ask and answer OpenSearch usage questions here.
+  - name: 🔐 Report a Security Issue
+    url: https://github.com/opensearch-project/.github/blob/main/SECURITY.md
+    about: Please e-mail security@opensearch.org. Do not create a public GitHub issue.

@@ -7,14 +7,14 @@ on:
       - synchronize
   workflow_dispatch:
   schedule:
-    - cron: '0 */1 * * *' # Runs every 1 hour 
+    - cron: "0 */1 * * *" # Runs every 1 hour
 
 jobs:
   baking_pull_request:
     name: "Baking pull request..."
     runs-on: ubuntu-latest
     steps:
-    - uses: peternied/bake-time@v3
-      with:
-        check-name: "Baking pull request..."
-        delay-hours: 48
+      - uses: peternied/bake-time@v3
+        with:
+          check-name: "Baking pull request..."
+          delay-hours: 48

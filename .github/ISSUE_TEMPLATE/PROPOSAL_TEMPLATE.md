@@ -10,19 +10,19 @@ assignees: ''
 _In a few sentences, describe the feature and its core capabilities._
 
 ### What users have asked for this feature?
-_Highlight any research, proposals, requests or anecdotes that signal this is the right thing to build. Include links to GitHub Issues, Forums, Stack Overflow, Twitter, Etc_
+_Highlight any research, proposals, requests or anecdotes that signal this is the right thing to build. Include links to GitHub Issues, Forums, Stack Overflow, Twitter, etc._
 
 ### What problems are you trying to solve?
-_Summarize the core use cases and user problems and needs you are trying to solve. Describe the most important user needs, pain points and jobs as expressed by the user asks above. Template: When \<a situation arises> , a \<type of user> wants to \<do something>, so they can \<expected outcome>. (Example: When **searching by postal code**, **a buyer** wants to **be required to enter a valid code** so they **don’t waste time searching for a clearly invalid postal code.**)_
+_Summarize the core use cases and user problems and needs you are trying to solve. Describe the most important user needs, pain points and jobs as expressed by the user asks above. Template: When \<a situation arises> , a \<type of user> wants to \<do something>, so they can \<expected outcome> (e.g. When **searching by postal code**, **a buyer** wants to **be required to enter a valid code** so they **don’t waste time searching for a clearly invalid postal code.**)._
 
 ### What is the developer experience going to be?
 _Does this have a REST API? If so, please describe the API and any impact it may have to existing APIs. In a brief summary (not a spec), highlight what new REST APIs or changes to REST APIs are planned. as well as any other API, CLI or Configuration changes that are planned as part of this feature._
 
 #### Are there any security considerations? 
-_Describe if the feature has any security considerations or impact. What is the security model of the new APIs? Features should be integrated into the OpenSearch security suite and so if they are not, we should highlight the reasons here._
+_Describe whether the feature has any security considerations or impact. What is the security model of the new APIs? Features should be integrated into the OpenSearch security suite and so if they are not, we should highlight the reasons here._
 
 #### Are there any breaking changes to the API
-_If this feature will require breaking changes to any APIs, ouline what those are and why they are needed. What is the path to minimizing impact? (example, add new API and deprecate the old one)_
+_If this feature will require breaking changes to any APIs, outline what those will be and why they are needed. What is the path to minimizing impact? (e.g. add new API and deprecate the old one)._
 
 ### What is the user experience going to be?
 _Describe the feature requirements and or user stories. You may include low-fidelity sketches, wireframes, APIs stubs, or other examples of how a user would use the feature via CLI, OpenSearch Dashboards, REST API, etc. Using a bulleted list or simple diagrams to outline features is okay. If this is net new functionality, call this out as well._
