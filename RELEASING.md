@@ -1,33 +1,44 @@
 - [Overview](#overview)
 - [Branching](#branching)
-  - [OpenSearch Branching](#opensearch-branching)
+  - [OpenSearch and OpenSearch Dashboards Branching](#opensearch-and-opensearch-dashboards-branching)
   - [Plugin Branching](#plugin-branching)
+  - [Single Repo Artifacts Branching](#single-repo-artifacts-branching)
   - [Feature Branches](#feature-branches)
+  - [Backporting](#backporting)
 - [Versioning](#versioning)
   - [Version Numbers](#version-numbers)
+    - [OpenSearch and OpenSearch Dashboards Version Numbers](#opensearch-and-opensearch-dashboards-version-numbers)
+    - [Single Repo Version Numbers](#single-repo-version-numbers)
   - [Incrementing Versions](#incrementing-versions)
-- [Tagging](#tagging)
-- [Release Labels](#release-labels)
-- [Release Process](#release-process)
-  - [OpenSearch Bundle Minor Releases and Patch Releases](#OpenSearch-Bundle-Minor-Releases-and-Patch-Releases)
-    - [Entrance Criteria to Start Release Window](#Entrance-Criteria-to-Start-Release-Window)
-    - [Exit Criteria to Close Release Window](#Exit-Criteria-to-Close-Release-Window)
-  - [OpenSearch Major Releases](#OpenSearch-Major-Releases)
-  - [Changing Release Date](#Changing-Release-Date)
-- [Security Reviews](#security-reviews)
-- [Backporting](#backporting)
+- [Releases](#releases)
+  - [Major Releases](#major-releases)
+  - [Minor Releases](#minor-releases)
+  - [Patch Releases](#patch-releases)
+- [Releasing](#releasing)
+  - [OpenSearch Releases](#opensearch-releases)
+    - [Release Process](#release-process)
+    - [Release Schedule](#release-schedule)
+    - [Release Window](#release-window)
+      - [Entrance Criteria to Start Release Window](#entrance-criteria-to-start-release-window)
+      - [Exit Criteria to Close Release Window](#exit-criteria-to-close-release-window)
+  - [Other Projects](#other-projects)
+  - [Tagging](#tagging)
+  - [Release Labels](#release-labels)
+  - [Changing Release Dates](#changing-release-dates)
+  - [Requesting a Release](#requesting-a-release)
+  - [Security Reviews](#security-reviews)
 
 ## Overview
 
-This document explains the release strategy for artifacts in this organization.
+This document explains the release strategy for artifacts in this organization, including large distributions, such as OpenSearch with OpenSearch Dashboards, and smaller distributions, such as clients.
 
 ## Branching
 
 Projects create a new branch when they need to start working on 2 separate versions of the product, with the `main` branch being the furthermost release. 
 
-### OpenSearch Branching
+### OpenSearch and OpenSearch Dashboards Branching
 
-[OpenSearch](https://github.com/opensearch-project/OpenSearch) typically tracks 3 releases in parallel. For example, given the last major release of 2.0, OpenSearch in this organization maintains the following active branches.
+Most repos in this organization, including [OpenSearch](https://github.com/opensearch-project/OpenSearch) and [OpenSearch-Dashboards](https://github.com/opensearch-project/OpenSearch-Dashboards), typically track 3 releases in parallel. For example, given the last major release of 2.0, OpenSearch and all its components in this organization maintains the following active branches.
 
 * **main**: The _next major_ release, currently 3.0. This is the branch where all merges take place, and code moves fast.
 * * **2.x**: The _next minor_ release. Once a change is merged into `main`, decide whether to backport it to `2.x`.
@@ -37,19 +48,33 @@ Label PRs with the next major version label (e.g. `3.0.0`) and merge changes int
 
 ### Plugin Branching
 
-Plugins are bundled and shiped together along with OpenSearch for every release. Plugin branching follows OpenSearch core branching that will allow working on 3 releases at the same time.
+OpenSearch and OpenSearch Dashboards plugins are bundled and shipped together along with the OpenSearch distribution for every release. Plugin branching follows OpenSearch branching described above that allows working on 3 releases at the same time.
+
+### Single Repo Artifacts Branching
+
+Frequently released artifacts, such as most [clients](https://github.com/opensearch-project/opensearch-clients), follow a simpler branching model with the next release always living on `main` and no patch branches.
 
 ### Feature Branches
 
 Do not creating branches in the upstream repo, use your fork, for the exception of long lasting feature branches that require active collaboration from multiple developers. Name feature branches `feature/<thing>`. Once the work is merged to `main`, please make sure to delete the feature branch.
 
+### Backporting
+
+Backwards-incompatible changes always result in a new major version and will __never__ be backported. Small improvements and features will be backported to a new minor version (e.g. `2.9.0`). Security fixes will be backported to a new patch version (e.g. `2.9.1`). Repos in this organization typically use a backport workflow where you can label a PR, e.g. `backport 2.x`, and the workflow will attempt an automatic backport and open a new PR. If the backport fails, it is the contributor's responsibility to do a manual backport following the instructions in the failed backport error message.
+
 ## Versioning
 
-OpenSearch versioning [follows semver](https://opensearch.org/blog/technical-post/2021/08/what-is-semver/). 
+All distributions in this organization [follow semver](https://opensearch.org/blog/technical-post/2021/08/what-is-semver/). A user-facing breaking change can only be made in a major release. Any regression that broke semver is considered a high severity bug. 
 
 ### Version Numbers
 
+#### OpenSearch and OpenSearch Dashboards Version Numbers
+
 The build number of the engine is 3-digit `major.minor.patch` (e.g. `2.9.0`), while plugins use 4 digits (`2.9.0.45`). See [OpenSearch#1093](https://github.com/opensearch-project/OpenSearch/issues/1093) for a proposal to remove this difference. 
+
+#### Single Repo Version Numbers
+
+The build number of all releasable artifacts is 3-digit `major.minor.patch` (e.g. `2.9.0`).
 
 ### Incrementing Versions
 
@@ -58,40 +83,51 @@ Versions are incremented as soon as development starts on a given version to avo
 * OpenSearch: `main` = 3.0.0, `2.x` = 2.10.0 `1.x` = 1.4.0, and `1.2` = 1.2.5
 * job-scheduler: `main` = 3.0.0.0, `2.x` = 2.10.0.0 , `1.x` = 1.4.0.0 and `1.2` = 1.2.5.0
 
-## Tagging
+## Releases
 
-Create tags after a release that match the version number, `major.minor.patch`, without a `v` prefix.
+### Major Releases
 
-* [OpenSearch tags](https://github.com/opensearch-project/OpenSearch/tags): [1.0.0](https://github.com/opensearch-project/OpenSearch/releases/tag/1.0.0)
-* [job-scheduler tags](https://github.com/opensearch-project/job-scheduler/tags): [1.0.0.0](https://github.com/opensearch-project/job-scheduler/releases/tag/1.0.0.0)
+Major releases contain breaking changes, new features, and bug fixes. All artifacts released in this organization only do major releases when there are significant breaking changes ready for release that warrant a major upgrade. To avoid major upgrades we strive to build features in a backwards compatible way as much as possible, therefore it's common for a distribution to go multiple years without a major release.
 
-For a discussion on whether to add a prefixing `v` to release tags, see [#35](https://github.com/opensearch-project/.github/issues/35).  
+OpenSearch releases new major versions only when there are a critical mass of breaking changes (e.g. changes that are incompatible with existing APIs). These tend to be tied to Lucene major version releases, and will be announced in the forums at least 4 weeks prior to the release date. Once we become aware of the need for a major version, we will start a major version release window which will be similar to a minor release, except for two things: 1) participation is mandatory for all components, and 2) the release window will be at least 4 weeks long to accommodate the testing required. 
 
-## Release Labels
+### Minor Releases
 
-Repositories create consistent release labels, such as `v2.9.0`, `v1.0.0`, `v1.1.0` and `v2.0.0`, as well as `patch` and `backport`. Use release labels to target an issue or a PR for a given release. See [MAINTAINERS](MAINTAINERS.md#triage-open-issues) for more information on triaging issues.
+Minor releases for large distributions such as OpenSearch are scheduled on regular intervals, contain new features and bug fixes, and must not contain any breaking changes.
 
-## Release Process
+### Patch Releases
 
-OpenSearch follows semver, which means we will only release breaking changes in major versions. All minor versions are compatible with every other minor version for that major. For example, 1.2.0 will work with 1.3.2, 1.4.1, etc, but may not work with 2.0.
+Patch releases are reserved for high-severity CVEs, critical bug fixes (e.g. causes users to rollback after an upgrade), or significant regressions in non-experimental features (e.g. feature unusable), and must not contain any new features.
 
-OpenSearch uses a “release-train” model. For minor version, that train leaves approximately every six weeks we release a new minor version which includes all the new features and fixes that are ready to go. Having a set release schedule makes sure OpenSearch is releasing in a predictable way and prevents a backlog of unreleased changes.
+We follow [OpenSSF's best practices](https://bestpractices.coreinfrastructure.org/en/criteria/0?details=true&rationale=true#0.vulnerabilities_fixed_60_days) for patching publicly known vulnerabilities and we make sure that there are no unpatched vulnerabilities of medium or higher severity that have been publicly known for more than 60 days in our actively maintained versions.
 
-In contrast, OpenSearch releases new major versions only when there are a critical mass of breaking changes (e.g. changes that are incompatible with existing APIs). These tend to be tied to Lucene major version releases, and will be announced in the forums at least 4 weeks prior to the release date.
+## Releasing
 
-### OpenSearch Bundle Minor Releases and Patch Releases
+### OpenSearch Releases
 
-At the beginning of every year, the project will publish on [OpenSearch.org](https://opensearch.org/releases.html) the “release windows start” dates for the year.  These dates will be spaced out ~6 weeks.
+See [Releasing OpenSearch](https://github.com/opensearch-project/opensearch-build/blob/main/README.md#releasing-opensearch) for the standard operating procedures of making an OpenSearch release.
+
+#### Release Process
+
+OpenSearch uses a "release-train" model. For minor version, that train leaves approximately every six weeks we release a new minor version which includes all the new features and fixes that are ready to go. Having a set release schedule makes sure OpenSearch is releasing in a predictable way and prevents a backlog of unreleased changes.
+
+#### Release Schedule
+
+At the beginning of every year, the project will publish on [opensearch.org](https://opensearch.org/releases.html) the "release windows start" dates for the year for all the large distributions, including OpenSearch. These dates will be spaced out ~6 weeks.
+
+#### Release Window
 
 On release window start date:
-1. We generate the first candidate with all plug-ins/components that have met the entrance criteria. If a plug-in/component hasn't met all of the criteria, we'll version bump the last released version and release that.  Once the release window opens and the first candidate is generated, no additioanl features can be added, and we will not delay the start of a release window for any plug-in/component.
-1. During the release window we will do final quality testing, documentation and performance testing.  Bug fixes can be added in during this time, but no new features will be added. 
-1. We will generate a new candidate every day and post on the release issue about the status of the exit criteria.  When all the exit criteria have been met, we'll announce that the candidate is ready and release it 2 days later (unless that falls on Friday, in which case we'll release on Monday)
-1. If we cannot clear the exit criteria within 2 weeks from the start of the window (1 week for patch releases), we will cancel that release window and try again in the next window.
 
-Please note:  This process is for regularly scheduled minor and patch releases.  For "hot" patches (patches required for security or other urgent issues) we will build, test and release as quickly as possible.
+1. We generate the first candidate with all plug-ins/components that have met the entrance criteria. If a plug-in/component hasn't met all of the criteria, we'll version bump the last released version and release that.  Once the release window opens and the first candidate is generated, no additional features can be added, and we will not delay the start of a release window for any plug-in/component.
+2. During the release window we will do final quality testing, documentation and performance testing.  Bug fixes can be added in during this time, but no new features will be added. 
+3. We will generate a new candidate every day and post on the release issue about the status of the exit criteria.  When all the exit criteria have been met, we'll announce that the candidate is ready and release it 2 days later (unless that falls on Friday, in which case we'll release on Monday)
+4. If we cannot clear the exit criteria within 2 weeks from the start of the window (1 week for patch releases), we will cancel that release window and try again in the next window.
 
-#### Entrance Criteria to Start Release Window
+Please note: this process is for regularly scheduled minor and patch releases. For "hot" patches (patches required for security or other urgent issues) we will build, test and release as quickly as possible.
+
+##### Entrance Criteria to Start Release Window
+
 * Documentation draft PRs are up and in tech review for all component changes.
 * Sanity testing is done for all components.
 * Code coverage has not decreased (all new code has tests).
@@ -100,28 +136,42 @@ Please note:  This process is for regularly scheduled minor and patch releases. 
 * Release ticket is cut, and there's a forum post announcing the start of the window.
 * [Any necessary security reviews](##Security-Reviews) are complete. 
 
-#### Exit Criteria to Close Release Window
+##### Exit Criteria to Close Release Window
+
 * Performance tests are run, results are posted to the release ticket and there no unexpected regressions
 * Documentation has been fully reviewed and signed off by the documentation community.
 * All integration tests are passing
 * Release blog is ready
 
-### OpenSearch Major Releases
+### Other Projects
 
-OpenSearch only does major releases when there are significant breaking changes that are ready for release.  Once we become aware of the need for a major version, we will start a major version release window which will be similar to a minor release, except for two things:  Participation is mandatory for all components and the release window will be at least 4 weeks long to accommodate the testing required. 
+Look for a RELEASING.md file in each repo, e.g. [opensearch-java/RELEASING.md](https://github.com/opensearch-project/opensearch-java/blob/main/RELEASING.md). This is typically a [1-click release process](https://github.com/opensearch-project/opensearch-build/blob/main/ONBOARDING.md#onboarding-to-universal--1-click-release-process) in which a maintainer pushes a tag to the repo, followed by automation performing the actual release.
 
-For the actual steps to build a release, please see [Releasing OpenSearch](https://github.com/opensearch-project/opensearch-build/blob/main/README.md#releasing-opensearch).
+### Tagging
 
-### Changing Release Date
+Create tags after a release that match the version number, `major.minor.patch`, without a `v` prefix.
 
-In the OpenSearch project, we strive for consistent and predictable release schedule as multiple organizations and users depend on the software for their own projects and businesses.
-However, sometimes a release date needs to move to accommodate engineering delays in critical components that affect the key properties of the software such as 
-performance, reliability, availability, or security. In order to move a release date, we will ensure:
+* [OpenSearch tags](https://github.com/opensearch-project/OpenSearch/tags): [1.0.0](https://github.com/opensearch-project/OpenSearch/releases/tag/1.0.0)
+* [job-scheduler tags](https://github.com/opensearch-project/job-scheduler/tags): [1.0.0.0](https://github.com/opensearch-project/job-scheduler/releases/tag/1.0.0.0)
+
+For a discussion on whether to add a prefixing `v` to release tags, see [#35](https://github.com/opensearch-project/.github/issues/35).
+
+### Release Labels
+
+Repositories create consistent release labels, such as `v2.9.0`, `v1.0.0`, `v1.1.0` and `v2.0.0`, as well as `patch` and `backport`. Use release labels to target an issue or a PR for a given release. See [MAINTAINERS](MAINTAINERS.md#triage-open-issues) for more information on triaging issues.
+
+### Changing Release Dates
+
+For large distributions such as OpenSearch, we strive for consistent and predictable release schedule as multiple organizations and users depend on the software for their own projects and businesses. However, sometimes a release date needs to move to accommodate engineering delays in critical components that affect the key properties of the software such as performance, reliability, availability, or security. In order to move a release date, we will ensure:
 
 * There is a publicly documented justification for moving the release date.
 * The justification is circulated 2 weeks or more prior to the original release date.
 * The organization coordinating the release is in favor of moving the release date.
 * The leadership committee has voted to move the release date with a simple majority.
+
+### Requesting a Release
+
+Smaller distributions, such as clients, release as often as possible. If you see changes that have not been released and you need a release, please open an issue titled "Release v. Next" in the corresponding repo, e.g. [opensearch-java#1093](https://github.com/opensearch-project/opensearch-java/issues/1093).
 
 ### Security Reviews 
 
@@ -138,36 +188,3 @@ The OpenSearch Project currently performs security reviews before releasing sign
 The review process consists of building a threat model for the proposed change and optionally engaging a specialist to perform additional testing, such as a penetration testing. This process is done in parallel and in private within the project, during development, and usually takes 4-10 weeks. A repository maintainer will assess the scope of the new changes, initiate and manage a security review, provide public updates, and, if needed, communicate privately by email with the contributors. Please add a note in your pull request if you believe a security review is warranted. 
 
 Please see [opensearch-project/.github#81](https://github.com/opensearch-project/.github/issues/81) for a discussion on improving this and other security-related processes.​
-
-## Backporting
-
-This project follows [semantic versioning](https://semver.org/spec/v2.0.0.html). Backwards-incompatible changes always result in a new major version and will __never__ be backported. Small improvements and features will be backported to a new minor version (e.g. `2.9.0`). Security fixes will be backported to a new patch version (e.g. `2.9.1`).
-
-Here are the commands we typically run to backport changes to release branches:
-
-1. Checkout the target release branch and pull the latest changes from `upstream`. In the examples below, our target release branch is `2.x`.
-
-```
-git checkout 2.x
-git pull upstream 2.x
-```
-
-2. Create a local branch for the backport. A convenient naming convention is _backport-\[PR-id\]-\[target-release-branch\]_.
-
-```
-git checkout -b backport-pr-xyz-1.x
-```
-
-3. Cherry-pick the commit to backport. Remember to include [DCO signoff](CONTRIBUTING.md#developer-certificate-of-origin).
-
-```
-git cherry-pick <commit-id> -s
-```
-
-4. Push the local branch to your fork.
-
-```
-git push origin backport-pr-xyz-1.x
-```
-
-5. Create a pull request for the change.
