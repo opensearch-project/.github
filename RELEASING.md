@@ -42,6 +42,7 @@ Most repos in this organization, including [OpenSearch](https://github.com/opens
 
 * **main**: The _next major_ release, currently 3.0. This is the branch where all merges take place, and code moves fast.
 * * **2.x**: The _next minor_ release. Once a change is merged into `main`, decide whether to backport it to `2.x`.
+* * **2.17**: The _last minor_ release and the _next patch_ release. Once a change is merged into `2.x`, it may be backported to, for example, `2.17` for the next 2.17 release candidate, or as a patch for a `2.12.1`.
 * **1.3**: The _next patch_ release. Once a change is merged into `main`, decide whether to backport it to `1.3`.
 
 Label PRs with the next major version label (e.g. `3.0.0`) and merge changes into `main`. Label PRs that you believe need to be backported as `2.x`, `1.x` and `1.3`. Backport PRs by checking out the versioned branch, cherry-pick changes and open a PR against each target backport branch.
@@ -89,7 +90,7 @@ Versions are incremented as soon as development starts on a given version to avo
 
 Major releases contain breaking changes, new features, and bug fixes. All artifacts released in this organization only do major releases when there are significant breaking changes ready for release that warrant a major upgrade. To avoid major upgrades we strive to build features in a backwards compatible way as much as possible, therefore it's common for a distribution to go multiple years without a major release.
 
-OpenSearch releases new major versions only when there are a critical mass of breaking changes (e.g. changes that are incompatible with existing APIs). These tend to be tied to Lucene major version releases, and will be announced in the forums at least 4 weeks prior to the release date. Once we become aware of the need for a major version, we will start a major version release window which will be similar to a minor release, except for two things: 1) participation is mandatory for all components, and 2) the release window will be at least 4 weeks long to accommodate the testing required. 
+For example, the OpenSearch bundle that contains OpenSearch and OpenSearch Dashboards releases new major versions after Lucene major version releases. This is announced in the forums at least 4 weeks prior to the release date. Once we become aware of the need for a major version, we start a major version release window which is similar to a minor release, except for two things: 1) participation is mandatory for all components, and 2) the release window is at least 4 weeks long to accommodate the testing required.
 
 ### Minor Releases
 
