@@ -1,5 +1,5 @@
 ---
-name: 🎆 Feature request
+name: 🎆 Feature Request
 about: Request a feature in this project
 title: '[FEATURE]'
 labels: 'enhancement, untriaged'
