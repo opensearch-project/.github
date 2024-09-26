@@ -61,7 +61,7 @@ Do not creating branches in the upstream repo, use your fork, for the exception 
 
 ### Backporting
 
-Backwards-incompatible changes always result in a new major version and will __never__ be backported. Small improvements and features will be backported to a new minor version (e.g. `2.9.0`). Security fixes will be backported to a new patch version (e.g. `2.9.1`). Repos in this organization typically use a backport workflow where you can label a PR, e.g. `backport 2.x`, and the workflow will attempt an automatic backport and open a new PR. If the backport fails, it is the contributor's responsibility to do a manual backport following the instructions in the failed backport error message.
+Backwards-incompatible changes always result in a new major version and will __never__ be backported. Small improvements and features will be backported to a new minor version (e.g. `2.9.0`). High severity security or critical bug fixes will be backported to a new patch version (e.g. `2.9.1`). Repos in this organization typically use a backport workflow where you can label a PR, e.g. `backport 2.x`, and the workflow will attempt an automatic backport and open a new PR. If the backport fails, it is the contributor's responsibility to do a manual backport following the instructions in the failed backport error message.
 
 ## Versioning
 
@@ -98,9 +98,11 @@ Minor releases for large distributions such as OpenSearch are scheduled on regul
 
 ### Patch Releases
 
-Patch releases are reserved for high-severity CVEs, critical bug fixes (e.g. causes users to rollback after an upgrade), or significant regressions in non-experimental features (e.g. feature unusable), and must not contain any new features.
+Patch releases are reserved for addressing high-severity CVEs, critical bug fixes (e.g., issues causing users to roll back after an upgrade), or significant regressions in non-experimental features (e.g., feature rendered unusable). These releases must not introduce any new features.
 
 We follow [OpenSSF's best practices](https://bestpractices.coreinfrastructure.org/en/criteria/0?details=true&rationale=true#0.vulnerabilities_fixed_60_days) for patching publicly known vulnerabilities and we make sure that there are no unpatched vulnerabilities of medium or higher severity that have been publicly known for more than 60 days in our actively maintained versions.
+
+Whether a fix qualifies as a critical bug should be proposed by the PR contributor or issue creator, and triaged by the maintainers of the repo with input from the community. The severity and impact of a bug in defining criticality of an issue can vary. For example, back-end APIs are fairly straightforward to triage, while a UX bug may prevent users from using a feature and may require some domain expertise to assess.
 
 ## Releasing
 
@@ -120,9 +122,9 @@ At the beginning of every year, the project will publish on [opensearch.org](htt
 
 On release window start date:
 
-1. We generate the first candidate with all plug-ins/components that have met the entrance criteria. If a plug-in/component hasn't met all of the criteria, we'll version bump the last released version and release that.  Once the release window opens and the first candidate is generated, no additional features can be added, and we will not delay the start of a release window for any plug-in/component.
-2. During the release window we will do final quality testing, documentation and performance testing.  Bug fixes can be added in during this time, but no new features will be added. 
-3. We will generate a new candidate every day and post on the release issue about the status of the exit criteria.  When all the exit criteria have been met, we'll announce that the candidate is ready and release it 2 days later (unless that falls on Friday, in which case we'll release on Monday)
+1. We generate the first release candidate with all plug-ins/components that have met the entrance criteria. If a plug-in/component hasn't met all of the criteria, we'll version bump the last released version and release that. Once the release window opens and the first candidate is generated, no additional features can be added, and we will not delay the start of a release window for any plug-in/component.
+2. During the release window we will conduct final quality testing, documentation updates and performance testing. Bug fixes can be added in during this time, but no new features will be included.
+3. We will generate a new release candidate every day and post on the release issue about the status of the exit criteria. When all the exit criteria have been met, we'll announce that the candidate is ready and release it 2 days later (unless that falls on Friday, in which case we'll release on Monday).
 4. If we cannot clear the exit criteria within 2 weeks from the start of the window (1 week for patch releases), we will cancel that release window and try again in the next window.
 
 Please note: this process is for regularly scheduled minor and patch releases. For "hot" patches (patches required for security or other urgent issues) we will build, test and release as quickly as possible.
