@@ -75,7 +75,7 @@ The build number of the engine is 3-digit `major.minor.patch` (e.g. `2.9.0`), wh
 
 #### Single Repo Version Numbers
 
-The build number of all releasable artifacts is 3-digit `major.minor.patch` (e.g. `2.9.0`).
+The version number of all releasable artifacts is 3-digit `major.minor.patch` (e.g. `2.9.0`).
 
 ### Incrementing Versions
 
