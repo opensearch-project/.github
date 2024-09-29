@@ -9,11 +9,16 @@
 
 ## Welcome!
 
-**OpenSearch** is [a community-driven, open source fork](https://aws.amazon.com/blogs/opensource/introducing-opensearch/) of [Elasticsearch](https://en.wikipedia.org/wiki/Elasticsearch) and [Kibana](https://en.wikipedia.org/wiki/Kibana) licensed under the [Apache v2.0 License](LICENSE.txt). For more information, see [opensearch.org](https://opensearch.org/).
+**OpenSearch Project** is [a community-driven, open source fork](https://aws.amazon.com/blogs/opensource/introducing-opensearch/) of [Elasticsearch](https://en.wikipedia.org/wiki/Elasticsearch) and [Kibana](https://en.wikipedia.org/wiki/Kibana) licensed under the [Apache v2.0 License](LICENSE.txt).
+
+OpenSearch is supported by [The OpenSearch Software Foundation](https://foundation.opensearch.org/), a project of [The Linux Foundation](https://www.linuxfoundation.org/). You can read the launch announcement [here](https://www.linuxfoundation.org/press/linux-foundation-announces-opensearch-software-foundation-to-foster-open-collaboration-in-search-and-analytics) and learn more about joining the foundation [here](https://foundation.opensearch.org/).
+
+For more information, see [opensearch.org](https://opensearch.org/).
 
 ## Project Resources
 
 * [Project Website](https://opensearch.org/)
+* [OpenSearch Software Foundation](https://foundation.opensearch.org/)
 * [Downloads](https://opensearch.org/downloads.html)
 * [Documentation](https://opensearch.org/docs/latest/)
 * Need help? Try [Forums](https://forum.opensearch.org/)

@@ -30,7 +30,7 @@ The OpenSearch Security Team will address reported issues on a best effort basis
 Anyone finding an issue that is already publicly disclosed (for example, a CVE in one of the project’s dependencies) should feel free to create an issue and discuss openly on GitHub. The process below is only intended for issues that have not been publicly disclosed yet.
 
 1. We request that instead of opening a GitHub issue, it is reported via email at security@opensearch.org. Please include a description of the issue, and any other information that could help in the reproduction and creation of a fix (version numbers, configuration values, reproduction steps...)
-2. The OpenSearch Security Team will negotiate the conditions for an embargo period and a disclosure timeline with the discoverer (see [Embargo schedule](#embargo-schedule)).
+2. The OpenSearch Security Team will negotiate the conditions for an embargo period and a disclosure timeline with the discoverer (see [Embargo Schedule](#embargo-schedule)).
 3. After the vulnerability is confirmed, if no CVE number is already reserved, the OpenSearch Security Team will reserve one, and communicate it to the discoverer and all parties in the pre-disclosure list (see [Pre-disclosure list](#pre-disclosure-list)).
 4. As soon as our advisory is available, we will send it, including patches, to members of the pre-disclosure list. In the event that we do not have a patch available 2 working weeks before the disclosure date, we aim to send an advisory that reflects the current state of knowledge to the pre-disclosure list. An updated advisory will be published as soon as available. At this stage, the advisory will be clearly marked with the embargo date.
 5. On the day the embargo is lifted, we will publish the advisory and release the new versions containing the fix.
@@ -84,6 +84,5 @@ Organizations who meet the criteria above (i.e. significant work needed post-dis
     * Specifically, the contact information (email addresses or other contact instructions) which such a member of the public should use
 * A statement to the effect that you have read this policy and agree to abide by the terms for inclusion in the list, specifically the requirements to regarding confidentiality during an embargo period
 * The email(s) you wish added to the pre-disclosure list
-
 
 The OpenSearch Security Team will review your application and get back to you with their decision.
