@@ -12,7 +12,7 @@
     - [Keep Dependencies up to Date](#keep-dependencies-up-to-date)
   - [Manage Roadmap](#manage-roadmap)
   - [Add Continuous Integration Checks](#add-continuous-integration-checks)
-  - [Use Semver](#use-semver)
+  - [Use SemVer](#use-semver)
   - [Release Frequently](#release-frequently)
   - [Promote Other Maintainers](#promote-other-maintainers)
   - [Describe the Repo](#describe-the-repo)
@@ -104,7 +104,7 @@ Ensure the repo highlights features that should be elevated to the project roadm
 
 Add integration checks that validate pull requests and pushes to ease the burden on Pull Request reviewers.
 
-### Use Semver
+### Use SemVer
 
 Use and enforce [semantic versioning](https://semver.org/) and do not let breaking changes be made outside of major releases.
 
