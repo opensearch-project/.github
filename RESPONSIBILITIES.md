@@ -45,7 +45,7 @@ Model the behavior set forward by the [Code of Conduct](CODE_OF_CONDUCT.md) and 
 
 Security is your number one priority. Maintainer's Github keys must be password protected securely and any reported security vulnerabilities are addressed before features or bugs.
 
-Note that this repository is monitored and supported 24/7 by Amazon Security, see [Reporting a Vulnerability](SECURITY.md) for details.
+Note that this repository is monitored and OpenSearch Security Team, see [Reporting a Vulnerability](SECURITY.md) for details.
 
 ### Review Pull Requests
 
