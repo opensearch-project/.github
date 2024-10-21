@@ -8,7 +8,7 @@ The purpose of the triage meetings is to ensure every issue created in the opens
 
 ### Which triage meeting should I attend?
 
-You should attend the meeting for the repo where your issue was opened, or the "catch all" if your issue has not seen much traction for an extended period of time.
+You should attend the meeting for the repo where your issue was opened, or the "catch all" triage if your issue has not seen much traction for an extended period of time.
 
 ### Do I need to attend for my issue to be addressed/triaged?
 
@@ -38,6 +38,13 @@ Meetings are typically 60 minutes and structured as follows:
 6. Open Discussion: Allow for members of the meeting to surface any topics without issues filed or pull request created.
 
 There is no specific ordering within each category.
+
+### How does an issue get "triaged"?
+
+1. Attendees of triage meetings copy-paste links to their GitHub accounts into chat.
+2. A volunteer that runs a triage meeting prepares a label such as `[[Triage](https://github.com/opensearch-project/.github/blob/main/TRIAGING.md) [1](...) [2](...)]` where the `[1](...)`, `[2](...)`, ... tags are links to GitHub accounts of the attendees.
+3. The `untriaged` label is removed from every issue being reviewed.
+4. The issue gets a comment using the above-mentioned label and any other comments as needed.
 
 ### Do I need to have already contributed to the project to attend a triage meeting?
 
