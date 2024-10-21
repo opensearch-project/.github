@@ -55,6 +55,12 @@ If you have an existing issue you would like to discuss, you can always comment 
 
 No. Due to the sensitive nature of security vulnerabilities, please report all potential vulnerabilities directly by following the steps outlined in [SECURITY.md](https://github.com/opensearch-project/.github/blob/main/SECURITY.md). Do not create security issues on GitHub.
 
+### What does an issue comment that says `[Catch All Triage - [1](...), [2](...)]` mean?
+
+This means the issue was flagged as untriaged for more than 2 weeks during "catch all" triage. The GitHub profiles of the community members attending are linked as `[1]`, `[2]`, etc. The issue was quickly reviewed for validity and urgency, the "untriaged" label was removed, and this comment was added.
+
+If you are a community member contributing to a repo that received this comment, please step up to establish a regular triage and avoid seeing the issue in the "catch all" one.
+
 ### Who should I contact if I have further questions?
 
 We recommend using the [forum](https://forum.opensearch.org/) or [public Slack](https://opensearch.org/slack.html).
