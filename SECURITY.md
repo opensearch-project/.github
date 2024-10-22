@@ -8,9 +8,9 @@ If you discover a potential security issue in this project we ask that you notif
 
 *Giving credit where credit is due, this policy is heavily influenced by the [Xen Project’s security response process](https://xenproject.org/developers/security-policy/), that was put to the test during the [embargo period for XSA-108 back in 2014](https://xenproject.org/2014/10/22/xen-project-security-policy-improvements-get-involved/) and improved its clarity around managing the pre-disclosure list and the deployment of fixes during embargo. We are standing on the shoulders of these battle-tested giants.*
 
-## The Security Response Team (SRT)
+## Security Response Team (SRT)
 
-The OpenSearch Security Response Team (SRT) comprises of a subset of the project’s maintainers responsible for looking after the project’s security, including the security issue response process outlined below. New SRT members can only be nominated by current SRT members.
+The OpenSearch Security Response Team (SRT) is comprised of a subset of the project’s maintainers responsible for looking after the project’s security, including the security issue response process outlined below. New SRT members are nominated by current SRT members.
 
 SRT will address reported issues on a best effort basis, prioritizing them based on several factors, including severity.
 
