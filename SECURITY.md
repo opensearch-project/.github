@@ -8,22 +8,25 @@ If you discover a potential security issue in this project we ask that you notif
 
 *Giving credit where credit is due, this policy is heavily influenced by the [Xen Project’s security response process](https://xenproject.org/developers/security-policy/), that was put to the test during the [embargo period for XSA-108 back in 2014](https://xenproject.org/2014/10/22/xen-project-security-policy-improvements-get-involved/) and improved its clarity around managing the pre-disclosure list and the deployment of fixes during embargo. We are standing on the shoulders of these battle-tested giants.*
 
-## The Security Team
+## Security Response Team (SRT)
 
-The OpenSearch Security Team is a subset of the project’s maintainers responsible for looking after the project’s security, including the security issue response process outlined below. Maintainers can be added to the Security Team by submitting a PR updating this document and adding their name to the list below (the process for becoming a maintaner can be found [here](https://github.com/opensearch-project/.github/blob/main/MAINTAINERS.md#becoming-a-maintainer)).
+The OpenSearch Security Response Team (SRT) is comprised of a subset of the project’s maintainers responsible for looking after the project’s security, including the security issue response process outlined below. New SRT members are nominated by current SRT members.
 
-The OpenSearch Security Team will address reported issues on a best effort basis, prioritizing them based on several factors, including severity.
+SRT will address reported issues on a best effort basis, prioritizing them based on several factors, including severity.
 
 ### Current Members
 
-| Security Team member     | GitHub Alias                                                | Affiliation |
+| Security Response Team   | GitHub Alias                                                | Affiliation |
 | ------------------------ | ----------------------------------------------------------- | ----------- |
 | Kunal Khatua             | [kkhatua](https://github.com/kkhatua)                       | Amazon      |
 | Daniel (dB.) Doubrovkine | [dblock](https://github.com/dblock)                         | Amazon      |
 | Varun Lodaya             | [varun-lodaya](https://github.com/varun-lodaya)             | Amazon      |
 | Prabhat Chathurvedi      | [prabhat-chaturvedi](https://github.com/prabhat-chaturvedi) | Amazon      |
 | Craig Perkins            | [cwperks](https://github.com/cwperks)                       | Amazon      |
-| Eli Fisher               | [elfisher](https://github.com/elfisher)                     | Amazon      |
+| Nils Bandener            | [nibix](https://github.com/nibix)                           | Eliatra     |
+| Andrew Redko             | [reta](https://github.com/reta)                             | Aiven       |
+| Andrey Pleskach          | [willyborankin](https://github.com/willyborankin)           | Aiven       |
+| Ryan Liang               | [RyanL1997](https://github.com/RyanL1997)                   | Amazon      |
 
 ## Process
 
