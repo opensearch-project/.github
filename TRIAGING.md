@@ -8,7 +8,7 @@ The purpose of the triage meetings is to ensure every issue created in the opens
 
 ### Which triage meeting should I attend?
 
-You should attend the meeting for the repo where your issue was opened, or the "catch all" if your issue has not seen much traction for an extended period of time.
+You should attend the meeting for the repo where your issue was opened, or the "catch all" triage if your issue has not seen much traction for an extended period of time.
 
 ### Do I need to attend for my issue to be addressed/triaged?
 
@@ -39,6 +39,13 @@ Meetings are typically 60 minutes and structured as follows:
 
 There is no specific ordering within each category.
 
+### How does an issue get "triaged"?
+
+1. Attendees of triage meetings copy-paste links to their GitHub accounts into chat.
+2. A volunteer that runs a triage meeting prepares a label such as `[[Triage](https://github.com/opensearch-project/.github/blob/main/TRIAGING.md) [1](...) [2](...)]` where the `[1](...)`, `[2](...)`, ... tags are links to GitHub accounts of the attendees.
+3. The `untriaged` label is removed from every issue being reviewed.
+4. The issue gets a comment using the above-mentioned label and any other comments as needed.
+
 ### Do I need to have already contributed to the project to attend a triage meeting?
 
 No, all are welcome and encouraged to attend. Attending the Backlog & Triage meetings is a great way for a new contributor to learn about the project as well as explore different avenues of contribution.
@@ -54,6 +61,12 @@ If you have an existing issue you would like to discuss, you can always comment 
 ### Is this where I should bring up potential security vulnerabilities?
 
 No. Due to the sensitive nature of security vulnerabilities, please report all potential vulnerabilities directly by following the steps outlined in [SECURITY.md](https://github.com/opensearch-project/.github/blob/main/SECURITY.md). Do not create security issues on GitHub.
+
+### What does an issue comment that says `[Catch All Triage - [1](...), [2](...)]` mean?
+
+This means the issue was flagged as untriaged for more than 2 weeks during "catch all" triage. The GitHub profiles of the community members attending are linked as `[1]`, `[2]`, etc. The issue was quickly reviewed for validity and urgency, the "untriaged" label was removed, and this comment was added.
+
+If you are a community member contributing to a repo that received this comment, please step up to establish a regular triage and avoid seeing the issue in the "catch all" one.
 
 ### Who should I contact if I have further questions?
 
