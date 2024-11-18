@@ -60,7 +60,9 @@ OpenSearch is an open source product released under the Apache 2.0 license (see 
 
 We respect intellectual property rights of others and we want to make sure all incoming contributions are correctly attributed and licensed. A Developer Certificate of Origin (DCO) is a lightweight mechanism to do that.
 
-The DCO is a declaration attached to every contribution made by every developer. In the commit message of the contribution, the developer simply adds a `Signed-off-by` statement and thereby agrees to the DCO, which you can find below or at [DeveloperCertificate.org](http://developercertificate.org/).
+The DCO is a declaration attached to every contribution made by every developer. That representation is important for legal purposes and was the community-developed outcome after a [$1 billion lawsuit by SCO against IBM](https://en.wikipedia.org/wiki/SCO%E2%80%93Linux_disputes). The representation is designed to prevent issues but also keep the burden on contributors low. It has proven very adaptable to other projects, is built into git itself (and now also GitHub), and is in use by thousands of projects to avoid more burdensome requirements to contribute (such as a CLA).
+
+In the commit message of the contribution, the developer simply adds a `Signed-off-by` statement and thereby agrees to the DCO, which you can find below or at [DeveloperCertificate.org](http://developercertificate.org/).
 
 ```
 Developer's Certificate of Origin 1.1
@@ -91,9 +93,11 @@ By making a contribution to this project, I certify that:
     involved.
  ```
 
-We require that every contribution to OpenSearch is signed with a Developer Certificate of Origin. DCO checks are enabled via a [DCO workflow app](https://github.com/apps/dco) across the entire opensearch-project organization, and your PR will fail CI without it.
+We require that every contribution to OpenSearch is signed with a Developer Certificate of Origin. 
 
-Additionally, we kindly ask you to use your real name. We do not accept anonymous contributors, nor those utilizing pseudonyms.
+DCO checks are enabled via a [DCO workflow app](https://github.com/apps/dco) across the entire opensearch-project organization, and your PR will fail CI without it.
+
+Additionally, we kindly ask you to use your real name. A real name does not require a legal name, nor a birth name, nor any name that appears on an official ID (e.g. a passport). Your real name is the name you convey to people in the community for them to use to identify you as you. The key concern is that your identification is sufficient enough to contact you if an issue were to arise in the future about your contribution. Thus, your real name should not be an anonymous id or false name that misrepresents who you are.
 
 Each commit must include a DCO which looks like this, which includes a real name and a valid email address where you can receive emails:
 
