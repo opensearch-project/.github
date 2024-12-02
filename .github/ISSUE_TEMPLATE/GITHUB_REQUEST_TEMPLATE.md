@@ -30,3 +30,5 @@ _Requests typically require at least 5 business days to process. Specify your re
 
 ### How to check the status of your request?  
 _Track the progress of your request here: https://github.com/orgs/opensearch-project/projects/208/views/33_  
+_Member of @opensearch-project/admin will take a look at the request soon._
+_Thanks!_
