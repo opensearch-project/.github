@@ -7,14 +7,14 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to submit GitHub Requset! Please note that the estimate time for the request to be resolved is 7-10 days from the time of the request.
+        Thanks for taking the time to submit this GitHub Request! Please note that the estimated time for the request to be resolved is 7-10 days from the time of the request.
   - type: dropdown
     attributes:
-      description: 'Provide request type'
+      description: 'Provide request type.'
       label: 'What is the type of request?'
       multiple: false
       options:
-        - # Empty first option to force selection
+        - # Empty first option to force selection.
         - User Permission
         - Organization Membership
         - Repository Management
@@ -44,9 +44,8 @@ body:
       required: true
   - type: textarea
     attributes:
-      description: 'Notes'
-      label: '(DO NOT DELETE)'
+      label: 'Notes'
       value: |
-        Track the progress of your request here: https://github.com/orgs/opensearch-project/projects/208/views/33
+        Track the progress of your request here: https://github.com/orgs/opensearch-project/projects/208/views/33.
         Member of @opensearch-project/admin will take a look at the request soon.
         Thanks!
