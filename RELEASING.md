@@ -131,6 +131,7 @@ Please note: this process is for regularly scheduled minor and patch releases. F
 
 ##### Entrance Criteria to Start Release Window
 
+* Each component release issue has an assigned owner.
 * Documentation draft PRs are up and in tech review for all component changes.
 * Sanity testing is done for all components.
 * Code coverage has not decreased (all new code has tests).
