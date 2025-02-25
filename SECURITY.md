@@ -19,7 +19,6 @@ SRT will address reported issues on a best effort basis, prioritizing them based
 | Security Response Team   | GitHub Alias                                                | Affiliation |
 | ------------------------ | ----------------------------------------------------------- | ----------- |
 | Kunal Khatua             | [kkhatua](https://github.com/kkhatua)                       | Amazon      |
-| Daniel (dB.) Doubrovkine | [dblock](https://github.com/dblock)                         | Amazon      |
 | Varun Lodaya             | [varun-lodaya](https://github.com/varun-lodaya)             | Amazon      |
 | Prabhat Chathurvedi      | [prabhat-chaturvedi](https://github.com/prabhat-chaturvedi) | Amazon      |
 | Craig Perkins            | [cwperks](https://github.com/cwperks)                       | Amazon      |
