@@ -12,16 +12,16 @@ body:
     attributes:
       description: |
         Please note that, we are still awaiting nomination of initial BIG members per [OpenSearch Project Build Interest Group (BIG) Governance Proposal](https://github.com/opensearch-project/.github/issues/304).
-        As a result, requests for new GitHub Repo may experience delays.
+        As a result, requests for new GitHub Repository may experience delays.
       label: |
-        Are you requesting a new GitHub Repo within opensearch-project GitHub Organization?
-        If not, please provide the URL of your current GitHub Repo.
+        Are you requesting a new GitHub Repository within opensearch-project GitHub Organization?
+        If not, please provide the URL of your current GitHub Repository.
     validations:
       required: true
   - type: input
     attributes:
       description: |
-        **(Enter 'N/A' in this section if you already have a GitHub Repo)**
+        **(Enter 'N/A' in this section if you already have a GitHub Repository)**
         1. Review the OpenSearch Software Foundation [Charter](https://foundation.opensearch.org/assets/media/OpenSearch%20Project%20Technical%20Charter%20Final%209-13-2024.docx.pdf).
         2. Open a proposal issue with this [template](https://github.com/opensearch-project/.github/issues/new?template=PROPOSAL_TEMPLATE.md), see [examples](https://github.com/opensearch-project/.github/issues?q=is%3Aissue%20state%3Aopen%20%5BPROPOSAL%5D).
         3. Attach the proposal issue url in above textarea.
@@ -31,7 +31,7 @@ body:
   - type: textarea
     attributes:
       description: |
-        **(Enter 'N/A' in this section if you already have a GitHub Repo)**
+        **(Enter 'N/A' in this section if you already have a GitHub Repository)**
       value: |
         1. What is the new GitHub repository name?
         2. Project description and community value?
@@ -41,37 +41,37 @@ body:
         6. Should this project be in OpenSearch Core/OpenSearch Dashboards Core? If no, why not?
            Or, shall we combine this project to an existing repo source code in opensearch-project GitHub Org?
         7. Is this project an OpenSearch/OpenSearch Dashboards plugin to be included as part of the OpenSearch release?
-      label: 'GitHub Repo Additional Information'
+      label: 'GitHub Repository Additional Information'
     validations:
       required: true
   - type: textarea
     attributes:
       description: |
-        **(Enter 'N/A' in this section if you already have a GitHub Repo)**
+        **(Enter 'N/A' in this section if you already have a GitHub Repository)**
       value: |
         1. Who will be supporting this repo going forward?
         2. What is your plan (including staffing) to be responsive to the community (at a minimum, this should include reviewing PRs, responding to issues, answering forum questions?)
         3. Initial Maintainers List (max 3 users, provide GitHub aliases):
-      label: 'GitHub Repo Owners'
+      label: 'GitHub Repository Owners'
     validations:
       required: true
   - type: textarea
     attributes:
       description: |
-        **(Enter 'N/A' in this section if you already have a GitHub Repo)**
+        **(Enter 'N/A' in this section if you already have a GitHub Repository)**
       value: |
         1. Please provide the URL to the source code.
         2. What is the license for the source code?
         3. Does the source code include any third-party code that is not compliant with the Apache License 2.0?
-      label: 'GitHub Repo Source Code / License / Libraries'
+      label: 'GitHub Repository Source Code / License / Libraries'
     validations:
       required: true
   - type: dropdown
     attributes:
       description: |
         Please choose the publication target(s) your repo plans to use. 
-        You must have a new GitHub Repo requested in this same issue, 
-        or an existing GitHub Repo before we can assist with adding new publication targets.
+        You must have a new GitHub Repository requested in this same issue, 
+        or an existing GitHub Repository before we can assist with adding new publication targets.
       label: |
         What is the publication target(s)?
         You can choose multiple targets from the list.
@@ -113,7 +113,7 @@ body:
             * At least three positive (+1) TSC members' votes are necessary, and no vetoes (-1) after a one week period, then Admin Team will open a repo creation ticket with Linux Foundation
             * Linux Foundation verify the votes and create repo
             * Admin Team setup automations on repo settings, secrets, scanning, add initial maintainers, and more
-            * Repo delivered to the original requester
+            * Repository delivered to the original requester
 
           * If you already have a GitHub repo and just want to add new publication target(s)
             * Admin Team will review your request and follow up
