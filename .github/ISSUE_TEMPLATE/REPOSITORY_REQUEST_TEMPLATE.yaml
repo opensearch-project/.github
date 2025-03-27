@@ -25,7 +25,7 @@ body:
         1. Review the OpenSearch Software Foundation [Charter](https://foundation.opensearch.org/assets/media/OpenSearch%20Project%20Technical%20Charter%20Final%209-13-2024.docx.pdf).
         2. Open a proposal issue with this [template](https://github.com/opensearch-project/.github/issues/new?template=PROPOSAL_TEMPLATE.md), see [examples](https://github.com/opensearch-project/.github/issues?q=is%3Aissue%20state%3Aopen%20%5BPROPOSAL%5D).
         3. Attach the proposal issue url in above textarea.
-      label: 'GitHub Repo Proposal'
+      label: 'GitHub Repository Proposal'
     validations:
       required: true
   - type: textarea
