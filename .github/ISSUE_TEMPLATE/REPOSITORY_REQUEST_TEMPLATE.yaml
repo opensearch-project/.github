@@ -1,5 +1,5 @@
 ---
-name: '📦Repository Request'
+name: '📦 New GitHub Repository Request'
 description: 'Request a new repository with its publication target(s) in the OpenSearch Project.'
 title: '[Repository Request]'
 labels: ['repository-request']
