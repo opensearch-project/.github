@@ -35,7 +35,7 @@ body:
       value: |
         1. What is the new GitHub repository name?
         2. Project description and community value?
-        3. What customer problem are we trying to solve with this repo?
+        3. What user problem are you trying to solve with this new repository?
         4. Why do we create a new repo at this time?
         5. Is there any existing projects that is similar to your proposal?
         6. Should this project be in OpenSearch Core/OpenSearch Dashboards Core? If no, why not?
