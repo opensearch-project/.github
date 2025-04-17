@@ -61,7 +61,7 @@ Because the `main` branch tracks the next minor version, we have no standardized
 
 ## Versioning
 
-All distributions in this organization [follow SemVer](https://opensearch.org/blog/technical-post/2021/08/what-is-semver/). A user-facing breaking change can only be made in a major release. Any regression that breaks SemVer is considered a high severity bug.
+All distributions in this organization [follow SemVer](https://opensearch.org/blog/what-is-semver/). A user-facing breaking change can only be made in a major release. Any regression that breaks SemVer is considered a high severity bug.
 
 ### Version Numbers
 
