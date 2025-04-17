@@ -11,18 +11,16 @@ body:
   - type: input
     attributes:
       description: |
-        Please note that, we are still awaiting nomination of initial BIG members per [OpenSearch Project Build Interest Group (BIG) Governance Proposal](https://github.com/opensearch-project/.github/issues/304).
-        As a result, requests for new GitHub Repository may experience delays.
+        If not, please provide the URL of your current GitHub Repository.
       label: |
         Are you requesting a new GitHub Repository within opensearch-project GitHub Organization?
-        If not, please provide the URL of your current GitHub Repository.
     validations:
       required: true
   - type: input
     attributes:
       description: |
         **(Enter 'N/A' in this section if you already have a GitHub Repository)**
-        1. Review the OpenSearch Software Foundation [Charter](https://foundation.opensearch.org/assets/media/OpenSearch%20Project%20Technical%20Charter%20Final%209-13-2024.docx.pdf).
+        1. Review the OpenSearch Software Foundation [charter](https://foundation.opensearch.org/assets/media/OpenSearch%20Project%20Technical%20Charter%20Final%209-13-2024.docx.pdf).
         2. Open a proposal issue with this [template](https://github.com/opensearch-project/.github/issues/new?template=PROPOSAL_TEMPLATE.md), see [examples](https://github.com/opensearch-project/.github/issues?q=is%3Aissue%20state%3Aopen%20%5BPROPOSAL%5D).
         3. Attach the proposal issue url in above textarea.
       label: 'GitHub Repository Proposal'
@@ -102,7 +100,7 @@ body:
       value: |
         Next Steps:
           * If this is about creating a new GitHub Repository
-            * Build Interest Group (BIG) will review your proposal and provide feedback
+            * Build Interest Group ([BIG](https://github.com/opensearch-project/technical-steering/blob/main/special-interest-groups/build-interest-group/charter.md)) and its [members](https://github.com/opensearch-project/technical-steering/tree/main/special-interest-groups/build-interest-group#membership) will review your proposal and provide feedback
               * Review of Proposal, asking questions, adding comments
               * If there is any concern regarding the naming / IP, additional IP review will be requested
               * Involve Subject Matter Experts from other repositories on the proposed topics
