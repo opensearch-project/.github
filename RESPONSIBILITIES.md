@@ -122,7 +122,7 @@ Make sure the repo has a well-written, accurate, and complete description. See [
 
 ## Becoming a Maintainer
 
-You can become a maintainer by actively [contributing](CONTRIBUTING.md) to any project, and being nominated by an existing maintainer.
+You can become a maintainer by actively [contributing](CONTRIBUTING.md) to any project, and being nominated by an existing maintainer. Past nominations can give a good sense of the body of work required to become a maintainer for a given repository. This data is publicly shared in each pull request that adds a new maintainer, and examples can be easily found by looking at the [commit history of the MAINTAINERS.md file](https://github.com/opensearch-project/OpenSearch/commits/main/MAINTAINERS.md) of the relevant repository.
 
 ### Nomination
 
