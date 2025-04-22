@@ -1,0 +1,121 @@
+---
+name: '📦 New GitHub Repository Request'
+description: 'Request a new repository with its publication target(s) in the OpenSearch Project.'
+title: '[Repository Request]'
+labels: ['repository-request']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to submit this Repository Request! Please note that the estimated time for the request to be resolved is 14-21 days from the time of the request.
+  - type: input
+    attributes:
+      description: |
+        If not, please provide the URL of your current GitHub Repository.
+      label: |
+        Are you requesting a new GitHub Repository within opensearch-project GitHub Organization?
+    validations:
+      required: true
+  - type: input
+    attributes:
+      description: |
+        **(Enter 'N/A' in this section if you already have a GitHub Repository)**
+        1. Review the OpenSearch Software Foundation [charter](https://foundation.opensearch.org/assets/media/OpenSearch%20Project%20Technical%20Charter%20Final%209-13-2024.docx.pdf).
+        2. Open a proposal issue with this [template](https://github.com/opensearch-project/.github/issues/new?template=PROPOSAL_TEMPLATE.md), see [examples](https://github.com/opensearch-project/.github/issues?q=is%3Aissue%20state%3Aopen%20%5BPROPOSAL%5D).
+        3. Attach the proposal issue url in above textarea.
+      label: 'GitHub Repository Proposal'
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      description: |
+        **(Enter 'N/A' in this section if you already have a GitHub Repository)**
+      value: |
+        1. What is the new GitHub repository name?
+        2. Project description and community value?
+        3. What user problem are you trying to solve with this new repository?
+        4. Why do we create a new repo at this time?
+        5. Is there any existing projects that is similar to your proposal?
+        6. Should this project be in OpenSearch Core/OpenSearch Dashboards Core? If no, why not?
+           Or, shall we combine this project to an existing repo source code in opensearch-project GitHub Org?
+        7. Is this project an OpenSearch/OpenSearch Dashboards plugin to be included as part of the OpenSearch release?
+      label: 'GitHub Repository Additional Information'
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      description: |
+        **(Enter 'N/A' in this section if you already have a GitHub Repository)**
+      value: |
+        1. Who will be supporting this repo going forward?
+        2. What is your plan (including staffing) to be responsive to the community (at a minimum, this should include reviewing PRs, responding to issues, answering forum questions?)
+        3. Initial Maintainers List (max 3 users, provide GitHub aliases):
+      label: 'GitHub Repository Owners'
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      description: |
+        **(Enter 'N/A' in this section if you already have a GitHub Repository)**
+      value: |
+        1. Please provide the URL to the source code.
+        2. What is the license for the source code?
+        3. Does the source code include any third-party code that is not compliant with the Apache License 2.0?
+      label: 'GitHub Repository Source Code / License / Libraries'
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      description: |
+        Please choose the publication target(s) your repo plans to use. 
+        You must have a new GitHub Repository requested in this same issue, 
+        or an existing GitHub Repository before we can assist with adding new publication targets.
+      label: |
+        What is the publication target(s)?
+        You can choose multiple targets from the list.
+      multiple: true
+      options:
+        - # Empty first option to force selection.
+        - DockerHub Staging
+        - DockerHub Production
+        - ECR Staging
+        - ECR Production
+        - Maven Snapshots / Sonatype Nexus
+        - Maven Central
+        - NPM
+        - RubyGems
+        - PyPI
+        - GO Pkg
+        - NuGet
+        - PHP Packagist
+        - Rust Crates
+        - Terraform Provider
+        - HuggingFace
+        - Others
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 'Notes (DO NOT CHANGE)'
+      value: |
+        Next Steps:
+          * If this is about creating a new GitHub Repository
+            * Build Interest Group ([BIG](https://github.com/opensearch-project/technical-steering/blob/main/special-interest-groups/build-interest-group/charter.md)) and its [members](https://github.com/opensearch-project/technical-steering/tree/main/special-interest-groups/build-interest-group#membership) will review your proposal and provide feedback
+              * Review of Proposal, asking questions, adding comments
+              * If there is any concern regarding the naming / IP, additional IP review will be requested
+              * Involve Subject Matter Experts from other repositories on the proposed topics
+              * Ensure new repositories align with the foundation’s charter
+              * Review the provided source code if any
+              * Send final feedback and recommendations to the [Technical Steering Committee](https://github.com/opensearch-project/technical-steering)
+            * Technical Steering Committee (TSC) will have a vote based on BIG feedback, and reply back the vote as a comment in this issue by a TSC member
+            * At least three positive (+1) TSC members' votes are necessary, and no vetoes (-1) after a one week period, then Admin Team will open a repo creation ticket with Linux Foundation
+            * Linux Foundation verify the votes and create repo
+            * Admin Team setup automations on repo settings, secrets, scanning, add initial maintainers, and more
+            * Repository delivered to the original requester
+
+          * If you already have a GitHub repo and just want to add new publication target(s)
+            * Admin Team will review your request and follow up
+
+        Track the progress of your request here: https://github.com/orgs/opensearch-project/projects/208/views/33.
+        Member of @opensearch-project/admin will take a look at the request soon.
+        Thanks!

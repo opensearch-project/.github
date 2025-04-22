@@ -13,8 +13,12 @@ jobs:
   baking_pull_request:
     name: "Baking pull request..."
     runs-on: ubuntu-latest
+    env:
+      SLEEP_HOURS: 3 # Max GHA runner time is 6 hours 
     steps:
-      - uses: peternied/bake-time@v3
-        with:
-          check-name: "Baking pull request..."
-          delay-hours: 48
+      - name: Sleep to enforce bake time
+        run: |
+          echo "Sleeping for configured bake time of ${{ env.SLEEP_HOURS }} hours..."
+          sleep $(( ${{ env.SLEEP_HOURS }} * 3600 ))
+      - name: Bake complete
+        run: echo "Bake time completed successfully."

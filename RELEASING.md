@@ -1,10 +1,10 @@
 - [Overview](#overview)
 - [Branching](#branching)
-  - [OpenSearch and OpenSearch Dashboards Branching](#opensearch-and-opensearch-dashboards-branching)
-  - [Plugin Branching](#plugin-branching)
+  - [OpenSearch Distribution Branching](#opensearch-distribution-branching)
   - [Single Repo Artifacts Branching](#single-repo-artifacts-branching)
   - [Feature Branches](#feature-branches)
   - [Backporting](#backporting)
+  - [Breaking Changes](#breaking-changes)
 - [Versioning](#versioning)
   - [Version Numbers](#version-numbers)
     - [OpenSearch and OpenSearch Dashboards Version Numbers](#opensearch-and-opensearch-dashboards-version-numbers)
@@ -36,20 +36,12 @@ This document explains the release strategy for artifacts in this organization, 
 
 Projects create a new branch when they need to start working on 2 separate versions of the product, with the `main` branch being the furthermost release. 
 
-### OpenSearch and OpenSearch Dashboards Branching
+### OpenSearch Distribution Branching
 
-Most repos in this organization, including [OpenSearch](https://github.com/opensearch-project/OpenSearch) and [OpenSearch-Dashboards](https://github.com/opensearch-project/OpenSearch-Dashboards), typically track 3 releases in parallel. For example, given the last major release of 2.0, OpenSearch and all its components in this organization maintains the following active branches.
+The OpenSearch distribution, including [OpenSearch](https://github.com/opensearch-project/OpenSearch), [OpenSearch Dashboards](https://github.com/opensearch-project/OpenSearch-Dashboards), and their plugins, track 2 releases in parallel. For example, given the last major release of 3.0, the repositories that make up the distribution maintain the following active branches.
 
-* **main**: The _next major_ release, currently 3.0. This is the branch where all merges take place, and code moves fast.
-* * **2.x**: The _next minor_ release. Once a change is merged into `main`, decide whether to backport it to `2.x`.
-* * **2.17**: The _last minor_ release and the _next patch_ release. Once a change is merged into `2.x`, it may be backported to, for example, `2.17` for the next 2.17 release candidate, or as a patch for a `2.12.1`.
-* **1.3**: The _next patch_ release. Once a change is merged into `main`, decide whether to backport it to `1.3`.
-
-Label PRs with the next major version label (e.g. `3.0.0`) and merge changes into `main`. Label PRs that you believe need to be backported as `2.x`, `1.x` and `1.3`. Backport PRs by checking out the versioned branch, cherry-pick changes and open a PR against each target backport branch.
-
-### Plugin Branching
-
-OpenSearch and OpenSearch Dashboards plugins are bundled and shipped together along with the OpenSearch distribution for every release. Plugin branching follows OpenSearch branching described above that allows working on 3 releases at the same time.
+* **main**: The _next minor_ release, currently 3.1. This is the branch where all merges take place.
+* **2.19**: The _last minor_ release and the _next patch_ release. Any fix deemed appropriate for the next patch release of 2.19.x should be merged to this branch.
 
 ### Single Repo Artifacts Branching
 
@@ -61,11 +53,15 @@ Do not creating branches in the upstream repo, use your fork, for the exception 
 
 ### Backporting
 
-Backwards-incompatible changes always result in a new major version and will __never__ be backported. Small improvements and features will be backported to a new minor version (e.g. `2.9.0`). High severity security or critical bug fixes will be backported to a new patch version (e.g. `2.9.1`). Repos in this organization typically use a backport workflow where you can label a PR, e.g. `backport 2.x`, and the workflow will attempt an automatic backport and open a new PR. If the backport fails, it is the contributor's responsibility to do a manual backport following the instructions in the failed backport error message.
+High severity security or critical bug fixes will be backported to a new patch version (e.g. `2.19.1`). Repos in this organization typically use a backport workflow where you can label a PR, e.g. `backport 2.19`, and the workflow will attempt an automatic backport and open a new PR. If the backport fails, it is the contributor's responsibility to do a manual backport following the instructions in the failed backport error message.
+
+### Breaking Changes
+
+Because the `main` branch tracks the next minor version, we have no standardized place for merging breaking changes intended for the next major version. If an individual repository wishes to incubate breaking changes, then the feature branch strategy can be used to for these changes. Please see [this issue](https://github.com/opensearch-project/.github/issues/251) for the historical context of why we no longer use the `main` branch to track the next major version.
 
 ## Versioning
 
-All distributions in this organization [follow SemVer](https://opensearch.org/blog/technical-post/2021/08/what-is-semver/). A user-facing breaking change can only be made in a major release. Any regression that breaks SemVer is considered a high severity bug.
+All distributions in this organization [follow SemVer](https://opensearch.org/blog/what-is-semver/). A user-facing breaking change can only be made in a major release. Any regression that breaks SemVer is considered a high severity bug.
 
 ### Version Numbers
 
@@ -81,8 +77,8 @@ The version number of all releasable artifacts is 3-digit `major.minor.patch` (e
 
 Versions are incremented as soon as development starts on a given version to avoid confusion. In the examples above versions are as follows.
 
-* OpenSearch: `main` = 3.0.0, `2.x` = 2.10.0 `1.x` = 1.4.0, and `1.2` = 1.2.5
-* job-scheduler: `main` = 3.0.0.0, `2.x` = 2.10.0.0 , `1.x` = 1.4.0.0 and `1.2` = 1.2.5.0
+* OpenSearch: `main` = 3.0.0, `2.19` = 2.19.1
+* job-scheduler: `main` = 3.0.0.0, `2.19` = 2.19.1.0
 
 ## Releases
 
