@@ -16,16 +16,24 @@ SRT will address reported issues on a best effort basis, prioritizing them based
 
 ### Current Members
 
-| Security Response Team   | GitHub Alias                                                | Affiliation |
+| Name                     | GitHub Alias                                                | Affiliation |
 | ------------------------ | ----------------------------------------------------------- | ----------- |
 | Kunal Khatua             | [kkhatua](https://github.com/kkhatua)                       | Amazon      |
-| Varun Lodaya             | [varun-lodaya](https://github.com/varun-lodaya)             | Amazon      |
 | Prabhat Chathurvedi      | [prabhat-chaturvedi](https://github.com/prabhat-chaturvedi) | Amazon      |
 | Craig Perkins            | [cwperks](https://github.com/cwperks)                       | Amazon      |
+| Shikhar Jain             | [shikharj05](https://github.com/shikharj05)                 | Amazon      |
+| Gulshan Kumar            | [kumargu](https://github.com/kumargu)                       | Amazon      |
+| Aayush Singhal           | [Aayush8394](https://github.com/Aayush8394)                 | Amazon      |
 | Nils Bandener            | [nibix](https://github.com/nibix)                           | Eliatra     |
-| Andrew Redko             | [reta](https://github.com/reta)                             | Aiven       |
-| Andrey Pleskach          | [willyborankin](https://github.com/willyborankin)           | Aiven       |
+
+### Emeritus
+
+| Name                     | GitHub Alias                                                | Affiliation |
+| ------------------------ | ----------------------------------------------------------- | ----------- |
 | Ryan Liang               | [RyanL1997](https://github.com/RyanL1997)                   | Amazon      |
+| Varun Lodaya             | [varun-lodaya](https://github.com/varun-lodaya)             | Amazon      |
+| Andriy Redko             | [reta](https://github.com/reta)                             | Aiven       |
+| Andrey Pleskach          | [willyborankin](https://github.com/willyborankin)           | Aiven       |
 
 ## Process
 
