@@ -17,7 +17,7 @@ If you're interested in becoming a maintainer, see [MAINTAINERS](MAINTAINERS.md)
 
 ## Current Admins
 
-For the current list of admins, please directly refer to the official [admin team page](https://github.com/orgs/opensearch-project/teams/admin).
+For the current list of admins, please directly refer to the [admin team page](https://github.com/orgs/opensearch-project/teams/admin).
 
 ## Admin Permissions
 
