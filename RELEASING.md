@@ -28,7 +28,7 @@
   - [Requesting a Release](#requesting-a-release)
   - [Security Reviews](#security-reviews)
 
-## Overview
+ Overview
 
 This document explains the release strategy for artifacts in this organization, including large distributions, such as OpenSearch with OpenSearch Dashboards, and smaller distributions, such as clients.
 
@@ -134,7 +134,7 @@ Please note: this process is for regularly scheduled minor and patch releases. F
 * Release notes are ready and available for all components.
 * Roadmap is up-to-date (information is available to create release highlights).
 * Release ticket is cut, and there's a forum post announcing the start of the window.
-* [Any necessary security reviews](##Security-Reviews) are complete. 
+* [Any necessary security reviews](#Security-Reviews) are complete. 
 
 ##### Exit Criteria to Close Release Window
 
