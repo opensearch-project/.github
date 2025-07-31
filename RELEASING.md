@@ -28,7 +28,7 @@
   - [Requesting a Release](#requesting-a-release)
   - [Security Reviews](#security-reviews)
 
- Overview
+## Overview
 
 This document explains the release strategy for artifacts in this organization, including large distributions, such as OpenSearch with OpenSearch Dashboards, and smaller distributions, such as clients.
 
