@@ -19,4 +19,4 @@ This document contains a list of maintainers in this repo. See [opensearch-proje
 | Maintainer         | GitHub ID                           | Affiliation |
 | ------------------ | ------------------------------------------ | ----------- |
 | Daniel Doubrovkine | [dblock](https://github.com/dblock)        | Independent |
-| Peter Nied         | [peternied](https://github.com/peternied)  | Amazon      |
+| Peter Nied         | [peternied](https://github.com/peternied)  | Airbnb      |
