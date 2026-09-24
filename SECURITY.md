@@ -6,11 +6,13 @@ Security issues happen as part of the normal lifecycle of software development o
 
 If you discover a potential security issue in this project we ask that you notify the OpenSearch Security Team via email to security@opensearch.org. Please do **not** create a public GitHub issue.
 
-*Giving credit where credit is due, this policy is heavily influenced by the [Xen Project’s security response process](https://xenproject.org/developers/security-policy/), that was put to the test during the [embargo period for XSA-108 back in 2014](https://xenproject.org/2014/10/22/xen-project-security-policy-improvements-get-involved/) and improved its clarity around managing the pre-disclosure list and the deployment of fixes during embargo. We are standing on the shoulders of these battle-tested giants.*
+For detailed policies, procedures, and guidelines related to the security response process, see the [opensearch-project/security-response](https://github.com/opensearch-project/security-response) repository.
+
+*Giving credit where credit is due, this policy is heavily influenced by the [Xen Project's security response process](https://xenproject.org/developers/security-policy/), that was put to the test during the [embargo period for XSA-108 back in 2014](https://xenproject.org/2014/10/22/xen-project-security-policy-improvements-get-involved/) and improved its clarity around managing the pre-disclosure list and the deployment of fixes during embargo. We are standing on the shoulders of these battle-tested giants.*
 
 ## Security Response Team (SRT)
 
-The OpenSearch Security Response Team (SRT) is comprised of a subset of the project’s maintainers responsible for looking after the project’s security, including the security issue response process outlined below. New SRT members are nominated by current SRT members.
+The OpenSearch Security Response Team (SRT) is comprised of a subset of the project's maintainers responsible for looking after the project's security, including the security issue response process outlined below. New SRT members are nominated by current SRT members.
 
 SRT will address reported issues on a best effort basis, prioritizing them based on several factors, including severity.
 
@@ -20,8 +22,8 @@ SRT will address reported issues on a best effort basis, prioritizing them based
 | ------------------------ | ----------------------------------------------------------- | ----------- |
 | Kunal Khatua             | [kkhatua](https://github.com/kkhatua)                       | Amazon      |
 | Craig Perkins            | [cwperks](https://github.com/cwperks)                       | Amazon      |
-| Shikhar Jain             | [shikharj05](https://github.com/shikharj05)                 | Amazon      |
-| Gulshan Kumar            | [kumargu](https://github.com/kumargu)                       | Amazon      |
+| Darshit Chanpura         | [DarshitChanpura](https://github.com/DarshitChanpura)       | Amazon      |
+| Zilong Xia               | [ZilongX](https://github.com/ZilongX)                       | Amazon      |
 | Nils Bandener            | [nibix](https://github.com/nibix)                           | Eliatra     |
 | Nagaraj G                | [nagarajg17](https://github.com/nagarajg17)                 | Amazon      |
 
@@ -35,10 +37,12 @@ SRT will address reported issues on a best effort basis, prioritizing them based
 | Andrey Pleskach          | [willyborankin](https://github.com/willyborankin)           | Aiven       |
 | Prabhat Chathurvedi      | [prabhat-chaturvedi](https://github.com/prabhat-chaturvedi) | Amazon      |
 | Aayush Singhal           | [Aayush8394](https://github.com/Aayush8394)                 | Amazon      |
+| Shikhar Jain             | [shikharj05](https://github.com/shikharj05)                 | Amazon      |
+| Gulshan Kumar            | [kumargu](https://github.com/kumargu)                       | Amazon      |
 
 ## Process
 
-Anyone finding an issue that is already publicly disclosed (for example, a CVE in one of the project’s dependencies) should feel free to create an issue and discuss openly on GitHub. The process below is only intended for issues that have not been publicly disclosed yet.
+Anyone finding an issue that is already publicly disclosed (for example, a CVE in one of the project's dependencies) should feel free to create an issue and discuss openly on GitHub. The process below is only intended for issues that have not been publicly disclosed yet.
 
 1. We request that instead of opening a GitHub issue, it is reported via email at security@opensearch.org. Please include a description of the issue, and any other information that could help in the reproduction and creation of a fix (version numbers, configuration values, reproduction steps...)
 2. The OpenSearch Security Team will negotiate the conditions for an embargo period and a disclosure timeline with the discoverer (see [Embargo Schedule](#embargo-schedule)).
@@ -79,7 +83,7 @@ Without prior consultation with the OpenSearch Security Team, list members may m
 * The assigned OpenSearch advisory number
 * The planned disclosure date
 
-List members may, if (and only if) the OpenSearch Security Team grants permission, deploy fixed versions during the embargo. Permission for deployment, and any restrictions, will be stated in the embargoed advisory text. Where the list member is a service provider who intends to take disruptive action such as rebooting as part of deploying a fix: the list member’s communications to its users about the service disruption may mention that the disruption is to correct a security issue, and relate it to the public information about the issue (as listed above). This applies whether the deployment occurs during the embargo (with permission–see above) or is planned for after the end of the embargo.
+List members may, if (and only if) the OpenSearch Security Team grants permission, deploy fixed versions during the embargo. Permission for deployment, and any restrictions, will be stated in the embargoed advisory text. Where the list member is a service provider who intends to take disruptive action such as rebooting as part of deploying a fix: the list member's communications to its users about the service disruption may mention that the disruption is to correct a security issue, and relate it to the public information about the issue (as listed above). This applies whether the deployment occurs during the embargo (with permission–see above) or is planned for after the end of the embargo.
 
 Pre-disclosure list members are allowed to share fixes to embargoed issues, analysis, etc., with the OpenSearch Security Team and security teams of other list members. Technical measures must be taken to prevent non-list-member organizations, or unauthorized staff in list-member organizations, from obtaining the embargoed materials.
 
@@ -88,7 +92,7 @@ Pre-disclosure list members are allowed to share fixes to embargoed issues, anal
 Organizations who meet the criteria above (i.e. significant work needed post-disclosure to remediate the issue and/or ability to help create or test the potential fixes) should contact the OpenSearch Security Team via email at security@opensearch.org if they wish to be added to the pre-disclosure list. In the email, you must include:
 
 * The name of your organization
-* How you’re using OpenSearch
+* How you're using OpenSearch
 * A description of why you fit the criteria (number of users, amount of work needed to remediate, ability to collaborate on fixes...)
 * Information about your handling of security problems
     * Your invitation to members of the public, who discover security problems with your products/services, to report them in confidence to you
